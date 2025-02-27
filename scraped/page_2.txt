@@ -1,0 +1,56 @@
+Test Requirements for UCSC Graduate Studies
+ProgramGRE General TestGRE Subject Test
+Anthropology  Not Required Not Required
+Applied Economics & Finance, M.S. Not Required Not Required
+Applied Mathematics Not Required Not Required
+Art: Environmental Art & Social Practice Not Required Not Required
+Astronomy Not Required Not Required
+Biomolecular Engineering & Bioinformatics, M.S. Not Required Not Required
+Chemistry & Biochemistry Not Required Not Required
+Coastal Science & Policy Not Required Not Required
+Computational Media Not Required Not Required
+Computer Engineering, M.S. Not Required Not Required
+Computer Science & Engineering M.S. Not Required Not Required
+Computer Science & Engineering Ph.D. Not Required Not Required
+Digital Art & New Media Not Required Not Required
+Earth & Planetary Sciences Not Required Not Required
+Ecology & Evolutionary Biology Not Required Not Required
+Economics Ph.D.Required Not Required
+Education, M.A. Not Required Not Required
+Education, Ph.D. Not Required Not Required
+Electrical & Computer Engineering Not Required Not Required
+Environmental Studies Not Required Not Required
+Feminist Studies Not Required Not Required
+Film & Digital Media Not Required Not Required
+Games & Playable Media, M.S. Not Required Not Required
+GIS Spatial Tech. Application & Research Not Required Not Required
+History Not Required Not Required
+History of Consciousness Not Required Not Required
+Human Computer Interaction Not Required Not Required
+Latin American & Latino Studies Not Required Not Required
+Linguistics Not Required Not Required
+Literature Not Required Not Required
+Materials Science & Engineering M.S. Not Required Not Required
+Materials Science & Engineering Ph.D.Required Not Required
+Mathematics Not Required Not Required
+Microbiology & Environmental Toxicology, M.S., Ph.D. Not Required Not Required
+Molecular, Cell & Developmental Biology, M.S. Not Required Not Required
+Music Not Required Not Required
+Natural Language Processing Not Required Not Required
+Ocean Sciences Not Required Not Required41Philosophy Not Required Not Required
+Physics Not Required Not Required
+Politics Not Required Not Required
+Program in Biomedical Sciences and Engineering:
+Biomolecular Engineering & Bioinformatics, Ph.D (BMEB) Not Required Not Required
+Chemical Biology, Biochemistry & Biophysics, Ph.D. (CB3)  Not Required Not Required
+Molecular, Cell & Developmental Biology, PhD (MCD) Not Required Not Required
+Microbial Biology and Pathogenesis, Ph.D. (METX) Not Required Not Required
+Psychology Not Required Not Required
+Science Communication Not Required Not Required
+Scientific Computing & Applied Mathematics Not Required Not Required
+Serious Games Not Required Not Required
+Social Documentation Not Required Not Required
+Sociology Not Required Not Required
+Statistical Sciences Not Required Not Required
+Theater Arts Not Required Not Required
+Visual Studies Not Required Not Required
