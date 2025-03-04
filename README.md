@@ -3,6 +3,6 @@
 ## Querying the RAG Model
 
 ```bash
-python connect_LLM.py question
+python connect_LLM.py "your question"
 ```
-where question is a string (e.g. "when is the NLP application due?")
+where "your question" is whatever query you are interested in (e.g. "when is the NLP application due?")
