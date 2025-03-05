@@ -1,63 +1,50 @@
 Admissions | Natural Language Processing M.S.
-ADMISSIONSGet ready to apply for Fall 2025 admission consideration
-APPLY STARTING OCT 1ST
-Applying to the NLP MS Program at UCSC
-We’re delighted that you’re interested in applying to UCSC’s unique professional master’s program in natural language processing. The NLP MS program is intended for students who have a considerable background in computer science, and we are looking for multifaceted individuals who ideally have experience with programming, computer science, probability, statistics, and linguistics. We review applications holistically and we have students in the NLP MS program with different undergraduate degrees who are successful in the program.
-Below please see a list of recommended courses and requirements that will help you be successful in our program. In your application, you can explain any gaps between your background and the admission guidelines below.
-Applicants wishing to study a broader range of computer science topics in a graduate program may wish to consider the MS in Computer Science and Engineering degree program. The program cost varies with the selected curriculum plan. Please check the Registrar’s website for the most recent tuition and fee information.
-Admission requirements:
-A B.A. or B.S in Computer Science or equivalent
-An overall GPA of 3.0 or better on the 4.0 GPA scale or the equivalent
-Excellent programming skills either through academic coursework and/or significant professional experience
-TOEFL or IELTS scores (if applicable)
-Minimum TOEFL score of 89
-Minimum IELTS score of 7.0
-Essential courses to highlight in your application:
-A class in Discrete Math (the equivalent of UCSC’s CSE 16: Applied Discrete Mathematics)
-An advanced class in Data Structures and Algorithms (the equivalent of UCSC’s CSE 101: Introduction to Data Structures and Algorithms)
-At least one class in Probability and Statistics with a grade of B or better (the equivalent of UCSC’s CSE 107: Probability and Statistics for Engineers or STAT 131: Introduction to Probability Theory)
-Desirable (but not required) additional requirements include:
-A class in NLP or Linguistics (the equivalent of UCSC’s CSE 143: Introduction to Natural Language Processing)
-A class in Machine Learning (the equivalent of UCSC’s CSE 142: Machine Learning)
-A class in Formal Languages and Automata Theory (the equivalent of UCSC’s CSE 103: Computational Models)
-Want to learn more? Connect with our Support TeamThere are lots of ways to get support with your application. The NLP Support Team is ready to assist with any questions you may have about the program, our industry-informed curriculum, and applying to UCSC.
-Visit our Contact page to connect with our NLP Support Team today.
-Application Materials
-Required application materials
-Application fee:
-Domestic: $135
-International: $155
-If you are currently enrolled in a UCSC undergraduate or graduate program or have an undergraduate or graduate degree from a UCSC program, you may request an application fee waiver directly from the NLP Program.
-Review the Graduate Admissions website for information about fee waivers and exemptions.
-GPA: minimum 3.0 on 4.0 scale or equivalent.
-Transcripts: unofficial transcripts are accepted for application purposes but official transcripts may be required if admitted to the program.
-Letters of Recommendation: 3 letters required from professors and professional contacts who may best speak to your abilities and academic potential in your chosen field of study.
-TOEFL or IELTS  (if applicable)
-TOEFL: minimum score of 89
-IELTS: minimum overall score of 7.0
-Personal History Statement:
-Recommended length is a concise 1-3 pages, single-spaced.
-UCSC is interested in a diverse and inclusive graduate student population. In the essay, discuss how your personal background informs your decision to pursue a graduate degree.
-Include any educational, familial, cultural, economic, or social experiences, challenges, or opportunities relevant to your academic journey; how you might contribute to social or cultural diversity within your chosen field; and/or how you might serve educationally underrepresented segments of society with your degree.
-Statement of Purpose:
-Recommended length is a concise 2-4 pages, single-spaced.
-Please describe your plans for graduate study or research and for your future occupation or profession.
-Include any information that may aid the selection committee in evaluating your preparation and qualifications for graduate study at UCSC.
-CV required, preferably from a link to a personal web page containing CV
-NOTE: GRE (no minimum) – The GRE requirement has been waived for Fall 2024 admission consideration for NLP MS applications. You are welcome to submit your official scores, but please note the inclusion of your official GRE score will not be a deciding factor for admission.
-Application Instructions & FAQ
-Admissions FAQ
-Application FAQ
-Application Instructions
-AB 540 Info
-International Applicants
-We’re here to help! Visit our Contact page to connect with a member of our support team. You can also email the NLP Program Team directly at nlp@ucsc.edu.
-Funding opportunities: MS students are typically self-supported. While a small number of partial fellowship packages are extended to eligible NLP students each year, the NLP Program encourages students to seek external support for covering graduate education expenses. Recipients of these fellowships are selected based on financial need and merit. We strongly recommend eligible applicants complete the optional Statement of Financial Need in the application to be considered for financial support. Instructions for completing this statement are available on the Graduate Admissions website.
-Visit the NLP Financials page to review additional information about the estimated costs of attendance and financial support options.
-Join an info session to learn more! The NLP Program Team hosts virtual information sessions each year about the unique benefits of studying NLP at UCSC. At each session, you’ll have an opportunity to meet members of our community including faculty and staff, and to ask any questions you may have about the program and application. Below is a schedule of upcoming information sessions you can attend from anywhere in the world:
-Friday, November 3rd from 11 AM – 12 PM (PDT) – Register now
-Wednesday, December 6th from 7 PM – 8 PM (PST) – Register now
-Tuesday, January 9th from 8 AM – 9 AM (PST) – Register now
-For parents and families of prospective students: We know that going to graduate school can involve a significant investment of your time and personal resources. As you consider your options for graduate studies, you may also want to include your support network in your decision-making process. We’ve put together a guide for parents and family members to provide insight into life at UCSC, as well as the support and resources available to our graduate students. Please always feel welcome to contact our Support Team if you or your family members have any questions.
-Join an NLP Information Session!At our information sessions, we discuss the range of courses and support services we offer, as well as tips for applying to the program. We also prioritize time for a Q&A session during each event, where you’ll have the opportunity to meet NLP faculty and staff.
-To attend an information session, please complete the session’s registration form. You’ll then be sent an individualized Zoom link you can use to access the information session. Please note that dates and times for upcoming sessions are subject to change.
+ADMISSIONS Get ready to apply for Fall 2025 admission consideration 
+APPLY STARTING OCT 1ST 
+Applying to the NLP MS Program at UCSC We’re delighted that you’re interested in applying to UCSC’s unique professional master’s program in natural language processing. 
+The NLP MS program is intended for students who have a considerable background in computer science, and we are looking for multifaceted individuals who ideally have experience with programming, computer science, probability, statistics, and linguistics. 
+We review applications holistically and we have students in the NLP MS program with different undergraduate degrees who are successful in the program. 
+Below please see a list of recommended courses and requirements that will help you be successful in our program. 
+In your application, you can explain any gaps between your background and the admission guidelines below. 
+Applicants wishing to study a broader range of computer science topics in a graduate program may wish to consider the MS in Computer Science and Engineering degree program. 
+The program cost varies with the selected curriculum plan. Please check the Registrar’s website for the most recent tuition and fee information. 
+Admission requirements: A B.A. or B.S in Computer Science or equivalent An overall GPA of 3.0 or better on the 4.0 GPA scale or the equivalent 
+Excellent programming skills either through academic coursework and/or significant professional experience TOEFL or IELTS scores (if applicable) 
+Minimum TOEFL score of 89 Minimum IELTS score of 7.0 
+Essential courses to highlight in your application: 
+A class in Discrete Math (the equivalent of UCSC’s CSE 16: Applied Discrete Mathematics ) 
+An advanced class in Data Structures and Algorithms (the equivalent of UCSC’s CSE 101: Introduction to Data Structures and Algorithms ) 
+At least one class in Probability and Statistics with a grade of B or better (the equivalent of UCSC’s CSE 107: Probability and Statistics for Engineers or STAT 131: Introduction to Probability Theory ) 
+Desirable (but not required) additional requirements include: 
+A class in NLP or Linguistics (the equivalent of UCSC’s CSE 143: Introduction to Natural Language Processing ) 
+A class in Machine Learning (the equivalent of UCSC’s CSE 142: Machine Learning ) 
+A class in Formal Languages and Automata Theory (the equivalent of UCSC’s CSE 103: Computational Models ) 
+Want to learn more? Connect with our Support Team There are lots of ways to get support with your application. The NLP Support Team is ready to assist with any questions you may have about the program, our industry-informed curriculum, and applying to UCSC. 
+Visit our Contact page to connect with our NLP Support Team today. 
+Application Materials Required application materials 
+Application fee: Domestic: $135 International: $155 
+If you are currently enrolled in a UCSC undergraduate or graduate program or have an undergraduate or graduate degree from a UCSC program, you may request an application fee waiver directly from the NLP Program. 
+Review the Graduate Admissions website for information about fee waivers and exemptions. 
+GPA: minimum 3.0 on 4.0 scale or equivalent. 
+Transcripts: unofficial transcripts are accepted for application purposes but official transcripts may be required if admitted to the program. 
+Letters of Recommendation: 3 letters required from professors and professional contacts who may best speak to your abilities and academic potential in your chosen field of study. 
+TOEFL or IELTS (if applicable) TOEFL: minimum score of 89 IELTS: minimum overall score of 7.0 
+Personal History Statement: Recommended length is a concise 1-3 pages, single-spaced. 
+UCSC is interested in a diverse and inclusive graduate student population. 
+In the essay, discuss how your personal background informs your decision to pursue a graduate degree. 
+Include any educational, familial, cultural, economic, or social experiences, challenges, or opportunities relevant to your academic journey; how you might contribute to social or cultural diversity within your chosen field; and/or how you might serve educationally underrepresented segments of society with your degree. 
+Statement of Purpose: Recommended length is a concise 2-4 pages, single-spaced. 
+Please describe your plans for graduate study or research and for your future occupation or profession. 
+Include any information that may aid the selection committee in evaluating your preparation and qualifications for graduate study at UCSC. 
+CV required, preferably from a link to a personal web page containing CV NOTE: GRE (no minimum) – The GRE requirement has been waived for Fall 2024 admission consideration for NLP MS applications. 
+You are welcome to submit your official scores, but please note the inclusion of your official GRE score will not be a deciding factor for admission. 
+Application Instructions & FAQ Admissions 
+FAQ Application FAQ Application Instructions AB 540 Info International Applicants We’re here to help! Visit our Contact page to connect with a member of our support team. You can also email the NLP Program Team directly at nlp@ucsc.edu . 
+Funding opportunities: MS students are typically self-supported. 
+While a small number of partial fellowship packages are extended to eligible NLP students each year, the NLP Program encourages students to seek external support for covering graduate education expenses. Recipients of these fellowships are selected based on financial need and merit. We strongly recommend eligible applicants complete the optional Statement of Financial Need in the application to be considered for financial support. Instructions for completing this statement are available on the Graduate Admissions website . 
+Visit the NLP Financials page to review additional information about the estimated costs of attendance and financial support options. 
+Join an info session to learn more! 
+The NLP Program Team hosts virtual information sessions each year about the unique benefits of studying NLP at UCSC. 
+At each session, you’ll have an opportunity to meet members of our community including faculty and staff, and to ask any questions you may have about the program and application. Below is a schedule of upcoming information sessions you can attend from anywhere in the world: Friday, November 3rd from 11 AM – 12 PM (PDT) – Register now Wednesday, December 6th from 7 PM – 8 PM (PST) – Register now Tuesday, January 9th from 8 AM – 9 AM (PST) – Register now For parents and families of prospective students: We know that going to graduate school can involve a significant investment of your time and personal resources. 
+As you consider your options for graduate studies, you may also want to include your support network in your decision-making process.
+We’ve put together a guide for parents and family members to provide insight into life at UCSC, as well as the support and resources available to our graduate students. Please always feel welcome to contact our Support Team if you or your family members have any questions. Join an NLP Information Session! At our information sessions, we discuss the range of courses and support services we offer, as well as tips for applying to the program. We also prioritize time for a Q&A session during each event, where you’ll have the opportunity to meet NLP faculty and staff. To attend an information session, please complete the session’s registration form. You’ll then be sent an individualized Zoom link you can use to access the information session. Please note that dates and times for upcoming sessions are subject to change. November 6, 2024 11 AM – 12 PM PST Register online December 4th, 2024 7 PM – 8 PM PST Register online January 15, 2025 8 AM – 9 AM PST
