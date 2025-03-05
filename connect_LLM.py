@@ -52,15 +52,11 @@ def query_rag(question):
 
     return answer
 
-original_stdout = sys.stdout
-sys.stdout = open("/dev/null", "w")
-
 parser = argparse.ArgumentParser()
 parser.add_argument("question", type=str, help="The question for model.")
 args = parser.parse_args()
 output = query_rag(args.question)
 
-sys.stdout = original_stdout
 print(output)
 
 
