@@ -2,9 +2,6 @@ from bs4 import BeautifulSoup
 import requests
 import os
 import time
-
-# From here: https://www.geeksforgeeks.org/implementing-web-scraping-python-beautiful-soup/,
-#  https://www.geeksforgeeks.org/remove-all-style-scripts-and-html-tags-using-beautifulsoup/
  
 urls = ["https://www.gradadmissions.ucsc.edu/graduate-studies", "https://www.gradadmissions.ucsc.edu/nlp",
         "https://docs.google.com/spreadsheets/d/1ritoeqeeMPk8s_X8nmBTf5E2BfHd21a0RLggd5Rm5YE/edit?gid=0#gid=0",
@@ -13,6 +10,7 @@ urls = ["https://www.gradadmissions.ucsc.edu/graduate-studies", "https://www.gra
         "https://nlp.ucsc.edu/about-us/", "https://nlp.ucsc.edu/program-overview/", "https://nlp.ucsc.edu/financials/", "https://nlp.ucsc.edu/industry/",
         "https://nlp.ucsc.edu/your-career/", "https://nlp.ucsc.edu/facilities/", "https://nlp.ucsc.edu/contact/"]
 
+# Iterate over websites
 for i, url in enumerate(urls):
     time.sleep(30)
 
@@ -28,5 +26,6 @@ for i, url in enumerate(urls):
 
     final_scraped = " ".join(soup.stripped_strings)
 
+    # Write to file
     with open(path + str(i) + ".txt", "w") as f:
         f.write(final_scraped)
