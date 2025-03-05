@@ -17,7 +17,7 @@ for i, url in enumerate(urls):
     time.sleep(30)
 
     # Scrape and parse HTML
-    path = os.path.join(os.path.dirname(__file__), "scraped/page_")
+    path = os.path.join(os.path.dirname(__file__), "scraped_scratch/page_")
     response = requests.get(url)
     data = response.text
     soup = BeautifulSoup(data, "html.parser")
@@ -30,3 +30,5 @@ for i, url in enumerate(urls):
 
     with open(path + str(i) + ".txt", "w") as f:
         f.write(final_scraped)
+
+
