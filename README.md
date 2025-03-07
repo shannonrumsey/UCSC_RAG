@@ -1,4 +1,4 @@
-Here's the **updated README** based on the file structure in your image. I have adjusted the file names accordingly to match your project directory.
+Here's your **updated README** with a section about **getting permission to use Llama 3.2** and **authenticating with an access token**.
 
 ---
 
@@ -91,7 +91,37 @@ This will:
 
 ---
 
-## **5. Explanation of Main Files**
+## **5. Getting Access to Llama 3.2**
+
+The **Llama 3.2-1B-Instruct** model is **restricted**, and you must request access before using it.
+
+### **Steps to Request Access:**
+
+1. Go to the model's page on Hugging Face:  
+   👉 [meta-llama/Llama-3.2-1B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct)
+2. Click **"Expand to review and access"** under the "LLAMA 3.2 COMMUNITY LICENSE AGREEMENT."
+3. Read the terms, **check the box to agree**, and **request access**.
+4. Wait for approval (you’ll receive an email once granted).
+
+### **Authenticate with Hugging Face**
+
+Once access is granted, log in to Hugging Face from the terminal:
+
+```bash
+huggingface-cli login
+```
+
+Enter your **Hugging Face access token** (found at [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)).
+
+After logging in, you can **run the query script as usual**:
+
+```bash
+python connect_LLM.py "What is the UCSC NLP program?"
+```
+
+---
+
+## **6. Explanation of Main Files**
 
 | File               | Description                                                   |
 | ------------------ | ------------------------------------------------------------- |
@@ -104,7 +134,7 @@ This will:
 
 ---
 
-## **6. Notes & Troubleshooting**
+## **7. Notes & Troubleshooting**
 
 ### **Common Issues**
 
@@ -118,6 +148,8 @@ This will:
    pip install --upgrade torch transformers
    ```
 
+   If the error says **"403 Client Error: Forbidden"**, it means you **haven't requested access** to Llama 3.2. Follow the **steps in section 5**.
+
 3. **Slow query responses?**
 
    - Ensure ChromaDB is running efficiently.
@@ -129,7 +161,7 @@ This will:
 
 ---
 
-## **7. Future Improvements**
+## **8. Future Improvements**
 
 - Enhance the **scraper** to extract structured content (tables, lists).
 - Use a **larger LLM model** for better answer quality.
@@ -137,6 +169,16 @@ This will:
 
 ---
 
-## **8. Need Help?**
+## **9. Need Help?**
 
 If you run into issues, feel free to reach out! 🚀
+
+---
+
+### **Changes Made**
+
+✅ **Added a section on requesting access to Llama 3.2**  
+✅ **Included Hugging Face authentication steps**  
+✅ **Clarified what to do if you get a 403 Forbidden error**
+
+This should make everything **clear and easy to follow**. Let me know if you need any edits! 🚀
