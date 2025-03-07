@@ -1,6 +1,10 @@
-# **UCSC RAG**
+Here's the **updated README** based on the file structure in your image. I have adjusted the file names accordingly to match your project directory.
 
-This project implements a **Retrieval-Augmented Generation (RAG) model** using **LangChain**, **ChromaDB**, and **Llama 3.2**, with data scraped from **UCSC NLP-related websites**. It allows users to **query extracted content** to get concise, context-aware responses.
+---
+
+# **UCSC_RAG**
+
+This project implements a **Retrieval-Augmented Generation (RAG) model** using **LangChain**, **ChromaDB**, and **Llama 3.2**. It scrapes UCSC NLP-related websites, stores text embeddings in a vector database, and allows users to query the data for contextual responses.
 
 ---
 
@@ -8,20 +12,21 @@ This project implements a **Retrieval-Augmented Generation (RAG) model** using *
 
 ### **Prerequisites**
 
-Make sure you have the following installed:
+Ensure you have:
 
 - Python **3.8+**
 - Pip package manager
+- Virtual environment (optional but recommended)
 
 ### **Install Dependencies**
 
-Run the following command to install all required libraries:
+Run the following command to install required libraries:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-If `requirements.txt` is not provided, install dependencies manually:
+If `requirements.txt` is missing, install manually:
 
 ```bash
 pip install beautifulsoup4 requests langchain chromadb torch transformers
@@ -31,29 +36,29 @@ pip install beautifulsoup4 requests langchain chromadb torch transformers
 
 ## **2. Scraping Data**
 
-This script scrapes text from **UCSC NLP-related web pages** and stores them in a local directory.
+The **`scraper.py`** script extracts text from UCSC NLP-related web pages and saves it in the `scraped/` directory.
 
 ### **Run the scraper**
 
 ```bash
-python scrape.py
+python scraper.py
 ```
 
 This will:
 
-1. Download the text from specified URLs.
-2. Strip out unnecessary elements like styles and scripts.
-3. Save the processed text in the `scraped/` directory.
+1. Fetch content from predefined URLs.
+2. Remove unnecessary elements (styles, scripts).
+3. Save the cleaned text in the `scraped/` directory.
 
-🚀 **Note:** Scraping includes a **30-second delay** per request to avoid being blocked.
+🚀 **Note:** The script includes a **30-second delay per request** to avoid being blocked.
 
 ---
 
 ## **3. Creating the Vector Database**
 
-Once the text is scraped, we need to convert it into vector embeddings and store them in **ChromaDB**.
+Once data is scraped, it must be converted into **vector embeddings** and stored in **ChromaDB**.
 
-### **Run the embedding script**
+### **Run the database creation script**
 
 ```bash
 python create_db.py
@@ -61,39 +66,41 @@ python create_db.py
 
 This will:
 
-1. Load all scraped text files.
-2. Split the text into smaller chunks for efficient retrieval.
-3. Embed the text using **HuggingFace’s all-mpnet-base-v2** model.
-4. Store the vectorized documents in **ChromaDB**.
+1. Load all scraped text files from `scraped/`.
+2. Split text into smaller chunks.
+3. Convert text into embeddings using **HuggingFace’s all-mpnet-base-v2** model.
+4. Store embeddings in **ChromaDB**.
 
 ---
 
 ## **4. Querying the RAG Model**
 
-Once the database is set up, you can **ask questions** about the scraped content.
+Once the database is built, you can **ask questions** about the scraped content.
 
 ### **Run a query**
 
 ```bash
-python query_rag.py "What is the UCSC NLP program?"
+python connect_LLM.py "What is the UCSC NLP program?"
 ```
 
 This will:
 
-1. **Embed the question** and search for the most relevant context in the database.
+1. **Embed the question** and search for the most relevant content in ChromaDB.
 2. **Generate a response** using **Llama-3.2-1B-Instruct**.
-3. **Output a concise and formatted answer**.
+3. **Return a concise, formatted answer.**
 
 ---
 
 ## **5. Explanation of Main Files**
 
-| File               | Description                                           |
-| ------------------ | ----------------------------------------------------- |
-| `scrape.py`        | Scrapes content from UCSC NLP-related sites.          |
-| `create_db.py`     | Converts text into embeddings and stores in ChromaDB. |
-| `query_rag.py`     | Queries the vector database and generates responses.  |
-| `requirements.txt` | List of required dependencies.                        |
+| File               | Description                                                   |
+| ------------------ | ------------------------------------------------------------- |
+| `scraper.py`       | Scrapes UCSC NLP-related websites.                            |
+| `create_db.py`     | Converts text into embeddings and stores in ChromaDB.         |
+| `connect_LLM.py`   | Queries the database and generates responses using Llama 3.2. |
+| `requirements.txt` | List of required dependencies.                                |
+| `.gitignore`       | Prevents tracking of unnecessary files.                       |
+| `scraped/`         | Stores extracted text files.                                  |
 
 ---
 
@@ -102,31 +109,34 @@ This will:
 ### **Common Issues**
 
 1. **Missing dependencies?**  
-   Run `pip install -r requirements.txt` to install all required libraries.
-2. **Model download issues?**  
-   Ensure `torch` and `transformers` are installed and update them if needed:
+   Run `pip install -r requirements.txt` to install required libraries.
+
+2. **LLM model download issues?**  
+   Ensure `torch` and `transformers` are installed:
+
    ```bash
    pip install --upgrade torch transformers
    ```
-3. **Slow response time?**
 
-   - Ensure that ChromaDB is running efficiently.
+3. **Slow query responses?**
+
+   - Ensure ChromaDB is running efficiently.
    - Use a **GPU** for faster LLM inference.
 
-4. **Errors running queries?**
-   - Make sure you ran `create_db.py` before `query_rag.py`.
-   - If `query_rag.py` crashes, check if the database exists and is correctly populated.
+4. **Database not found?**
+   - Ensure `create_db.py` was run **before** querying the model.
+   - Check if the `scraped/` directory contains text files.
 
 ---
 
 ## **7. Future Improvements**
 
-- Improve scraper to **extract structured content** (e.g., tables, lists).
-- Use a **larger LLM model** for improved response quality.
-- Implement **Slack integration** for querying UCSC NLP Slack data (if permitted).
+- Enhance the **scraper** to extract structured content (tables, lists).
+- Use a **larger LLM model** for better answer quality.
+- Implement **Slack integration** to extract UCSC NLP Slack data (if permitted).
 
 ---
 
-### **Need Help?**
+## **8. Need Help?**
 
-If you run into any issues, feel free to reach out! 🚀
+If you run into issues, feel free to reach out! 🚀
