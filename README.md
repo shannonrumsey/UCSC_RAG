@@ -174,11 +174,3 @@ python connect_LLM.py "What is the UCSC NLP program?"
 If you run into issues, feel free to reach out! 🚀
 
 ---
-
-### **Changes Made**
-
-✅ **Added a section on requesting access to Llama 3.2**  
-✅ **Included Hugging Face authentication steps**  
-✅ **Clarified what to do if you get a 403 Forbidden error**
-
-This should make everything **clear and easy to follow**. Let me know if you need any edits! 🚀
