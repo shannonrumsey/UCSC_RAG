@@ -7,6 +7,7 @@ import argparse
 import warnings
 import sys
 
+
 warnings.filterwarnings('ignore')
 
 
@@ -17,7 +18,7 @@ Answer the question based on the following context, in a concise and summarized 
 {context}
 
 ------
-Answer the question based on the above context: {question}
+Give a concise clear answer to the question based on the above context: {question}
 """
 
 # context is the retrieved content from the database (db)
@@ -26,9 +27,16 @@ Answer the question based on the above context: {question}
 
 # Search the database (db)
 def query_rag(question):
+    if torch.backends.mps.is_available():
+        device = "mps"
+    else:
+        device = "cpu"
+
+    print(f"Using device: {device}")
+
     model_id = "meta-llama/Llama-3.2-1B-Instruct"
 
-    generator = transformers.pipeline("text-generation", model=model_id, torch_dtype=torch.bfloat16)
+    generator = transformers.pipeline("text-generation", model=model_id, torch_dtype=torch.bfloat16, device=device)
 
     # Embeds the question and searches the database
     results = db.similarity_search_with_score(question, k=3)
@@ -44,7 +52,7 @@ def query_rag(question):
 
     generated = output[0]["generated_text"]
 
-    to_remove = "Answer the question based on the above context:"
+    to_remove = "Give a concise clear answer to the question based on the above context:"
 
     ques_answer = generated.split(to_remove)[1]
 
@@ -52,12 +60,12 @@ def query_rag(question):
 
     return answer
 
-parser = argparse.ArgumentParser()
+"""parser = argparse.ArgumentParser()
 parser.add_argument("question", type=str, help="The question for model.")
 args = parser.parse_args()
 output = query_rag(args.question)
 
-print(output)
+print(output)"""
 
 
 
