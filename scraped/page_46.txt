@@ -1,0 +1,31 @@
+FAQs for Students: Transcripts
+Q: How do I order transcripts?  
+A: Transcripts are ordered online.
+Q: How do I order a pdf of my official transcript?  
+A: Order transcripts online. During the ordering process, if you choose Basic Service with No Evaluations, you will be given the option to send your official transcript electronically. You will need to provide the email address of the receiving party. You are also responsible for ensuring that the receiving party understands that they are responsible for downloading your transcript when they are notified that it is available. The downloading of your transcript PDF file will be done in a secure and encrypted manner.  Attachments/documents can be uploaded during the ordering process. If you attended UCSC before 1986 a pdf version of your official/unofficial transcript is not available. A paper copy of your official transcript will need to be mailed or picked up.
+Q: When do current enrollments appear on the official transcript?  
+A: For current students, your enrollments for the current term will first show on your official transcript the day after the Add/Drop/Swap deadline.
+Q: How do I include a document (attachment) with my transcript order?  
+A: During the ordering process you are asked if you have an attachment. Be sure to say yes.
+Q: Why am I being asked for an authorization?  
+A: For your protection, Parchment requires additional confirmation that the student is the person ordering the official transcript. The authorization is required when the information entered during the ordering process doesn't match what UC Santa Cruz has on record for the student.
+Q: I don't remember my Student ID Number. How do I order a transcript?  
+A: You can enter your Social Security Number instead. If you would rather enter your student ID number contact IT Services by entering a Slughub ticket or email help@ucsc.edu if you still have access to you UCSC email address. They will help you regain access to your student portal, where you can view your student ID number.
+Q: How do I get unofficial transcripts?  
+A: Log into MyUCSC and choose the Student Center tile. In the Academics section of Student Center, select Transcript: View Unofficial and click “Go.” Select either "Printable Transcript (PDF)" or "Viewable Transcript (HTML)" for the report type and click “view report.”  The PDF version of the unofficial transcript is best for printing or e-mailing.  The HTML version of the unofficial transcript is best for use with assistive software that requires document structure tags.
+Q: Nothing happens when I click on the PDF version of my unofficial transcript. What do I do?  
+A: Disable your browser's pop up blocker. When you are done viewing your transcript, you may re-enable your pop up blocker if desired.  Firefox For the Mac OS, go to Firefox menu > Preferences > Content. For Windows, go to Tools menu > Options > Content. Uncheck Block pop-up windows.  Safari Go to Safari menu > Preferences > Security tab and uncheck Block pop-up windows.  Internet Explorer Go to Tools menu > Internet Options > Privacy tab. Uncheck the Turn on Pop-Up Blocker box.  Google Chrome Go to Chrome menu > Settings. Click Show advanced settings... at the bottom of the page. Under Privacy, click the Content settings button. Under Pop-ups, select Allow all sites to show pop-ups.
+Q: I never received the transcripts I ordered. What should I do?[show]
+A: Verify the status of your transcript request online at Parchment's Order Status page.
+Q: Are my community college credits transferable to UCSC?[show]
+A: Contact the Office of Admissions, and request a Proposed Program Evaluation.
+Q: Where do I send my college transcript to obtain transfer credit at UCSC?[show]
+A: You will get a message on your Student Center under your To Do List. You may drop off an official copy of your transcript at the Registrar’s Office on the first floor of the Hahn Student Services building, or you may have your official transcript mailed to the following address:  UC Santa Cruz Admission’s Office 1156 High Street Santa Cruz, CA 95064.
+Q: How will I know that my college transcript was received?[show]
+A: Go to Student Center on MyUCSC, and you will get a message on your Student Center under your To Do List as soon as your transcript has been received. It can take up to eight weeks before your transfer credit will be posted. Once the credit has been posted, the To Do List message will change to say "Transcript Reviewed."
+Q: Where can I see my transfer credit?[show]
+A: Go to My Student Center on your student portal, and select Transfer Credit Report from the drop-down menu under Academics. The transcript can also be found on MyUCSC on the Academics>External Education page.
+Q: What if my college transcript has not been reviewed yet, but I need the transfer credit as a prerequisite to enroll in another class?[show]
+A: If you have a copy of your community college transcript, you can take it to your major department's advising office; in some cases they can help you to get in the class. If you are not yet proposed/declared in your major, you can take your transcript to the department of the major in which you intend to declare. If you are in a special exchange program that does not include a proposed major, then you can contact the department of the class directly.
+Q: What if I did not receive the transfer credit I was expecting?[show]
+A: You may fill out a Request for Review of Transfer Credit. Please specify exactly what you are looking for. The Admissions Office will then pull your transcript and review it again, to see if anything was missed initially.
