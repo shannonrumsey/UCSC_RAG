@@ -13,12 +13,12 @@ warnings.filterwarnings('ignore')
 
 # Create prompt template for LLM
 prompt_tmplt = """
-You are a helpful AI agent. Answer the question based on the following context, in a concise and summarized manner. Make sure to format your answer so it is clear:
+Answer the question based on the following context, in a concise and summarized manner:
 
 {context}
 
 ------
-Give a concise clear answer to the question based on the above context: {question}
+Answer the question based on the above context: {question}
 """
 
 # context is the retrieved content from the database (db)
@@ -52,7 +52,7 @@ def query_rag(question):
 
     generated = output[0]["generated_text"]
 
-    to_remove = "Give a concise clear answer to the question based on the above context:"
+    to_remove = "Answer the question based on the above context:"
 
     ques_answer = generated.split(to_remove)[1]
 
