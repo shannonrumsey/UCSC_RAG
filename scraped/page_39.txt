@@ -1,0 +1,55 @@
+FAQs for Students: Waitlist
+In fall, winter, and spring quarters during their waitlist appointment students may begin adding up to 14 waitlist credits. Students can see their waitlist appointment by selecting “details” under “Enrollment Dates” in their MyUCSC.
+The waitlist runs every half-hour during normal business hours through the seventh day of instruction; your waitlist position number may not indicate the order in which you will be enrolled in the class. For example, your waitlist position will be skipped if you have scheduled the course with a time conflict or have attempted to enroll in more than your allotted credits. If you are still on the waitlist at the start of instruction, attend the first class meeting to determine if you will be able to enroll. You may be dropped for not attending the first class meeting. Some things to consider:
+Waitlisting does not guarantee enrollment;
+Waitlisting does not guarantee more seats will open in a class;
+Error messages do not indicate that space is being held open in a class or that enrolment is guaranteed.
+Following the 7th day of instruction, the wait list is no longer an option and permission numbers are required to enroll (see the Academic and Administrative Calendar). Instructors and/or departments issue permission numbers. In summer, waitlists run every half-hour, 24 hours a day until the add deadline. Check your portal to ensure you know if you were enrolled from the waitlist. Attend class if possible.
+Q: How do I waitlist a course?  
+A: 1. Sign in to MyUCSC.
+2. Select the Enrollment or Student Center tile.
+3. Select the add tab at the top of page. Select the correct quarter and type in the five-digit course number of the course you would like to waitlist.
+4. Check the “Waitlist if class is full” box and select Next.
+5. If you would like to drop a course that you are currently enrolled in if you become enrolled in the wait-listed course you can indicate this in the “If Enrolled Drop This Class” drop down menu. You may only select a class as “Drop if Enrolled” once. If you need to use a permission number, you cannot also use "Drop if Enrolled.” The waitlist process will error and you will not be enrolled.
+6. Review your selection and select Proceed to Step 2 of 3.
+7. To complete the enrollment select on Finish Enrolling. A checkmark under Status means that your enrollment was successful.
+Q: How do I drop a wait-listed course?  
+A: Follow these steps:
+Sign in to MyUCSC. Select the Enrollment or Student Center tile.
+Select the drop tab at the top of the page. Select the correct quarter and check the box next to the course you wish to remove from your waitlist.
+Select the secondary section that you would like to change or just select next for no changes to the secondary section.
+Select the Drop Selected Classes box.
+Confirm the selection and select Finish Dropping. A checkmark under Status means that your drop was successful.
+
+Q: If I get an error message, how do I edit a wait-listed course?[show]
+A: If you are unable to successfully enroll in a wait-listed course because of too many credits or a time conflict, you can edit your waitlist.
+Sign in to MyUCSC. Select the Enrollment or Student Center tile.
+Select the edit tab on the top of the page. Select the correct quarter and choose the course you would like to edit. Select Proceed to Step 2 of 3.
+Select the secondary section that you would like to change or just select next for no changes to the secondary section.
+Indicate the course you would like to drop if you are enrolled in your wait-listed course in the “If Enrolled Drop This Class” drop down menu. Select Next.
+Review your selection and select Finish Editing to process your edit request. A checkmark under Status means that your edit was successful. You can return to the edit tab at any time to review the setup of your wait-listed course.
+If you preemptively drop the class that you have specified as your Drop if Enrolled class, you will remain on the waitlist, but without a Drop if Enrolled class. You may not get into the wait-listed class if your enrollment will exceed your credit limit. If you change the section for your Drop If Enrolled option, that class will no longer be listed as your Drop If Enrolled class, because your enrollment setup has been changed. In this case, you may edit your waitlist enrollment to specify a new Drop if Enrolled class.
+Editing your waitlist does not guarantee enrollment.
+Instructions how to edit your waitlist are also available here.
+Q: How do I view my position on the waitlist?[show]
+A: Follow these steps:
+Sign in to MyUCSC. Select the Student Center tile.
+Under the Academics heading on the top left of the page is a drop-down menu that says “more links…” Select Class Schedule from that menu and select the Go button.
+Your wait-listed classes will be shown on the Class Schedule page, and your waitlist position is shown in the Waitlist Position column.
+It is important to make sure you do not have any time conflicts or too many credits. If so, the process will fail to enroll you and move on to the next person on the waitlist.
+The waitlist system may try to enroll you even if you are not number one on the waitlist due to scheduling issues for preceding waitlisted students.
+Q: How do I change my section for a wait-listed course?  
+A: You may change your waitlist secondary section, by using the EDIT option. See the FAQ above "If I get an error message, how do I edit a wait-listed course?"
+Q: What is the $10 Waitlist Correction Fee and how do I avoid it?  
+A: Starting winter 2019 quarter, the campus implemented a $10 Waitlist Correction Fee for assistance from our office with switching waitlisted course options in fall, winter, and spring quarters. The fee does not apply to manual actions taken by you, and does not apply to the first correction (the fee will be automatically waived for the first call), but it will be applied for the second correction and any thereafter.
+You can avoid the fee by being strategic in your enrollment.
+Enroll in a backup class first.
+Enroll in the wait-listed course, checking the "Waitlist if class is full" box. Indicate in the "If Enrolled Drop This Class" drop down menu which back up course you would drop if enrolled in the wait-listed course.
+Check to make sure you do not have any time conflicts with the wait-listed course.
+Some co-requisite labs require a two-step waitlist process. Sign up on the waitlist for the lab. Once enrolled in the lab, you will then be notified to enroll in the co-requisite class.
+Q: Can I waitlist two offerings of the same course?  
+A: You can. However, once you are enrolled in one offering of the course you will automatically be dropped from the wait list of the course that you did not get into. If you are already enrolled in one offering of a class and would like to wait list for a different offering, you must set up the wait-list enrollment as a swap so that you are not dropped from the wait-listed class. For example, if you are enrolled in Physics 6L-01 and you'd rather be in Physics 6L-02, you will need to set up the enrollment so that if you get into Physics 6L-02 you will be dropped from Physics 6L-01. Otherwise, the system will drop you off of the wait list from Physics 6L-02 and you will remain enrolled in Physics 6L-01.  Please be aware that if you change your section for the enrolled offering of the class, that class will no longer be listed as your "drop if enrolled" class, because the enrollment has changed, and you will be automatically dropped from the waitlisted class.
+Q: What do the waitlist error messages mean and how do I resolve the error?  
+A: See information on waitlist error messages here.
+Pro Tip: When choosing a course which has multiple enrollment options (e.g., MATH 19A-01 and MATH 19A-02) or has required secondary discussion sections or labs, make sure to "View All" to see all options. Sign up for all classes that work in your schedule. Also, when signing up for a class that has a secondary discussion section or lab, add the secondary discussion section or lab that fits in your schedule with lowest waitlist enrollment. This will improve your chances of getting in when a spot opens up one of the courses.
+If the prior term’s grades are still not finalized by the time of enrollment for the upcoming term, there is a conditional enrollment that will be rechecked once the upcoming term starts and you will either remain in the course or be dropped depending on the grades of the prerequisite.   Please also note that students can waitlist for a course regardless of meeting prerequisites, though when the waitlist runs the prerequisites are checked and an enrollment is either processed or an error occurs.
