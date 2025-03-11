@@ -1,9 +1,5 @@
 Jeffrey Flanigan - Publications
-Publications
-Students
-Teaching
-Software
-Jeffrey Flanigan
+
 PhD Students
 Milad Gholami
 Brendan King
@@ -13,10 +9,13 @@ Nilay Patel
 Geetanjali Rakshit
 Rongwen Zhao
 Zekun Zhao
+
 MS Students
 Chris Liu (CSE MS)
+
 Undergraduate Students
 Chris Toukmaji
+
 Alumni
 Jeshwanth Bheemanpally (NLP MS 2021)
 Chris Garcia-Cordova (NLP MS 2021)

@@ -1,14 +1,7 @@
-Jeffrey Flanigan
-Publications
-Students
-Teaching
-Software
-Jeffrey Flanigan
 Jeff Flanigan is an Assistant Professor
 Computer Science and Engineering Department
 Jack Baskin School of Engineering
 University of California, Santa Cruz
-CV
 Silicon Valley Campus, Room 2329
 jmflanig@ucsc.edu
 I am an Assistant Professor in the Jack Baskin School of
@@ -26,4 +19,3 @@ I gave a tutorial at NAACL
 2015 on AMR with
 Nathan Schneider and Tim
 O’Gorman
-(slides).

@@ -1,31 +1,4 @@
 people [NLP Wiki]
-skip to content
-NLP Wiki
-User Tools
-Log In
-Site Tools
-Search
-ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
-Recent ChangesMedia ManagerSitemap
-Trace: • people
-Sidebar
-Outlines
-NLP
-ML
-People
-ML Overview
-Key Papers in NLP
-Sitemap
-NLP
-ML
-Papers
-JLab Wiki
-Tools
-Welcome page
-Syntax page
-Sidebar (edit)
-people
-Table of Contents
 People
 NLP
 Academia
@@ -272,6 +245,3 @@ Optimization
 Yuxin Chen
 John Duchi
 Satyen Kale
-people.txt · Last modified: 2025/02/05 15:02 by jmflanig
-Page Tools
-Show pagesourceOld revisionsBacklinksBack to top

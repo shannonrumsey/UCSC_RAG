@@ -1,31 +1,4 @@
 ml:history_of_ml [NLP Wiki]
-skip to content
-NLP Wiki
-User Tools
-Log In
-Site Tools
-Search
-ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
-Recent ChangesMedia ManagerSitemap
-Trace: • history_of_ml
-Sidebar
-Outlines
-NLP
-ML
-People
-ML Overview
-Key Papers in NLP
-Sitemap
-NLP
-ML
-Papers
-JLab Wiki
-Tools
-Welcome page
-Syntax page
-Sidebar (edit)
-ml:history_of_ml
-Table of Contents
 History of Machine Learning
 Early History of ML (prior to 1980)
 Theory (prior to 2000)
@@ -161,6 +134,3 @@ Battiti 1992 - First- and second-order methods for learning: Between steepest de
 Becker & Le Cun 1988 - Improving the convergence of back-propagation learning with second-order methods
 Related Pages
 History of NLP
-ml/history_of_ml.txt · Last modified: 2024/02/14 09:07 by jmflanig
-Page Tools
-Show pagesourceOld revisionsBacklinksBack to top

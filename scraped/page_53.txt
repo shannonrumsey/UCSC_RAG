@@ -1,37 +1,4 @@
-main_page [NLP Wiki]
-skip to content
-NLP Wiki
-User Tools
-Log In
-Site Tools
-Search
-ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
-Recent ChangesMedia ManagerSitemap
-Trace: • main_page
-Sidebar
-Outlines
-NLP
-ML
-People
-ML Overview
-Key Papers in NLP
-Sitemap
-NLP
-ML
-Papers
-JLab Wiki
-Tools
-Welcome page
-Syntax page
-Sidebar (edit)
-main_page
-Table of Contents
-NLP Wiki
-Some Highlights
-Creating Pages
-Namespaces
-Helpful Links
-NLP Wiki
+NLP Wiki [NLP Wiki]
 Welcome to the NLP Wiki, maintained by Jeff Flanigan's JLab group at UCSC.
 This wiki is a work in progress - please don't share widely.
 See the Sitemap, NLP Outline, or ML Outline.
@@ -67,6 +34,3 @@ You can create namespaces (basically folders) by putting “namespace:” at the
 Helpful Links
 The welcome page.
 The syntax page.
-main_page.txt · Last modified: 2023/12/07 03:39 by jmflanig
-Page Tools
-Show pagesourceOld revisionsBacklinksBack to top
