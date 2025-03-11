@@ -1,0 +1,29 @@
+Jeffrey Flanigan - Publications
+Publications
+Students
+Teaching
+Software
+Jeffrey Flanigan
+Forming Trees with Treeformers. Nilay Patel and Jeffrey Flanigan. At RANLP 2023.
+Does the “most sinfully decadent cake ever” taste good? Answering Yes/No
+Questions from Figurative Contexts. Geetanjali Rakshit and Jeffrey Flanigan. At RANLP 2023.
+Diverse Retrieval-Augmented In-Context Learning for Dialogue State Tracking. Brendan King and Jeffrey Flanigan. In Findings of ACL 2023.
+Automatic Identification of Code-Switching Functions in Speech
+Transcripts. Ritu Belani and Jeffrey Flanigan. In Findings of ACL 2023.
+FigurativeQA: A Test Benchmark for Figurativeness Comprehension for Question Answering. Geetanjali Rakshit and Jeffrey Flanigan. In Proceedings of the 3rd Workshop on Figurative Language Processing 2022.
+Improving Neural Machine Translation with the Abstract Meaning Representation by Combining Graph and Sequence Transformers. Changmao Li and Jeffrey Flanigan. In NAACL 2022 Workshop on Deep Learning on Graphs.
+DOCAMR: Multi-Sentence AMR Representation and Evaluation. Tahira Naseem, Austin Blodgett, Sadhana Kumaravel,
+Tim O’Gorman, Young-Suk Lee, Jeffrey Flanigan, Ramón Fernandez Astudillo, Radu Florian, Salim Roukos, and Nathan Schneider. In Proceedings of NAACL 2022.
+Avoiding Overlap in Data Augmentation for AMR-to-Text Generation. Wenchao Du and Jeffrey Flanigan. In Proceedings of ACL 2021.
+ASQ: Automatically Generating Question-Answer Pairs using AMRs. Geetanjali Rakshit and Jeffrey Flanigan. 2021.
+Athena: Constructing dialogues dynamically with discourse constraints. Vrindavan Harrison, Juraj Juraska, Wen Cui, Lena Reed, Kevin K. Bowden, Jiaqi Wu,
+Brian Schwarzmann, Abteen Ebrahimi, Rishi Rajasekaran, Nikhil Varghese, Max Wechsler-Azen, Steve Whittaker, Jeffrey Flanigan, and Marilyn Walker. In 3rd Proceedings of Alexa Prize, 2020.
+The Materials Science Procedural Text Corpus: Annotating Materials Synthesis Procedures with Shallow Semantic Structures. Sheshera Mysore, Zach Jensen, Edward Kim, Kevin Huang, Haw-Shiuan Chang, Emma Strubell, Jeffrey Flanigan, Andrew McCallum, and Elsa Olivetti. In LAW@ACL 2019.
+Parsing and Generation for the Abstract Meaning Representation. Ph.D. Thesis 2018.
+Generation from Abstract Meaning Representation using Tree Transducers. Jeffrey Flanigan, Chris Dyer, Noah A. Smith and Jaime Carbonell. In Proceedings of NAACL 2016.
+CMU at SemEval-2016 Task 8: Graph-based AMR Parsing with Infinite Ramp Loss. Jeffrey Flanigan, Chris Dyer, Noah A. Smith and Jaime Carbonell. In SemEval 2016.
+Toward Abstractive Summarization Using Semantic Representations. Fei Liu, Jeffrey Flanigan, Sam Thomson, Norman Sadeh and Noah A. Smith.  In Proceedings of NAACL 2015. (bib)
+CMU: Arc-Factored, Discriminative Semantic Dependency Parsing.  Sam Thomson, Brendan O’Connor, Jeffrey Flanigan, David Bamman, Jesse Dodge, Swabha Swayamdipta, Nathan Schneider, Chris Dyer and Noah A. Smith. In SemEval 2014. (bib)
+A Discriminative Graph-Based Parser for the Abstract Meaning Representation. Jeffrey Flanigan, Sam Thomson, Jaime Carbonell, Chris Dyer and Noah A. Smith. In Proceedings of ACL 2014. (bib)
+Large-Scale Discriminative Training for Statistical Machine Translation Using Held-Out Line Search. Jeffrey Flanigan, Chris Dyer and Jaime Carbonell. In Proceedings of NAACL 2013. (bib)
+Part-of-Speech Tagging for Twitter: Annotation, Features, and Experiments. Kevin Gimpel, Nathan Schneider, Brendan O’Connor, Dipanjan Das, Daniel Mills, Jacob Eisenstein, Michael Heilman, Dani Yogatama, Jeffrey Flanigan, and Noah A. Smith. In Proceedings of ACL 2011. (bib)

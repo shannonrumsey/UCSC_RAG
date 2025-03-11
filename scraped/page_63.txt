@@ -1,0 +1,277 @@
+nlp:language_model [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • language_model
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+nlp:language_model
+Table of Contents
+Language Models
+Overviews
+Papers
+Large Language Models
+Abilities and Analysis of LLMs
+Evaluation of LLMs and Benchmarks
+Adapting Language Models
+To Domains
+To Other Languages
+Temporal Language Modeling
+Extracting Knowledge from Language Models
+Knowledge Editing
+Personalization
+LLM Personality
+Detecting Generated Text
+Adversarial Attacks
+Applications
+Copyright Issues
+Theoretical and Foundational Papers
+Historical Papers
+Datasets
+Software and Demos
+Related Pages
+Language Models
+Traditional definition of a language model (LM): a language model is a probability distribution over sentences, that is, it assigns probabilities to sentences.  Language models can usually compute the probability of the next word given a sequence of words (autoregressive language models), or in the case of masked language models, the probability of a word given a surrounding context.
+Note: unlike autoregressive language models, masked language models usually can't be used to compute the probability of a sentence, and so they aren't really “language models” in the traditional sense.
+To experiment with an autoregressive language model or masked language model, see online demos below.
+Overviews
+Introductory Material
+Basic intro, and n-gram language modeling
+Language modeling by Mike Collins
+Probabilistic Language Models by Noah Smith
+Chapter 3 of Speech and Language Processing
+Neural language models
+Section 7.5 of Chapter 7 of Speech and Language Processing
+Large language models
+2021 - AMMUS : A Survey of Transformer-based Pretrained Models in Natural Language Processing Comprehensive overview at the time
+Wei et al 2023 - An Overview on Language Models: Recent Developments and Outlook
+Liu et al 2024 - Understanding LLMs: A Comprehensive Overview from Training to Inference Wow, really good
+Naveed et al 2024 - A Comprehensive Overview of Large Language Models
+For another nice introduction, see related work of Taylor 2022 (p. 3)
+Bowman 2023 - Eight Things to Know about Large Language Models
+Minaee et al 2024 - Large Language Models: A Survey
+Wan et al 2023 - Efficient Large Language Models: A Survey
+Zheng et al 2023 - GPT-Fathom: Benchmarking Large Language Models to Decipher the Evolutionary Path towards GPT-4 and Beyond
+Weng 2024 - Navigating the Landscape of Large Language Models: A Comprehensive Review and Analysis of Paradigms and Fine-Tuning Strategies
+Language models in the news, etc
+Wired - GPT-3
+Twitter GPT-3 code example (Sharif Shameem) “I only had to write 2 samples to give GPT-3 context for what I wanted it to do. It then properly formatted all of the other samples… If I wanted it to write output plain HTML/CSS instead of JSX, all I would have to do would be to re-write my 2 initial samples in HTML/CSS. Then all of GPT-3's outputs would be in plain HTML/CSS.”
+We Might See A 100T Language Model In 2022 Nice overview of some large language models in 2022
+Bibliographies
+Awesome-LLM
+Papers
+n-gram Models: Old classic papers, and recent papers
+Teh 2006 - A Bayesian Interpretation of Interpolated Kneser-Ney
+Malagutti et al 2024 - The Role of n-gram Smoothing in the Age of Neural Networks
+Fill-In-the-Middle
+Bavarian et al 2022 - Efficient Training of Language Models to Fill in the Middle
+See also Starcoder Fill-In-The-Middle
+Memory, Cache and Retrieval-Augmented Language Models
+Khandelwal et al 2019 - Generalization through Memorization: Nearest Neighbor Language Models
+Yogatama et al 2021 - Adaptive Semiparametric Language Models
+2021 - Improving language models by retrieving from trillions of tokens (blog)
+Wu et al 2022 - Memorizing Transformers Uses k-NN lookup with fixed embeddings to retrieve relevant examples
+Clark et al 2022 - Unified Scaling Laws for Routed Language Models
+Large Language Models
+See also Ecosystem Graphs for a more complete list.
+This is a list of large, GPT-style autoregressive LMs.  See also pretraining for another list of large language models and GPT-3 alternatives.
+Jozefowicz et al 2016 - Exploring the Limits of Language Modeling It's interesting to see how far we've come since 2016.
+GPT: Radford et al 2018 - Improving Language Understanding by Generative Pre-Training
+GPT-2: Radford et al 2019 - Language Models are Unsupervised Multitask Learners original github Annotated GPT-2 Illustrated GPT-2 Interestingly, GPT-2 does not include a bias term in the final linear layer for the vocab, see here and here.
+GPT-3: Brown et al 2019 - Language Models are Few-Shot Learners OpenAI cookbook
+Turing-NLG: A 17-billion-parameter language model by Microsoft
+Fedus et al 2021 - Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity
+Gopher: Rae et al 2021 - Scaling Language Models: Methods, Analysis & Insights from Training Gopher blog
+Jurassic-1: Lieber et al 2022 - Jurassic-1: Technical Details and Evaluation model blog
+Megatron-Turing NLG: Smith et al 2022 - Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model Microsoft blog NVidia blog Researcher access code models
+Chinchilla: Hoffmann et al 2022 - Training Compute-Optimal Large Language Models Says most LLMs are undertrained, and trains a compute budget optimal size language model using the same dataset as Gopher. blog1 blog2
+PaLM: Chowdhery et al 2022 - PaLM: Scaling Language Modeling with Pathways blog
+GPT-NeoX-20B: Black et al 2022 - GPT-NeoX-20B: An Open-Source Autoregressive Language Model Has an interesting description of the hardware they used
+OPT: Zhang et al 2022 - OPT: Open Pre-trained Transformer Language Models blog models
+Bloom: model card Training readme Tensorboard log
+Zeng et al 2022 - GLM-130B: An Open Bilingual Pre-trained Model
+Li et al 2023 - FLM-101B: An Open LLM and How to Train It with $100K Budget
+Model  Year  Parameters  Training Data  Public?  Link
+GPT  2018   BooksCorpus  Yes  github Huggingface
+GPT-2  2019  1.5B  Webtext (closed, see datasets below)  Yes  github Huggingface
+GPT-3  2020  175B  CommonCrawl, Webtext2, Books 1&2, Wikipedia  API  OpenAI cookbook
+MoE  2021  1.1T (13B)  CC100, CC-News, CC-Stories, OpenWebText, BookCorpus, Wikipedia  Yes  github HuggingFace
+Gopher  2021  280B  MassiveText  No  blog
+Megatron-Turing NLG  2022  530B  Pile, CommonCrawl, Realnews, CC-Stories  Researcher access  blog1 blog2 github
+Chinchilla  2022  70B  MassiveText  No  blog
+GPT-NeoX-20B  2022  20B  Pile  Yes  github
+Jurassic-1  2022  178B   API  AI21 studio
+YaLM 100B  2022  100B  Pile + lots of Russian text  Yes  github HuggingFace
+PaLM  2022  540B  Social media, web, books, Github, Wikipedia  No?  blog
+OPT  2022  66B, 175B  Pile subset: CommonCrawl, OpenWebtext2, Gutenberg, Wikipedia   Yes  demo models
+UL2  2022  20B   Yes  blog github
+Bloom  2022  176B  Multilingual BigScienceCorpus paper  Yes  HuggingFace demo
+GLM-130B  2022  130B  Pile, Chinese WudaoCorpora, more  Yes  github
+Galactica  2022  120B  Scientific papers, code, reference material, prompts  Yes github HuggingFace
+ChatGPT  2022  ?   API  demo ShareGPT
+LLaMA  2023  65B  CommonCrawl, C4, Github, Wikipedia, Books3, ArXiv, StackExchange  Yes  blog github
+GPT-4  2023  ?  ? (multi-modal)  API  website
+Alpaca  2023  7B  52k instructions from Self-Instruct w/ text-davinci-003  Yes  github demo
+Vicuna  2023  7B/13B  (Chatbot)  Yes  github demo
+Koala  2023  13B   Yes  github demo
+StackLLaMA  2023  7B   Yes demo
+LIMA  2023  65B
+PaLM 2  2023  14.7B   API  website api
+LLama 2  2023  70B   Yes  website blog
+Mistral 7B, Mixtral 8X7B  2023  7B   Yes, API
+Orca 2  2023
+OLMo  2024  7B  dolma  Yes, open data  blog github huggingface
+Gemma  2024  7B, 2B   Yes  blog
+Jamba  2024  52B   Yes  blog HuggingFace
+
+Abilities and Analysis of LLMs
+ChatGPT
+For ChatGPT, see also ChatGPT.
+Laskar et al 2023 - A Systematic Study and Comprehensive Evaluation of ChatGPT on Benchmark Datasets
+Ronan & Schneider - Can Chat GPT solve a Linguistics Exam?
+Creativity
+Zhao et al 2024 - Assessing and Understanding Creativity in Large Language Models
+Tian et al 2024 - MacGyver: Are Large Language Models Creative Problem Solvers?
+Self-Correction
+Liu et al 2024 - Large Language Models have Intrinsic Self-Correction Ability
+Use of Context
+Khandelwal et al 2018 - Sharp Nearby, Fuzzy Far Away: How Neural Language Models Use Context (Old, no longer applies to transformer models)
+Liu 2023 - Lost in the Middle: How Language Models Use Long Contexts
+Evaluation of LLMs and Benchmarks
+Polo et al 2024 - tinyBenchmarks: evaluating LLMs with fewer examples
+Effects of Length and Irrelevant Context
+Levy et al 2024 - Same Task, More Tokens: the Impact of Input Length on the Reasoning Performance of Large Language Models
+Adapting Language Models
+To Domains
+Xie et al 2023 - Data Selection for Language Models via Importance Resampling
+To Other Languages
+Language Adaptive Fine-Tuning (LAFT):
+Artetxe et al 2019 - On the Cross-lingual Transferability of Monolingual Representations
+Pfeiffer et al 2020 - UNKs Everywhere: Adapting Multilingual Language Models to New Scripts
+Recycling: Vries & Nissim 2021 - As Good as New. How to Successfully Recycle English GPT-2 to Make Models for Other Languages This one works the best so far. Retrains the embeddings keeping the Transformer layers fixed
+Zhao & Schütze - Discrete and Soft Prompting for Multilingual Models
+Multi-lingual version: Alabi et al 2022 - Adapting Pre-trained Language Models to African Languages via Multilingual Adaptive Fine-Tuning
+Lin et al 2022 - Few-shot Learning with Multilingual Generative Language Models
+Shi et al 2022 - Language Models are Multilingual Chain-of-Thought Reasoners
+Marchisio et al 2022 - Mini-Model Adaptation: Efficiently Extending Pretrained Models to New Languages via Aligned Shallow Training
+Michal Štefánik et al 2023 - Resources and Few-shot Learners for In-context Learning in Slavic Languages (Dataset)
+Zhao et al 2024 - LLaMA Beyond English: An Empirical Study on Language Capability Transfer
+Temporal Language Modeling
+Lazaridou et al 2021 - Mind the Gap: Assessing Temporal Generalization in Neural Language Models
+Li & Flanigan 2024 - Future Language Modeling from Temporal Document History
+Drinkall et al 2024 - Time Machine GPT
+Extracting Knowledge from Language Models
+See also Dense Document Retrieval with LLMs.
+Extracting Training Data
+Carlini et al 2020 - Extracting Training Data from Large Language Models github
+Membership Inference for Training Data
+(Decide if some sample data is in the training data or not)
+Related page: Membership Inference Attacks
+Song & Shmatikov 2018 - Auditing Data Provenance in Text-Generation Models
+Language Models as Knowledge Bases?
+Feldman et al 2019 - Commonsense Knowledge Mining from Pretrained Models
+Jiang et al 2020 - How Can We Know What Language Models Know?
+Cao et al 2021 - Knowledgeable or Educated Guess? Revisiting Language Models as Knowledge Bases
+Liu et al 2022 - Generated Knowledge Prompting for Commonsense Reasoning
+Huang et al 2022 - Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents
+Akyürek et al 2022 - Tracing Knowledge in Language Models Back to the Training Data
+Knowledge Editing
+See Knowledge Editing.
+Personalization
+Salemi et al 2023 - LaMP: When Large Language Models Meet Personalization
+Li et al 2024 - Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security
+LLM Personality
+Jiang et al 2023 - PersonaLLM: Investigating the Ability of Large Language Models to Express Personality Traits
+Detecting Generated Text
+See also Fake News Detection.
+Rodriguez - Cross-Domain Detection of GPT-2-Generated Technical Text
+Mitchell et al 2023 - DetectGPT: Zero-Shot Machine-Generated Text Detection using Probability Curvature
+Adversarial Attacks
+Mu et al 2023 - Can LLMs Follow Simple Rules?
+Applications
+Evaluation, see Evaluation with Large Language Models
+Creating Data or replacement for crowdsourcing, see Data Augmentation (Synthetic Data Generation)
+Copyright Issues
+Henderson et al 2023 - Foundation Models and Fair Use
+Karamolegkou et al 2023 - Copyright Violations and Large Language Models
+Theoretical and Foundational Papers
+See also Analysis of In-Context-Learning.
+Emergent Abilities
+Lu et al 2023 - Are Emergent Abilities in Large Language Models just In-Context Learning?
+Historical Papers
+Historical papers that may or may not be applicable today.
+Teh 2003 - A Bayesian Interpretation of Interpolated Kneser-Ney
+Melis et al 2017 - On the State of the Art of Evaluation in Neural Language Models Shows that LSTMS, when properly tuned, outperform other models (as of 2017, so before the Transformer)
+Khandelwal et al 2018 - Sharp Nearby, Fuzzy Far Away: How Neural Language Models Use Context
+Datasets
+Standard benchmark datasets
+Wikitext 103
+Penn Treebank
+PG-19 Uses books from before 1919.  Good for long sequences.
+Large datasets
+Bookcorpus, also reproduced in the Pile, see here. reproduction original dataset
+Common Crawl
+WebText and OpenWebText:
+WebText: Introduced in GPT-2 (paper).
+OpenWebText: Various implementations here and here and here (on HuggingFace here). Used in MegatronLM here.
+OpenWebText2 Open re-implementation, widely used. Use this one. On HuggingFace here.
+Colossal Clean Crawled Corpus (C4): paper AI2 reimplementation atHuggingFace
+The Pile Diverse set of data for building language models. Individual components, see readme. Older individual components Paper: The Pile: An 800GB Dataset of Diverse Text for Language Modeling Pile check tool
+The pile has been removed due to this letter, see here and here
+BigScienceCorpus: 2022 - The BigScience Corpus:
+A 1.6TB Composite Multilingual Dataset
+RedPajama-Data An Open Source Recipe to Reproduce LLaMA training dataset
+Code datasets
+The Stack Used in StarCoder. Has two membership test websites: Am I in the stack and DataPortraits
+Small datasets
+BabyLM Challenge
+Tinystories: paper dataset
+Minipile: paper Huggingface
+Software and Demos
+Training and/or Inference Frameworks for LLMs
+For an overview, see table 4 and section 3.7 of Liu et al 2024 - Understanding LLMs: A Comprehensive Overview from Training to Inference
+(Historical) n-gram LM toolkits
+The best, highly optimized toolkit: KenLM
+Industry standard toolkit with many options: SRILM
+NLTK also implements n-gram LMs
+Deep learning toolkits
+GPT Neo An open-source implementation of model & data parallel GPT3-like models using the mesh-tensorflow library.
+NVidia's Megatron-LM Used for example, by BLOOM
+Online demos
+AI2's Jurassic language model Jurassic-1
+GPT-3: web interface is free after signing up
+Hugging Face Fill Mask demo: Fill-Mask Demo Text Generation Demo
+Related Pages
+Autonomous Language Agents
+BERT and Friends
+ChatGPT
+Dense Document Retrieval with LLMs
+Hallucination and Factivity
+Instruction-Tuning
+Perplexity
+Pretraining
+Prompting
+Scaling Laws
+Supertasks
+nlp/language_model.txt · Last modified: 2025/03/11 04:26 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

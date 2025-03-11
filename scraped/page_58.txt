@@ -1,0 +1,67 @@
+nlp:hallucination_and_factivity [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • hallucination_and_factivity
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+nlp:hallucination_and_factivity
+Table of Contents
+Hallucination and Factivity
+Overviews
+Hallucination and Factivity in LLMs
+Datasets
+Related Pages
+Hallucination and Factivity
+Overviews
+In Generation
+Ji et al 2022 - Survey of Hallucination in Natural Language Generation
+In Large Language Models
+Zhang et al 2023 - Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models
+Rawte et al 2023 - A Survey of Hallucination in Large Foundation Models
+Ye et al 2023 - Cognitive Mirage: A Review of Hallucinations in Large Language Models
+Andriopoulos & Pouwelse 2023 - Augmenting LLMs with Knowledge: A Survey on Hallucination Prevention
+Hallucination and Factivity in LLMs
+Lin et al 2022 - TruthfulQA: Measuring How Models Mimic Human Falsehoods
+Lee et al 2022 - Factuality Enhanced Language Models for Open-Ended Text Generation - Prepends a topic prefix to sentences in the factual documents to make each sentence serve as a standalone fact during pretraining.
+Prompting GPT-3 To Be Reliable
+Min et al 2023 - FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation
+Du et al 2023 - Quantifying and Attributing the Hallucination of Large Language Models via Association Analysis
+Dhuliawala et al 2023 - Chain-of-Verification Reduces Hallucination in Large Language Models
+Zouying et al 2023 - AutoHall: Automated Hallucination Dataset Generation for Large Language Models
+Chen et al 2023 - FELM: Benchmarking Factuality Evaluation of Large Language Models github
+Tian et al 2023 - Fine-tuning Language Models for Factuality
+Gekhman et al 2024 - Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations?
+Prompt to break down sentences into independent facts:
+(from Min 2023)
+Datasets
+TruthQA: paper github
+FactScore: paper github
+FELM: paper github
+Related Pages
+Automatic Fact Checking
+Factivity
+Language Model
+Trustworthy AI
+nlp/hallucination_and_factivity.txt · Last modified: 2024/05/24 03:11 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

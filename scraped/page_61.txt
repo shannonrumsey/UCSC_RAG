@@ -1,0 +1,67 @@
+nlp:information_extraction [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • information_extraction
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+nlp:information_extraction
+Table of Contents
+Information Extraction
+Overviews
+Papers
+Courses
+People
+Related Pages
+Information Extraction
+Overviews
+Introduction: Eisenstein p. 403
+Sarawagi 2008 - Information Extraction  Old but good introduction
+Grishman 2015 - Information Extraction
+Mannai et al 2017 - Information Extraction Approaches: A Survey (Springer link)
+Golshan et al 2018 - A Study of Recent Contributions on Information Extraction (Not so great overview)
+Singh 2018 - Natural Language Processing for Information Extraction  Best overview
+Weischedel & Boschee 2018 - What Can Be Accomplished with the State of the Art in Information Extraction? A Personal View
+Grishman 2019 - Twenty-five years of information extraction
+Miscellaneous Overviews
+Niklaus et al 2018 - A Survey on Open Information Extraction
+Martinez-Rodriguez et al 2016 - Information Extraction meets the Semantic Web: A Survey
+Nasar et al 2018 - Information Extraction From Scientific Articles: A Survey
+Verma & Bhattacharyya - Survey on Coreference Resolution, Relation and Event Extraction (unpublished?)
+Ward et al 2020 - Survey of Current State of the Art Entity-Relation Extraction Tools
+Papers
+Zhang et al 2020 - TRIE: End-to-End Text Reading and Information Extraction for Document Understanding
+Courses
+https://www.cis.uni-muenchen.de/~fraser/information_extraction_2017_lecture/ or https://www.cis.uni-muenchen.de/~fraser/information_extraction_2017_seminar/
+People
+Ralph Grishman
+Related Pages
+Entity Linking
+Event Extraction
+Knowledge Graphs
+Named Entity Recognition
+Ontology Learning
+Relation Extraction
+Temporal Information Extraction
+nlp/information_extraction.txt · Last modified: 2025/01/17 20:39 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

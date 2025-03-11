@@ -1,0 +1,205 @@
+nlp:machine_translation [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • machine_translation
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+nlp:machine_translation
+Table of Contents
+Machine Translation
+Overviews
+Key Papers
+System Papers
+Baselines
+Syntax in MT
+Multilingual Translation
+Low-Resource
+Character-Level
+Domain Adaptation
+Pretraining
+Unsupervised
+Sentence Alignment
+Statistical MT
+Evaluation
+Datasets
+Papers About Corpus Collection
+Standard Datasets
+Datasets for Small-Scale Experiments
+Low-Resource Datasets
+Large Datasets
+Software
+Resources
+People
+Related Pages
+Machine Translation
+Overviews
+For a reading list, see The Machine Translation Reading List
+Philipp Koehn's 2017 Draft Chapter on NMT
+Philipp Koehn's draft book on NMT
+Philipp Koehn's 2020 Book - Neural Machine Translation
+Stahlberg 2019 - Neural Machine Translation: A Review and Survey
+Yang et al 2020 - A Survey of Deep Learning Techniques for Neural Machine Translation
+Tan et al 2020 - Neural Machine Translation: A Review of Methods, Resources, and Tools
+Key Papers
+Bahdanau et al 2014 - Neural Machine Translation by Jointly Learning to Align and Translate
+Sennrich et al 2016 - Neural Machine Translation of Rare Words with Subword Units
+Vaswani et al 2017 - Attention Is All You Need
+System Papers
+Wu et al 2016 - Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation
+Levin et al 2017 - Toward a Full-Scale Neural Machine Translation in Production: The Booking.com Use Case
+Britz et al 2017 - Massive Exploration of Neural Machine Translation Architectures
+Arivazhagan et al 2019 - Massively Multilingual Neural Machine Translation in the Wild: Findings and Challenges See the list open problems.  From Google's MT team, did they deploy this?
+Hassan et al 2018 - Achieving Human Parity on Automatic Chinese to English News Translation
+Costa-jussà et al 2022 - No Language Left Behind: Scaling Human-Centered Machine Translation blog website model demo Transformer encoder-decoder model with sparsely gated mixture of experts. 50B params, and also distilled versions.
+Baselines
+Denkowski & Neubig et al 2017 - Stronger Baselines for Trustable Results in Neural Machine Translation
+Syntax in MT
+Sennrich & Haddow 2016 - Linguistic Input Features Improve Neural Machine Translation
+Nadejde et al 2017 - Predicting Target Language CCG Supertags Improves Neural Machine Translation
+Currey & Heafield 2018 - Multi-Source Syntactic Neural Machine Translation
+Multilingual Translation
+In multilingual translation, one system is built to translate between many language pairs (rather than just one).
+Aharoni et al 2019 - Massively Multilingual Neural Machine Translation
+Tang et al 2020 - Multilingual Translation with Extensible Multilingual Pretraining and Finetuning
+Low-Resource
+Zoph et al 2016 - Transfer Learning for Low-Resource Neural Machine Translation
+Gu et al 2018 - Universal Neural Machine Translation for Extremely Low Resource Languages
+Comparision of SMT vs NMT for low-resource MT
+Sennrich & Zhang 2019 - Revisiting Low-Resource Neural Machine Translation: A Case Study
+Duh et al 2020 - Benchmarking Neural and Statistical Machine Translation on Low-Resource African Languages
+Costa-jussà et al 2022 - No Language Left Behind: Scaling Human-Centered Machine Translation dataset blog website model demo Transformer encoder-decoder model with sparsely gated mixture of experts. 50B params, and also distilled versions.
+Marco & Fraser 2022 - Findings of the WMT 2022 Shared Tasks in Unsupervised MT and Very Low Resource Supervised MT
+Character-Level
+Cherry et al 2018 - Revisiting Character-Based Neural Machine Translation with Capacity and Compression
+Domain Adaptation
+See also Domain Adaptation.
+Surveys
+Chu & Wang 2018 - A Survey of Domain Adaptation for Neural Machine Translation
+Thompson et al 2019 - Overcoming Catastrophic Forgetting During Domain Adaptation of Neural Machine Translation
+Pretraining
+Qi et al 2018 - When and Why are Pre-trained Word Embeddings Useful for Neural Machine Translation?
+Zhu etal 2020 - Incorporating BERT into Neural Machine Translation
+Tang et al 2020 - Multilingual Translation with Extensible Multilingual Pretraining and Finetuning
+Unsupervised
+Lample et al 2017- Unsupervised Machine Translation Using Monolingual Corpora Only
+Luo et al 2019 - Neural Decipherment via Minimum-Cost Flow: from Ugaritic to Linear B
+Song et al 2019 - MASS: Masked Sequence to Sequence Pre-training for Language Generation github
+Marchisio et al 2020 - When Does Unsupervised Machine Translation Work?
+Marchisio et al 2021 - On Systematic Style Differences between Unsupervised and Supervised MT and an Application for High-Resource Machine Translation
+Marco & Fraser 2022 - Findings of the WMT 2022 Shared Tasks in Unsupervised MT and Very Low Resource Supervised MT
+Tan & Monz 2023 - Towards a Better Understanding of Variations in Zero-Shot Neural Machine Translation Performance
+Sentence Alignment
+Before an MT system can be trained, the sentences in the parallel documents need to be aligned to create sentence pairs.
+Thompson & Koehn 2019 - Vecalign: Improved Sentence Alignment in Linear Time and Space
+Mining parallel sentences
+Some of these methods can be used to mine parallel sentences from large collections of documents
+Laser
+Artetxe & Schwenk 2019 - Massively Multilingual Sentence Embeddings for Zero-Shot Cross-Lingual Transfer and Beyond github Used in NLLB
+Heffernan et al 2022 - Bitext Mining Using Distilled Sentence Representations for Low-Resource Languages
+Statistical MT
+See also Statistical Machine Translation.  Recent papers related to SMT:
+2019 - A Multifaceted Evaluation of Neural versus Phrase-Based Machine Translation for 9 Language Directions
+Evaluation
+For an overview, see Evaluating MT Systems.
+Papers
+See also the metrics task at WMT every year which does a correlation with human evaluations.
+BLEU: Papineni et al 2002 - BLEU: a Method for Automatic Evaluation of Machine Translation
+METEOR: Banerjee & Lavie 2005 - METEOR: An Automatic Metric for MT Evaluation with Improved Correlation with Human Judgments and Lavie & Agarwal 2007, download
+TER: A Study of Translation Edit Rate with Targeted Human Annotation
+Multi-lingual METEOR: Denkowski & Lavie 2014 - Meteor Universal: Language Specific Translation Evaluation for Any Target Language, download
+chrF: Popovic 2015 - chrF: character n-gram F-score for automatic MT evaluation
+chrF++: Popovic 2017 - chrF++: words helping character n-grams, github
+Post 2018 - A Call for Clarity in Reporting BLEU Scores
+BERTscore: Zhang et al 2019 - BERTScore: Evaluating Text Generation with BERT
+Freitag et al 2020 - BLEU might be Guilty but References are not Innocent
+Marie et al 2021 - Scientific Credibility of Machine Translation Research: A Meta-Evaluation of 769 Papers
+Guerreiro et al 2023 - xCOMET: Transparent Machine Translation Evaluation through Fine-grained Error Detection
+Kocmi & Federmann 2023 - Large Language Models Are State-of-the-Art Evaluators of Translation Quality
+Evaluation of Metrics
+Freitag et al 2021 - Experts, Errors, and Context: A Large-Scale Study of Human Evaluation for Machine Translation Used in WMT
+BLEU
+Note that BLEU is a corpus-level metric, and that averaging BLEU scores computed at the sentence level will not give the same result as corpus-level BLEU.  Corpus-level BLEU is the standard one reported in papers.
+Notes: To assess length effects (translations being too short), people often report the brevity penalty, BP computed when calculating BLEU.   Most BLEU evaluation scripts report this number as BP = .
+SacreBLEU (recommended) paper
+Internally uses mteval-v13a.pl as the tokenizer
+If you want to simulate SacreBLEU evaluation, but with statistical significance, you can use the mteval-v13a.pl script to tokenize your output and references, and then use MultEval
+Compare-MT Can analyze the differences between two systems and compute statistical significance. paper
+Historical: Moses's multi-bleu.pl
+Jon Clark's MultEval Does automatic boostrap resampling to compute statistical significance. paper
+Datasets
+Papers About Corpus Collection
+Resnik & Smith 2003 - The Web as a Parallel Corpus - The foundational paper about collecting parallel data from the web.
+Standard Datasets
+WMT 2014 En-Fr, etc
+WMT 2016
+Nice scripts to download and preprocess: wmt16_en_de.sh
+Opus - The Open Parallel Corpus
+Datasets for Small-Scale Experiments
+IWSLT 2013 MT Datasets English-French (200K sentence pairs), used for example here.
+IWSLT 2014 English-German (160K sentence pairs), used for example here.
+Malagasy-English dataset (80K sentence pairs) Malagasy is a morphologically rich language (WARNING: hasn't been used in a while, no recent neural models to compare to)
+Low-Resource Datasets
+Guzmán et al 2019 dataset Four language pairs: Nepali-English, Sinhala-English, Khmer-English, Pashto-English
+Malagasy-English dataset (Jeff recommends)
+LDMT MURI Data (ask Jeff for it, he has access)
+Flores-101 dataset Paper: Goyal et al 2021 3001 sentences translated into 101 languages
+Flores-200 dataset Paper: Costa-jussà et al 2022
+Cherokee-English dataset Recommended (recent, 2020)
+Large Datasets
+El-Kishky et al 2019 - CCAligned: A Massive Collection of Cross-Lingual Web-Document Pairs
+Software
+See also Tan 2020.
+FairSeq
+OpenNMT
+Sockeye
+Nematus
+Resources
+Conferences and Workshops
+WMT (Workshop on Machine Translation, now Conference on Machine Translation)
+Books
+Koehn 2020 - Neural Machine Translation
+Wikis
+MT Research Survey Wiki Covers neural methods as well
+Bibliographies
+MT Reading List (constantly updated)
+People
+Wilker Aziz
+Marine Carpuat
+David Chiang
+Orhan Firat
+Kenneth Heafield
+Kevin Knight
+Philipp Koehn
+Graham Neubig
+Matt Post
+Rico Sennrich
+Related Pages
+Cross-Lingual Transfer
+Multilinguality
+Noisy Channel Model
+Seq2seq
+Software
+Statistical Machine Translation
+nlp/machine_translation.txt · Last modified: 2024/08/13 06:21 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

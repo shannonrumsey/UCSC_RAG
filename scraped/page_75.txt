@@ -1,0 +1,200 @@
+nlp:question_answering [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • question_answering
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+nlp:question_answering
+Table of Contents
+Question Answering
+Overviews
+Demos
+Key Papers
+Topics
+General QA Papers
+Explanation And Implicit Reasoning Papers
+QA with Attribution
+Robust Question Answering
+Open-Domain Question Answering
+Multi-hop Reasoning
+Multi-Span QA
+Yes/No Questions
+Long-Form QA
+Knowledge-Grounded QA
+Commonsense QA
+Selective QA
+Domain Shift
+Domain Adaptation
+Cross-Lingual
+Unsupervised QA
+Evaluation
+Datasets
+Resources
+Slides
+People
+Related Pages
+Question Answering
+Overviews
+Best overview: Baradaran et al 2020 - A Survey on Machine Reading Comprehension Systems.
+Gao et al 2018 - Neural Approaches to Conversational AI (contains a chapter on QA)
+Baradaran et al 2020 - A Survey on Machine Reading Comprehension Systems
+Thayaparan et al 2020 - A Survey on Explainability in Machine Reading Comprehension
+Rogers et al 2022 - QA Dataset Explosion: A Taxonomy of NLP Resources for Question Answering and Reading Comprehension
+Demos
+AllenNLP - RoBERTa QA Model Online Demo
+Key Papers
+Early papers
+Riloff & Thelen 2000 - A Rule-based Question Answering System for Reading Comprehension Tests (Cited by the SQuAD 1.0 paper)
+Chen et al 2016 - A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task
+Rajpurkar et al 2016 - SQuAD: 100,000+ Questions for Machine Comprehension of Text
+BiDAF model
+Rajpurkar et al 2018 - Know What You Don't Know: Unanswerable Questions for SQuAD (SQuAD 2.0 paper)
+Karpukhin et al 2020 - Dense Passage Retrieval for Open-Domain Question Answering
+Basmov et al 2024 - LLMs’ Reading Comprehension Is Affected by Parametric Knowledge and Struggles with Hypothetical Statements
+Topics
+General QA Papers
+Andreas et al 2016 - Learning to Compose Neural Networks for Question Answering
+Basmov et al 2024 - LLMs’ Reading Comprehension Is Affected by Parametric Knowledge and Struggles with Hypothetical Statements
+Explanation And Implicit Reasoning Papers
+Chen & Durrett 2020 - Robust Question Answering Through Sub-part Alignment
+Lamm et al 2020 - QED: A Framework and Dataset for Explanations in Question Answering
+Thayaparan et al 2020 - A Survey on Explainability in Machine Reading Comprehension
+Geva et al 2021 - Did Aristotle Use a Laptop? A Question Answering Benchmark with Implicit Reasoning Strategies
+Dalvi et al 2021 - Explaining Answers with Entailment Trees
+QA with Attribution
+Bohnet et al 2022 - Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models
+Robust Question Answering
+Chen & Durrett 2020 - Robust Question Answering Through Sub-part Alignment
+Open-Domain Question Answering
+Lee et al 2019 - Latent Retrieval for Weakly Supervised Open Domain Question Answering
+DPR model: Karpukhin et al 2020 - Dense Passage Retrieval for Open-Domain Question Answering
+Lee et al 2021 - Learning Dense Representations of Phrases at Scale
+Multi-hop Reasoning
+Yang et al 2018 - HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering
+Dua et al 2019 - DROP: A Reading Comprehension Benchmark Requiring Discrete Reasoning Over Paragraphs
+Min et al 2019 - Multi-hop Reading Comprehension through Question Decomposition and Rescoring Decomposes questions into simpler questions, answers them, and then rescores the answer
+Sun et al 2020 - PullNet: Open Domain Question Answering with Iterative Retrieval on Knowledge Bases and Text
+Multi-Span QA
+Span-based QA datasets like SQuAD require that the answer span is contiguous.  Multi-Span QA relaxes this restriction so that questions like “What are the type of Turing Machines?” can be answered with multiple spans from the context passage.
+Segal et al 2019 - A Simple and Effective Model for Answering Multi-span Questions
+Yes/No Questions
+Clark et al 2019 - BoolQ: Exploring the Surprising Difficulty of Natural Yes/No Questions
+Sulem et al 2021 - Yes, No or IDK: The Challenge of Unanswerable Yes/No Questions
+Long-Form QA
+Fan et al 2019 - ELI5: Long Form Question Answering
+Knowledge-Grounded QA
+See Knowledge-Grounded Question Answering.
+Commonsense QA
+See Commonsense Question Answering.
+Selective QA
+2020- No Answer is Better Than Wrong Answer: A Reflection Model for Document Level Machine Reading Comprehension Top leaderboard on Natural Questions
+2020 - Selective Question Answering under Domain Shift
+2019 - Quizbowl: The case for incremental question answering.
+Domain Shift
+Selective Question Answering under Domain Shift
+Domain Adaptation
+See the related work in Yue 2022 and Yue 2022, and also Arafat Sultan's publications on QA.
+Synthetic Question Generation
+See also Question Generation.
+Duan et al 2017 - Question Generation for Question Answering
+Tang et al 2017 - Question Answering and Question Generation as Dual Tasks
+Shakeri et al 2020 - End-to-End Synthetic Data Generation for Domain Adaptation of Question Answering Systems Generates QA pairs in the target domain using encoder-decoder large pre-trained model fine-tuned to the dataset.
+Reddy et al 2020 - End-to-End QA on COVID-19: Domain Adaptation with Synthetic Training
+Shakeri et al 2020 - End-to-End Synthetic Data Generation for Domain Adaptation of Question Answering Systems
+Chen et al 2020 - Improved Synthetic Training for Reading Comprehension
+2020 - CliniQG4QA: Generating Diverse Questions for Domain Adaptation of Clinical Question Answering
+Lyu et al 2021 - Improving Unsupervised Question Answering via Summarization-Informed Question Generation
+Yue et al 2022 - Synthetic Question Value Estimation
+for Domain Adaptation of Question Answering
+Reddy et al 2022 - Synthetic Target Domain Supervision for Open Retrieval QA
+Yue et al 2022 - QA Domain Adaptation using Hidden Space Augmentation and Self-Supervised Contrastive Adaptation
+Cross-Lingual
+Agarwal et al 2022 - Zero-shot Cross-lingual Open Domain Question Answering
+Unsupervised QA
+Lyu et al 2021 - Improving Unsupervised Question Answering via Summarization-Informed Question Generation
+Evaluation
+Rodriguez et al 2021 - Evaluation Examples Are Not Equally Informative: How Should That Change NLP Leaderboards?
+Datasets
+See Rogers et al 2022 - QA Dataset Explosion. See also NLP Progress - Question Answering and Geetanjali's QA Datasets Spreadsheet
+CNN/Daily Mail Reading Comprehension
+Large-scale cloze-style QA dataset constructed from news articles and their summaries
+Paper: Hermann 2015 - Teaching Machines to Read and Comprehend
+Chen et al 2016 - A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task
+See https://github.com/danqi/rc-cnn-dailymail
+SQuAD: Rajpurkar et al 2016 - SQuAD: 100,000+ Questions for Machine Comprehension of Text SQuAD 2.0: Rajpurkar et al 2018 - Know What You Don’t Know: Unanswerable Questions for SQuAD
+NewsQA: Trischler et al 2016 - NewsQA: A Machine Comprehension Dataset.
+NarrativeQA: Kočiský et al 2017 - The NarrativeQA Reading Comprehension Challenge
+AI2 Reasoning Challenge (ARC): Clark et al 2018 - Think you have Solved Question Answering? Try ARC, the AI2 Reasoning Challenge
+Boratko et al 2019 - A Systematic Classification of Knowledge, Reasoning, and Context within the ARC Dataset
+MathQA: Amini et al 2019 - MathQA: Towards Interpretable Math Word Problem Solving with Operation-Based Formalisms
+Math Questions
+Hopkins et al 2019 - SemEval 2019 Task 10: Math Question Answering
+Liu et al 2021 - Can Small and Synthetic Benchmarks Drive Modeling Innovation? A Retrospective Study of Question Answering Modeling Approaches
+COPA: Choice of Plausible Alternatives (Gordon et al., 2012): Asking about either a plausible cause or a plausible result, among two alternatives, of a certain event expressed in a simple sentence. (Summary from Shwartz 2020)
+CommonSenseQA: commonsense Question Answering (Talmor et al., 2019): General questions about concepts from ConceptNet. To increase the challenge, the distractors are related to the target concept either by a relationship in ConceptNet or as suggested by crowdsourcing workers. (Summary from Shwartz 2020)
+MC-TACO: Multiple Choice Temporal commonsense (Zhou et al., 2019): Questions about temporal aspects of events such as ordering, duration, frequency, and typical time. The distractors were selected in an adversarial way using BERT. (Summary from Shwartz 2020)
+Social IQa: Social Interaction Question Answering (Sap et al., 2019b): Questions regarding social interactions, based on the ATOMIC dataset (Sap et al., 2019a). Contexts describe social interactions and questions refer to one of a few aspects (e.g. the subject’s motivation, following actions, etc.). The answers were crowdsourced. (Summary from Shwartz 2020)
+PIQA: Physical Interaction Question Answering (Bisk et al., 2020): Questions regarding physical commonsense knowledge. Contexts are goals derived from an instruction website, typically involving less prototypical uses of everyday objects (e.g., using a bottle to separate eggs). The answers were crowdsourced, and an adversarial filtering algorithm was used to remove annotation artifacts. (Summary from Shwartz 2020)
+WinoGrande (Sakaguchi et al., 2020): A large scale version of WSC that exhibits less bias thanks to adversarial filtering and use of placeholders instead of pronouns. As opposed to WSC that was curated by experts, WinoGrande was crowdsourced with a carefully designed approach that produces diverse examples which are trivial for humans. (Summary from Shwartz 2020)
+HybridQA: Chen et al 2020 - HybridQA: A Dataset of Multi-Hop Question Answering over Tabular and Textual Data
+UnifiedQA: Khashabi et al 2020 - UnifiedQA: Crossing Format Boundaries With a Single QA System
+Open Domain
+Natural Questions
+Stats: ~300k QA pairs
+Dataset viewer
+Bert Baseline Paper: Alberti et al 2019 - A BERT Baseline for the Natural Questions
+System Papers
+2020 - RikiNet: Reading Wikipedia Pages for Natural Question Answering
+Zemlyanskiy et al 2021 - ReadTwice: Reading Very Large Documents with Memories
+MS MARCO Bajaj et al 2016 - MS MARCO: A Human Generated MAchine Reading COmprehension Dataset List of QA datasets from MS MARCO paper:
+QReCC Anantha et al 2020 - Open-Domain Question Answering Goes Conversational via Question Rewriting
+AmbigQA: Min et al 2021 - AmbigQA: Answering Ambiguous Open-domain Questions
+QuAC
+System Papers
+Qu et al 2019 - BERT with History Answer Embedding for Conversational Question Answering
+Biomedical Domain
+BioASQ
+CovidQA Paper 1 Paper 2 (older)
+Product Domain (Product-related Question Answering - PQA)
+Amazon-PQA and AmazonPQSim: Rozen et al 2021 - Answering Product-Questions by Utilizing Questions from Other Contextually Similar Products Worked with Yes/No questions only.  Datasets available here (search for Amazon-PQA or AmazonPQSim). Dataset incluses free-form, not extractive answers and yes/no questions.
+Research Paper Domain
+Qasper: Dasigi et al 2021 - A Dataset of Information-Seeking Questions and Answers Anchored in Research Papers This dataset is really hard. Contains everything: abstractive, multispan extractive, yes / no, unanswerable questions, all from a very long context.
+Resources
+Slides
+Geetanjali's slides and here
+People
+Jonathan Berant
+William Cohen
+Matt Gardner
+Edward Grefenstette
+Percy Liang
+Chris Manning
+Andrew McCallum
+Hwee Tou Ng
+Chitta Baral
+Related Pages
+Question Generation
+Visual Question Answering
+nlp/question_answering.txt · Last modified: 2024/08/16 01:07 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

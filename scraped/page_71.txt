@@ -1,0 +1,277 @@
+people [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • people
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+people
+Table of Contents
+People
+NLP
+Academia
+Industry
+Machine Learning
+Academia
+Industry
+Vision
+Academia
+Industry
+Optimization
+People
+This page lists Google Scholar pages of people to follow for their research, as well as perhaps their Twitter account if they are active on Twitter.
+This list is incomplete - apologies to anyone we have left out.
+NLP
+Academia
+For academia, you can also go to CSRankings and look for top people in NLP at each university (NLP world rankings).
+Nikos Aletras
+James Allen
+Jacob Andreas Tw
+Yoav Artzi
+Wilker Aziz
+Mohit Bansal
+Chitta Baral
+Regina Barzilay
+Steven Bedrick
+Anya Belz Tw
+Jonathan Berant
+Tamara Berg
+Taylor Berg-Kirkpatrick
+Yonatan Bisk
+David Blei
+Phil Blunsom
+Sam Bowman Tw
+Claire Cardie
+Marine Carpuat
+Nate Chambers
+Kai-Wei Chang
+Snigdha Chaturvedi
+Danqi Chen
+David Chiang
+Kyunghyun Cho
+Eunsol Choi
+Jinho Choi
+Yejin Choi
+Shay Cohen
+William Cohen
+Trevor Cohn
+Michael Collins
+Ryan Cotterell
+Hal Daumé III
+Gerard de Melo
+Kevin Duh
+Greg Durrett
+Ondřej Dušek
+Jason Eisner
+Katrin Erk
+Maxine Eskenazi
+Jeffrey Flanigan
+Kevin Gimpel
+Daniel Gildea
+Yoav Goldberg Tw
+Sharon Goldwater
+Matt Gormley
+Edward Grefenstette
+Iryna Gurevych
+Hannaneh Hajishirzi
+Dilek Hakkani-Tur
+He He
+Kenneth Heafield
+Aurelie Herbelot
+Liang Huang
+Lifu Huang
+Eduard Hovy
+Mohit Iyyer
+Heng Ji
+Robin Jia
+Mark Johnson
+Shafiq Joty
+Dan Jurafsky
+Min-Yen Kan
+Dan Klein
+Kevin Knight
+Philipp Koehn
+Alexander Koller
+Lingpeng Kong
+Sandra Kübler
+Mirella Lapata
+Lillian Lee
+Percy Liang
+Zhenghua Li
+Ting Liu
+Fei Liu
+Xuezhe Ma
+Andrea Madotto
+Chris Manning Tw
+James Martin
+André Martins
+Mausam
+Andrew McCallum
+Margaret Mitchell
+Ray Mooney
+Kenton Murray
+Preslav Nakov
+Roberto Navigli
+Graham Neubig
+Hwee Tou Ng
+Martha Palmer
+Ellie Pavlick
+James Pustejovsky
+Dragomir Radev
+Matt Post
+Narges Razavian
+Siva Reddy
+Ehud Reiter
+Alan Ritter
+Shruti Rijhwani
+Carlos Gómez-Rodríguez - Dependency parsing
+Rachel Rudinger
+Anna Rumshisky
+Alexander (Sasha) Rush Tw
+Mrinmaya Sachan
+Maarten Sap
+Nathan Schneider
+Hinrich Schütze
+Lane Schwartz
+Roy Schwartz
+Rico Sennrich
+Sameer Singh
+Noah A. Smith
+Amanda Stent
+Swabha Swayamdipta
+Partha Talukdar
+Chenhao Tan
+Ivan Titov
+Jesse Thomason
+David Traum
+Yulia Tsvetkov
+Andreas Vlachos
+Katharina von der Wense
+Marilyn Walker
+Byron Wallace
+Xiaojun Wan
+Lu Wang
+William Wang
+Xin Eric Wang
+Daniel Weld
+Derry Wijaya
+Sherry Tongshuang Wu
+Wei "Coco" Xu
+Nianwen Xue
+Diyi Yang
+Ziyu Yao
+Mark Yatskar
+Dani Yogatama
+Zhou Yu
+Luke Zettlemoyer
+Xiaodan Zhu
+Industry
+Jason Baldridge
+Miguel Ballesteros
+Antoine Bordes
+Ming-Wei Chang
+Ken Church
+Peter Clark
+William Cohen
+Dipanjan Das
+Michael Denkowski
+Emily Dinan
+Markus Dreyer
+Chris Dyer
+Orhan Firat
+Matt Gardner
+Dan Garrette
+Jianfeng Gao
+David Grangier
+Dilek Hakkani-Tur
+Jayant Krishnamurthy
+Guillaume Lample
+Kenton Lee
+Mike Lewis
+Jiwei Li
+Yunyao Li
+Wolfgang Macherey
+Matthew Marge
+Swaroop Mishra
+Tahira Naseem
+Sujith Ravi
+Sebastian Ruder
+Noam Shazeer
+Richard Socher
+Linfeng Song
+Kristina Toutanova
+Ashish Vaswani
+Svitlana Volkova
+Zhilin Yang
+Lingfei Wu
+Manzil Zaheer
+Lin Zhao (at Bosch Research in Sunnyvale)
+Machine Learning
+Academia
+Yoshua Bengio
+Jeff Dean
+Lise Getoor
+Amir Gholami
+Tatsunori Hashimoto
+Geoffrey Hinton
+Sepp Hochreiter
+‪Michael Jordan
+Sham Kakade
+Michael Mahoney
+David McAllester
+Tom Mitchell
+Fei Sha
+Jürgen Schmidhuber
+Aarti Singh Google Scholar
+Yee Whye Teh
+Xinhua Zhang
+Eric Xing
+Industry
+Leon Bottou
+Yu (Hugo) Chen
+Ronan Collobert
+Ian Goodfellow
+Alex Graves
+Yuxiong He
+Sanjiv Kumar
+Quoc V. Le
+Yann LeCun
+Timothy Lillicrap
+Leslie N. Smith
+Ilya Sutskever
+Jakob Uszkoreit
+Oriol Vinyals
+Jason Weston
+Vision
+Academia
+Dhruv Batra
+Justin Johnson (Vision and language)
+Industry
+Kaiming He
+Andrej Karpathy
+Optimization
+Yuxin Chen
+John Duchi
+Satyen Kale
+people.txt · Last modified: 2025/02/05 15:02 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

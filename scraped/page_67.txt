@@ -1,0 +1,168 @@
+ml:nn_architectures [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • nn_architectures
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+ml:nn_architectures
+Table of Contents
+Neural Network Architectures
+Overviews
+Feedforward Networks
+Connections
+Sequence Networks
+Tree Networks
+Graph Networks
+Activation Functions
+Matrices
+Set and Pooling Networks
+Memory Architectures
+RNN Cells
+Position Embeddings
+Attention Mechanisms
+Neurosymbolic Networks
+Dynamic Neural Networks
+Miscellaneous Architectures
+Neural Network Architectures
+Overviews
+Yu et al 2019 - A Review of Recurrent Neural Networks: LSTM Cells and Network Architectures
+Wu et al 2019 - A Comprehensive Survey on Graph Neural Networks
+Narang et al 2021 - Do Transformer Modifications Transfer Across Implementations and Applications? Comparison of many Transformer model variants
+Feedforward Networks
+Highway networks
+GLU (also considered a kind of activation, but it's more like a FF architecture).  Variants: Shazeer 2020 ReGLU and SwiGLU work well.
+Capsule networks (also used in a CNN-type architecture)
+Sparsely-Gated Mixture-of-Experts.  Used to greatly scale-up the number of parameters with (sub-linear? check this) increase in computation. Uses many overlapping feedforward networks that are gated by another network. 1000x improvements in model capacity.
+Dou et al 2019 - Dynamic Layer Aggregation for Neural Machine Translation with Routing-by-Agreement
+Dao et al 2022 - Monarch: Expressive Structured Matrices for Efficient and Accurate Training
+Connections
+Residual connections
+ReZero Similar to residual connections, but with a trainable parameter that controls the strength of the nonlinearity (which is initialized to zero).
+Sequence Networks
+See also State-Space Models.
+RNNs: Elman networks, Jordan networks
+LSTMs, GRUs (see RNN Cells)
+Neural Turing Machines Cool idea, but this paper has a drawback because in practice they limit the size of the external memory, which makes it more like a neural finite-state machine (see p. 11, footnote 2).  Not necessarily the be-all and end-all architecture for NTMs.
+Differentiable Neural Computer An extension to Neural Turing Machines
+Pointer Networks
+StackRNNs, StackLSTMs
+HyperNetworks  Uses one network to generate the weights for another network.
+Memory networks (i.e. End-to-end memory networks)
+Associative LSTM
+Recurrent Additive Networks An early state space model
+Pointer-Generator Networks
+Convolutional Seq2seq
+Long Short-Term Memory-Network (LSTMN) Augments the LSTM cell with a memory network
+ByteNet Dilated convolution network for seq2seq that stacks the encoder and decoder, and doesn't use attention. Operates in linear time.
+Transformers
+Latent Transformer Non-autoregressive Transformer using latent variables
+Simple Self-Attention Network (SSAN) Single-layer transformer with 1 attention head
+RNMT+ Hybrid RNN/Transformer archecture. Outperforms the Transformer by half a BLEU point
+Universal Transformers A recurrent (across layers) Transformer with dynamic halting at each position
+Lightweight Recurrent Networks Related to the Transformer, LRNs are a drop-in replacement to other RNNs, which remove the sequential natural of RNN processing.  Essentially uses a Key-Query-Value attention mechanism instead of the recurrence.
+Feedback Transformer Makes the Transformer recurrent by allowing each timestep to look back at all layers.  Improves performance but makes training much slower because of the recurrence.
+∞-former (Infinite former) Infinite Memory Transformer
+FNet A faster, attention-free Transformer architecture based on Fourier transforms
+Anthe: Less is More! A slim architecture for optimal language translation
+RetNet (Retentive Network)
+Tree Networks
+TreeLSTM, also S-LSTMs
+Graph Networks
+See also Wu et al 2019 - A Comprehensive Survey on Graph Neural Networks and Graph Neural Networks.
+Graph convolution networks
+Graph transformers
+Activation Functions
+See also the table in Wikipedia's Activation functions.
+Sigmoid, Tahn, etc
+Softmax
+Maxout (explanation)
+Softsign
+HardTanh (from Collobert 2004)
+ReLU (history: also popularized here and earlier)
+Leaky ReLU
+Parametric ReLU (PReLU) Leaky ReLU with learned parameters.
+GLU and variants
+Gaussian error linear units (GELU) Roughly xσ(1.702x). Used in GTP-2 and BERT.
+Swish f(x) = xσ(βx). β=1.702 is GELU, β=1 is Sigmoid weighted Linear Unit (SiL)
+STL Signed Truncated Logarithm. Very cool activation function with great properties.
+Comparisons:
+Narang et al 2021 Compares activation functions in the Transformer
+Matrices
+Various representations of matrices, such as sparse, or low-dimensional ones.
+Tensor networks
+LoRA
+Monarch Matrices
+Set and Pooling Networks
+Max, average pooling
+Attention
+Transformer (it is actually a set network) and Simple Self-Attention Network (SSAN) which is a single-layer transformer with 1 attention head
+Deep sets
+Deep averaging networks (DAN) aka the neural bag-of-words model (NBOW)
+Weighted deep averaging networks.  (A natural extension would be to predict the vector “a” from a pooling operation over vectors. Not sure if anyone has done this yet.)
+Weighted Multiset Automata
+See also Vinyals et al 2015 - Order Matters: Sequence to sequence for sets
+BiLSTM Aggregation
+Attentive Pooling and described in Attentive Pooling with Learnable Norms
+Memory Architectures
+Neural Stacks, Queues, and DeQues (see also Probabilistic Neural Programs)
+Associative Memories
+Memory networks A simple key-value associative memory
+Holographic Reduced Representations An associative memory that compresses a collection of key-value vectors into a fixed-size representation using an approximation
+Continuous unbounded memory (see sections 3.2-3.3)
+RNN Cells
+See also Wikipedia - Recurrent Neural Networks and Yu et al 2019 - A Review of Recurrent Neural Networks: LSTM Cells and Network Architectures
+Feedforward network (Elman network)
+Feedforward network with residual connections (with careful tuning, has been shown to perform as well as LSTMs I believe)
+LSTM
+Forget gate
+Peephole connections
+Associative LSTM
+GRU (has been shown not to perform as well as the LSTM cell, for example here)
+Minimal Gated Unit (MGU)
+Position Embeddings
+See Position Embeddings.
+Attention Mechanisms
+See also the Attention Mechanisms page.
+Feedforward attention (the original one)
+Dot product attention (aka Luong attention)
+Structural attention
+Structured Attention Networks
+Label Attention Layer
+Linear Attention (Faster to compute - makes the Transformer O(n))
+Random Feature Attention Uses random features to approximate the softmax, making it O(1).
+Continuous Attention Mechanism, used here
+Single-Headed Gated Attention Can simulate multi-head attention, and is more expressive (see Sect 3.3 and Theorem 1).
+Neurosymbolic Networks
+See also Neurosymbolic Methods
+PossibleWorldNet
+Neural Module Networks (see Neural Module Networks)
+Probabilistic Neural Programs
+Dynamic Neural Networks
+See also Conditional Computation.
+Miscellaneous Architectures
+Infinite Neural Networks (GPNNs and Neural Tangent Kernel)
+Binarized Neural Networks
+Auto-Sizing Neural Networks
+ml/nn_architectures.txt · Last modified: 2024/05/24 23:06 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

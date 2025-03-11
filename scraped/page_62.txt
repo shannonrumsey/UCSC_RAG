@@ -1,0 +1,119 @@
+nlp:key_papers_in_nlp [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • key_papers_in_nlp
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+nlp:key_papers_in_nlp
+Table of Contents
+Key Papers in NLP
+Overviews
+Historical Background
+Papers
+Related Pages
+Key Papers in NLP
+Work in progress. Aims to be a compact list of the key papers in NLP.
+Overviews
+Machine Translation
+Dialog
+Question Answering
+Information Extraction
+Deep Learning
+Ruder's 2016 paper
+Historical Background
+Machine Translation
+Brown et al 1993 - The Mathematics of Statistical Machine Translation: Parameter Estimation
+Parsing
+Early work on Penn Treebank
+ParsEval
+Papers
+Each paper is listed twice: sorted by broad areas or by topic.
+By Broad Area
+Methods
+Attention: Bahdanau et al 2014 - Neural Machine Translation by Jointly Learning to Align and Translate
+Seq2seq: Sutskever et al 2014 - Sequence to Sequence Learning with Neural Networks
+BPE: Sennrich et al 2016 - Neural Machine Translation of Rare Words with Subword Units
+Transformer: Vaswani et al 2017 - Attention Is All You Need
+CRFs: Lafferty et al 2001 - Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data
+Decoding
+Neural features: Lample et al 2016 - Neural Architectures for Named Entity Recognition Kiperwasser & Goldberg 2016 - Simple and Accurate Dependency Parsing Using Bidirectional LSTM Feature Representations
+BERT
+GPT-2, GPT-3
+Datasets
+QA: Squad v1, v2
+NLI: SNLI
+Dialog:
+MultiWOZ:Budzianowski et al 2018 - MultiWOZ - A Large-Scale Multi-Domain Wizard-of-Oz Dataset for Task-Oriented Dialogue Modelling
+Information Extraction
+Named Entity Recognition: Tjong et al 2003 - Introduction to the CoNLL-2003 Shared Task: Language-Independent Named Entity Recognition
+General Benchmarks
+GLUE, SuperGLUE
+MMMLU: Hendrycks et al 2020 - Measuring Massive Multitask Language Understanding
+Evaluation and Ethics
+BLEU: Papineni et al 2002 - BLEU: a Method for Automatic Evaluation of Machine Translation
+Annotation artifacts
+2016 ethics paper
+Deep Learning
+Dropout
+Batch and Layer Norm
+Adam
+By Topic
+Machine Translation
+Attention: Bahdanau et al 2014 - Neural Machine Translation by Jointly Learning to Align and Translate
+BPE: Sennrich et al 2016 - Neural Machine Translation of Rare Words with Subword Units
+Transformer: Vaswani et al 2017 - Attention Is All You Need
+Dialog
+MultiWOZ:Budzianowski et al 2018 - MultiWOZ - A Large-Scale Multi-Domain Wizard-of-Oz Dataset for Task-Oriented Dialogue Modelling
+Question Answering (QA)
+Squad v1, v2
+Natural Language Inference (NLI)
+SNLI
+Vision and Language
+Information Extraction (IE)
+Named Entity Recognition (NER)
+Tjong et al 2003 - Introduction to the CoNLL-2003 Shared Task: Language-Independent Named Entity Recognition
+Lample et al 2016 - Neural Architectures for Named Entity Recognition
+Methods
+Seq2seq: Sutskever et al 2014 - Sequence to Sequence Learning with Neural Networks
+CRFs: Lafferty et al 2001 - Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data
+Decoding
+PreTraining, Language Models, and In-Context Learning
+BERT
+GPT-2, GPT-3
+Syntactic Parsing
+Dependency parsing
+Kiperwasser & Goldberg 2016 - Simple and Accurate Dependency Parsing Using Bidirectional LSTM Feature Representations
+Semantic Parsing
+Evaluation and Ethics
+BLEU: Papineni et al 2002 - BLEU: a Method for Automatic Evaluation of Machine Translation
+Annotation artifacts
+2016 ethics paper
+Deep Learning
+Dropout
+Batch and Layer Norm
+Adam
+Related Pages
+History of NLP
+nlp/key_papers_in_nlp.txt · Last modified: 2023/11/29 20:58 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

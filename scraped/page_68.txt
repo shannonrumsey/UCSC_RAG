@@ -1,0 +1,93 @@
+ml:nn_training [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • nn_training
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+ml:nn_training
+Table of Contents
+Neural Network Training
+Overviews
+Topics
+Training Setups in the Literature
+Alternative Training Methods
+Related Pages
+Neural Network Training
+Overviews
+Chapter 11 of Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow (UCSC login required)  Excellent introduction to training neural networks
+Deep Learning Chapter 8: Training Deep Models
+Smith 2018 - A Disciplined Approach to Neural Network Hyper-parameters Leslie's opinon, but has some good insights
+Karpathy 2019 - A Recipe for Training Neural Networks Good advice, especially looking at the data
+NLP 202 Winter 2022 - Training Neural Networks (slides)
+Topics
+Data Preparation and Tokenization
+Hyperparameter Tuning
+Random search is a good strategy, see Bergstra & Bengio 2012 - Random Search for Hyper-Parameter Optimization
+Initialization
+Normalization
+Optimizers
+Learning Rate
+Blog Post: Setting the learning rate of your neural network
+Loss Functions
+Regularization
+Fine-Tuning and Pretraining
+Neural Network Tricks
+Tricks such as Curriculum Learning, etc
+Transformer Training Tricks
+Residual connections, ReZero
+Mixed Precision Training (also Train With Mixed Precision - NVIDIA Docs, see other papers as well)
+Large-Scale and Distributed Training
+Training Setups in the Literature
+Training setups have evolved over time. Here are some from the literature.
+Bahdanau 2014: Minibatch stochastic gradient descent (SGD) with Adadelta, trained for 5 days.  Recurrent weight matrices initialized as random orthogonal matrices. For feedforward weight matrices, initialized by sampling each element from the Gaussian distribution of mean 0 and variance 0.00.  Biases initialized to 0.
+Ma & Hovy 2016: Minibatch SGD (batch size 10) with momentum (.9), gradient clipping (5.0) and learning rate decay (this setup performed similarly to Adam for them). Early-stopping on validation set. Dropout with rate = .5.
+Gehring et al 2017 - Convolutional Sequence to Sequence Learning They used a lot of tricks. Worth taking a look.
+Transformer (Vaswani et al 2017): Uses Adam with warmup, residual dropout, and label smoothing. Adam parameters β1 = 0.9, β2 = 0.98 and epsilon = 10−9.  Warmup increases “the learning rate linearly for the first warmup_steps training steps, and decreasing it thereafter proportionally to the inverse square root of the step number.” Trained for 100,000 steps (12 hours).
+Transformer: Popel & Bojar 2018 - Training Tips for the Transformer Model
+BERT (Devlin et al 2019): Uses Adam with linear warmup, and linearly decaying stepsize.  Regularization: dropout and weight decay (L2 regularizer). Does not use label smoothing like the Transformer. “BERT is optimized with Adam (Kingma and Ba,2015) using the following parameters: β1 = 0.9, β2 = 0.999, espilon = 1e-6 and L2 weight decay of 0.01 with steps to a peak value of 1e-4, and then linearly decayed. BERT trains with a dropout of 0.1 on all layers and attention weights, and a GELU activation function (Hendrycks and Gimpel, 2016). Models are pretrained for S = 1,000,000 updates, with minibatches containing B = 256 sequences of maximum length T = 512 tokens.” (from Liu et al 2020) Trained for  1,000,000 steps.  A search over hyperparameters for training BERT is given in You et al 2020. As noted in Press 2020, trains on shorter sentences (<128 tokens) for 90% of the training, before training on longer sentences (<512) for the last 10%.
+TODO: GPT-1 (p. 5)
+Low-resource NMT system: Sennrich & Zhang 2019 - Revisiting Low-Resource Neural Machine Translation: A Case Study Uses bideep RNN, label smoothing, different dropout rates for output word embeddings, input word embeddings and hidden layers, tied embeddings, layer normalization, tuned BPE vocabulary size (reduced from larger data scenarios). Trained with Adam with early-stopping on a dev set using BLEU.
+TODO: BART
+Academic Budget BERT
+Megatron-Turing NLG
+PaLM
+Paper  Architecture  Optimizer  Optimizer Hyperparameters  Initialization  Normalization  Regularizer  Learning Schedule  Stopping Criterion  Activation Function  Tokenization  Extras
+Bahdanau 2014  Seq2seq BiLSTM + attention  Adadelta + gradient clipping (on norm)  espilon = 10−6, ρ = 0.95, gradient clipping = 1  Random orthogonal + Gaussian  none  none  (no learning rate, set by Adadelta)  5 days  LSTM & Tahn  Moses
+Ma & Hovy 2016  BiLSTM +CNN word embds  SGD w/ momentum + gradient clipping  momentum = .9, gradient clipping = 5   GloVe & Uniform [-sqrt(3/dim),sqrt(3/dim)]   Dropout (.5)  Rate decay  Early-stopping  Sigmoid & Tahn  Tokens
+Gehring et al 2017  CNN seq2seq  Nesterov + gradient clipping (on norm)
+Vaswani et al 2017  Transformer  Adam  β1 = 0.9, β2 = 0.999, espilon = 1e-6  Glorot/fan_avg  Layer normalization  Dropout, label smoothing  Linear warm-up + 1/sqrt(step_number) 100,000 steps  ReLu  WordPiece
+BERT (Devlin et al 2019)  Transformer  Adam  β1 = 0.9, β2 = 0.999, espilon = 1e-6  (Glorot/fan_avg?)  Layer normalization  L2 weight decay of 0.01  Linear warmup + linear decay  1,000,000  GELU  WordPiece  Trains on short sentences first
+
+Alternative Training Methods
+See Neural Networks: Alternative Training Methods
+Related Pages
+Alternative Training Methods
+Data Preparation
+Hyperparameter Tuning
+NN Initialization
+NN Tricks
+Optimizers
+Regularization
+ml/nn_training.txt · Last modified: 2024/07/09 22:29 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

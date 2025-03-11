@@ -1,0 +1,195 @@
+nlp:dialog [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • dialog
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+nlp:dialog
+Table of Contents
+Dialog
+Overviews
+Key Papers
+Chatbots
+Open-Domain Goal-Oriented Dialog
+Open-Domain Dialog Systems with Roles
+Knowledge-Grounded Conversational Agents
+Conversational Question Answering
+Prompting and In-Context Learning
+Debating Systems
+Multimodal Dialog Agents
+Dialog Policy
+Dialog Acts
+Dialog Act Tagging
+Predicting Dialog Acts
+Dialog Systems that Learn / Teachable Agents
+Conversational Search
+Datasets
+Multi-Party Datasets
+Dialog Act Tagging
+Dialog Agent Safety
+Evaluation
+Ideas for future work
+Software
+Workshops and Conferences
+People
+Related Pages
+Dialog
+Overviews
+Best overviews: Chen et al 2017 - A Survey on Dialogue Systems: Recent Advances and New Frontiers and Roller et al 2020 - Recipes for building an open-domain chatbot.
+Introductions
+S&LP - Ch 24
+General
+Chen et al 2017 - A Survey on Dialogue Systems: Recent Advances and New Frontiers
+Gao et al 2018 - Neural Approaches to Conversational AI (95 pages)
+Roller et al 2020 - Open-Domain Conversational Agents: Current Progress, Open Problems, and Future Directions
+Singh 2021 - A Survey on Near-human Conversational Agents
+Caldarini et al 2022 - A Literature Survey of Recent Advances in Chatbots
+Shaier et al 2022 - Mind the Knowledge Gap: A Survey of Knowledge-enhanced Dialogue Systems
+Yi et al 2024 - A Survey on Recent Advances in LLM-Based Multi-turn Dialogue Systems
+Courses
+Zhou Yu's Conversational AI course at Columbia
+Datasets
+Serban et al 2017 - A Survey of Available Corpora for Building Data-Driven Dialogue Systems
+Sundar & Heck 2022 - Multimodal Conversational AI A Survey of Datasets and Approaches
+Evaluation
+Deriu et al 2019 - Survey on Evaluation Methods for Dialogue Systems
+Fan et al 2020 - A Survey of Dialogue System Evaluation
+Yeh et al 2021 - A Comprehensive Assessment of Dialog Evaluation Metrics
+Other
+Ma et al 2020 - A Survey on Empathetic Dialogue Systems
+Sundar & Heck 2022 - Multimodal Conversational AI: A Survey of Datasets and Approaches
+Rahmani et al 2023 - A Survey on Asking Clarification Questions Datasets in Conversational Systems
+Key Papers
+Ritter et al 2011 - Data-Driven Response Generation in Social Media
+Vinyals & Le 2015- A Neural Conversational Model
+Li et al 2016 - Deep Reinforcement Learning for Dialogue Generation
+Wolf et al 2019 - TransferTransfo: A Transfer Learning Approach for Neural Network Based Conversational Agents
+Li et al 2018 - Towards Deep Conversational Recommendations Introduced the ReDial dataset
+Meena: Adiwardana et al 2020 - Towards a Human-like Open-Domain Chatbot
+SOTA (2020, better than Meena) neural dialog generation: Roller et al 2020 - Recipes for building an open-domain chatbot. Code and models
+Andreas et al 2020 - Task-Oriented Dialogue as Dataflow Synthesis
+Dai et al 2022 - Dialog Inpainting: Turning Documents into Dialogs
+Chatbots
+See also Chatbots.
+Madotto et al 2020 - The Adapter-Bot: All-In-One Controllable Conversational Model
+Out-of-Scope Detection
+Qian et al 2023 - Distinguish Sense from Nonsense: Out-of-Scope Detection for Virtual Assistants
+Open-Domain Goal-Oriented Dialog
+Prabhumoye 2020 - I love your chain mail! Making knights smile in a fantasy game world: Open-domain goal-oriented dialogue agents
+Open-Domain Dialog Systems with Roles
+Bae et al 2022 - Building a Role Specified Open-Domain Dialogue System Leveraging Large-Scale Language Models
+Knowledge-Grounded Conversational Agents
+Conversational Question Answering
+Prompting and In-Context Learning
+Debating Systems
+Slonim et al 2021 - An Autonomous Debating System
+Multimodal Dialog Agents
+See Vision and Language - Multimodal Dialog Agents.
+Dialog Policy
+For a nice overview, see related work section of Joshi 2024.
+Joshi et al 2024 - LLM-Based Open-Domain Integrated Task and Knowledge Assistants with Programmable Policies (Has a great overview)
+Dialog Acts
+A dialog act, also known as a speech act, is the “action” an utterance performs, such as request information, confirm, etc.
+Dialog Act Tagging
+Dialog Acts are related to RST, except that dialog acts assume that the relation expressed in the dialog act is between adjacent utterances. See here for more information.
+Switchboard Dialog Act Draft 1997
+2005 - Guidelines for Dialogue Act and Addressee Annotation Version 1.0 Guidelines for the AMI dataset
+Yu & Yu 2019 - MIDAS, A Dialog Act Annotation Scheme for Open-Domain Human-Machine Spoken Conversations There used to be a corpus and an open-source system available, but it has been taken down. Jurik uses this tagger in his system
+Taxonomies of Dialog Acts
+Paul et al 2019 - Towards Universal Dialogue Act Tagging for Task-Oriented Dialogues
+Predicting Dialog Acts
+Predicting the next dialog act.
+Papers:
+Tanaka et al 2019 - Dialogue-Act Prediction of Future Responses based on Conversation History
+Dialog Systems that Learn / Teachable Agents
+See also Learning from Feedback.
+Melamed & Niraula 2016 - Towards A Virtual Assistant That Can Be Taught New Tasks In Any Domain By Its End-Users Helpa paper
+Li et al 2016 - Learning through dialogue interactions by asking questions
+Labutov et al 2018 - LIA: A Natural Language Programmable Personal Assistant
+Li et al 2020 - Interactive Task Learning from GUI-Grounded Natural Language Instructions and Demonstrations
+Mininger 2021 - Expanding Task Diversity in Explanation-Based Interactive Task Learning
+Conversational Search
+Overviews
+Keyvan et al 2023 - How to Approach Ambiguous Queries in Conversational Search: A Survey of Techniques, Approaches, Tools, and Challenges
+Rahmani et al 2023 - A Survey on Asking Clarification Questions Datasets in Conversational Systems
+Papers
+2020 - Making Information Seeking Easier: An Improved Pipeline for Conversational Search
+Dalton et al 2020 - CAsT-19: A Dataset for Conversational Information Seeking
+People
+Jamie Callan
+Datasets
+See also NLP progress - Dialog and Serban et al 2017 - A Survey of Available Corpora for Building Data-Driven Dialogue Systems.
+ReDial dataset - annotated dataset of dialogues, where users recommend movies to each other. Paper: Li et al 2018 - Towards Deep Conversational Recommendations
+MultiWOZ Also a data to text generation dataset. Paper v1.0: Ramadan et al 2018 - Large-Scale Multi-Domain Belief Tracking with Knowledge Sharing. Paper v2.0: Budzianowski et al 2018 - MultiWOZ - A Large-Scale Multi-Domain Wizard-of-Oz Dataset for Task-Oriented Dialogue Modelling
+Wizard of Wikipedia - Paper: Dinan et al 2018 - Wizard of Wikipedia: Knowledge-Powered Conversational Agents
+Self-dialogue Corpus - Paper: Fainberg et al 2018 - Talking to myself: self-dialogues as data for conversational agents
+Schema-Guided Dialogue Dataset - Paper: Rastogi et al 2019 - Towards Scalable Multi-domain Conversational Agents: The Schema-Guided Dialogue Dataset
+Topical-Chat - Paper: Gopalakrishnan et al 2019 - Topical-Chat: Towards Knowledge-Grounded Open-Domain Conversations
+Repository of Conversational Datasets - Paper: Henderson et al 2019 - A Repository of Conversational Datasets
+Multi-Party Datasets
+Apel et al 2023 - MeeQA: Natural Questions in Meeting Transcripts See the datasets they used for more multi-party datasets.
+Dialog Act Tagging
+Stolcke et al 2000 - Dialogue Act Modeling for Automatic Tagging and Recognition of Conversational Speech
+Boyer et al 2010 - Dialogue Act Modeling in a Complex Task-Oriented Domain
+Yu & Yu 2019 - MIDAS: A Dialog Act Annotation Scheme for Open Domain Human Machine Spoken Conversations
+Dialog Agent Safety
+Safety: making sure the dialog agent doesn't use swear words, offensive language, give bad advice, etc, which could happen if the agent has been trained on a corpus of dialogs.
+Dinan et al 2019 - Build it Break it Fix it for Dialogue Safety: Robustness from Adversarial Human Attack
+Xu et al 2020 - Recipes for Safety in Open-domain Chatbots
+Software
+Perspective API
+Evaluation
+See also Chatbots - Evaluation.
+Walker et al 1997 - PARADISE: A Framework for Evaluating Spoken Dialogue Agents (Task oriented dialog I believe)
+Ideas for future work
+Use dialog to add training data to improve the NER and EL on the fly. As examples get corrected, add them in.  There should be prior work on this.
+Software
+Chatbots
+Rule-based
+FreeHAL wikipedia Rule-based, self-learning chatbot
+Data-driven
+Task-Oriented Dialog
+Miscellaneous
+LangChain Framework for building applications with prompting (chaining prompts, etc)
+Workshops and Conferences
+SIGDIAL: 2020 2021
+IWSDS (International Workshop on Spoken Dialog Systems): 2023 2021 2017 Proceedings up to 2020 on dblp This is a nice workshop.
+People
+Emily Dinan
+Maxine Eskenazi
+Andrea Madotto
+David Traum
+Marilyn Walker
+Jason Weston
+Zhou Yu
+Related Pages
+Autonomous Language Agents
+Chatbots
+Discourse Analysis
+Embodied AI
+Multimodal Dialog Agents
+Task Oriented Dialog
+Jeff's List of Interesting Papers
+nlp/dialog.txt · Last modified: 2024/09/04 00:27 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

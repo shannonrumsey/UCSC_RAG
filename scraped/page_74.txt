@@ -1,0 +1,74 @@
+nlp:prompt_engineering [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • prompt_engineering
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+nlp:prompt_engineering
+Table of Contents
+Prompt Engineering
+Introductions and Overviews
+Papers
+Automatic Prompt Engineering
+Examples of Prompts
+Related Pages
+Prompt Engineering
+Introductions and Overviews
+Awesome ChatGPT Prompts
+Papers
+Note: some of these papers should be moved to automatic prompt engineering.
+Mishra et al 2022 - Reframing Instructional Prompts to GPTk’s Language
+Sorensen et al 2022 - An Information-theoretic Approach to Prompt Engineering Without Ground Truth Labels
+Webson & Pavlick 2021 - Do Prompt-Based Models Really Understand the Meaning of Their Prompts?
+Wang et al 2022 - Self-Instruct: Aligning Language Model with Self Generated Instructions
+Cheng et al 2023 - Batch Prompting: Efficient Inference with Large Language Model APIs Batch prompting to save money
+Yin et al 2023 - Did You Read the Instructions? Rethinking the Effectiveness of Task Definitions in Instruction Learning
+Chen et al 2023 - Exploring Lottery Prompts for Pre-trained Language Models Searches to see if there is a prompt for each example that produces the correct answer
+Li et al 2023 - Do you really follow me? Adversarial Instructions for Evaluating the Robustness of Large Language Models
+Wang & Zhao 2023 - Metacognitive Prompting Improves Understanding
+in Large Language Models
+Automatic Prompt Engineering
+Shin et al 2020 - AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts
+Deng et al 2022 - RLPrompt: Optimizing Discrete Text Prompts with Reinforcement Learning
+Wen et al 2023 - Hard Prompts Made Easy: Gradient-Based Discrete Optimization for Prompt Tuning and Discovery
+Pryzant et al 2023 - Automatic Prompt Optimization with "Gradient Descent" and Beam Search
+Yang et al 2023 - Large Language Models as Optimizers Figures out a good prompt for the task
+Ferdando et al 2023 - Promptbreeder: Self-Referential Self-Improvement Via Prompt Evolution
+Metaprompting
+Blog posts, etc
+A Complete Guide to Meta Prompting
+Meta-prompting
+Meta-Prompting Concept: Asking Chat-GPT for the best prompt for your desired completion, then to revise it before using it
+2022 - MetaPrompting: Learning to Learn Better Prompts
+2024 - Meta-Prompting: Enhancing Language Models with Task-Agnostic Scaffolding
+Examples of Prompts
+Examples of clever or interesting prompts.
+See appendix of https://arxiv.org/pdf/2307.16789.pdf
+Yasunaga et al 2023 - Large Language Models as Analogical Reasoners
+Arora et al 2022 - Ask Me Anything: A Simple Strategy for Prompting Language Models
+Awesome ChatGPT Prompts
+Related Pages
+Prompting
+nlp/prompt_engineering.txt · Last modified: 2025/01/18 02:00 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

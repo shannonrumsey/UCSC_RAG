@@ -1,0 +1,132 @@
+nlp:history_of_nlp [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • history_of_nlp
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+nlp:history_of_nlp
+Table of Contents
+History of NLP
+Historical Surveys
+Papers and Popular Descriptions
+Early Work (prior to 2000)
+Early Machine Learning or Corpus-based Methods in NLP
+Neural Networks in NLP
+Very Early Work
+Early Deep Learning in NLP
+Related Pages
+History of NLP
+Historical Surveys
+Zechner 1997 - A Literature Survey on Information Extraction and Text Summarization
+Papers and Popular Descriptions
+Statistical NLP
+Church 1988 - A Stochastic Parts Program and Noun Phrase Parser for Unrestricted Text One of the first statistical POS taggers, one of the papers that started the statistical/machine learning revolution in NLP
+Charniak 1998 - Statistical Techniques for NLP
+Early Work (prior to 2000)
+Models of Language
+Chomsky 1956 - Three Models for the Description of Language overview Introduced the Chomsky hierarchy
+Chomsky & Miller 1958 - Finite State Languages. From here.
+Chomsky 1959 - On Certain Formal Properties of Grammars
+Chomsky & Schützenberger
+1963 - The Algebraic Theory of Context Free Languages
+Machine Translation
+Interlingua-based
+Nirenburg et al 1988 - Lexical Realization in Natural Language Generation Describes the generation system of DIOGENES.
+Question Answering
+Lehnert 1975 - What Makes Sam Run? Script Based Techniques for Question Answering Very cool work.
+Riloff & Thelen 2000 - A Rule-based Question Answering System for Reading Comprehension Tests
+Dialog
+ELIZA: Weizenbaum 1966 - ELIZA - A Computer Program For the Study of Natural Language Communication Between Man And Machine wikipedia original source code commented source Python reimplementation other versions
+PERRY: wikipedia source code PERRY was the first program to pass the Turing test.
+Bobrow 1977 - GUS, A Frame-Driven Dialog System
+Green & Carberry 1994 - A Hybrid Reasoning Model For Indirect Answers
+Word-Sense Disambiguation
+Granger 1977 - FOUL-UP: A Program that Figures Out Meanings of Worcds from Context Really cool work. Uses “knowledge embodied in scripts to figure out likely definitions for unknown words.” Related to recent (2020s) work in common-sense reasoning.
+Speech Recognition
+Included here since some of the algorithms are shared with statistical NLP methods
+Denes 1960 - Spoken Digit Recognition Using Time‐Frequency Pattern Matching
+Word-based matching, cited by Bridle 1982
+Vintsyuk 1968 - Speech Discrimination by Dynamic Programming pdf (UCSC only) Bridle 1982 says this was pioneering work which was not well known in the West.
+Velichko & Zagoruyko 1970 - Automatic Recognition of 200 Words pdf (UCSC only) Cited by Bridle 1982
+Jelinek 1976 - Continuous Speech Recognition by Statistical Methods pdf (UCSC only)
+Lowerre 1976 - The Harpy Speech Recognition System (Ph.D. Thesis) pdf Summary, missing one page. Cited Bridle 1982 (and Ney 1992) for the term “beam search”
+Bridle et al 1982 - An Algorithm for Connected Word Recognition pdf (UCSC only) Cited by Ney 1992 for beam search
+Ney et al. 1992 - Data Driven Search Organization for Continuous Speech Recognition in the SPICOS System pdf (UCSC only) See p. 4 bottom for a history of beam search, which it says is called “beam search, DP beam search, or pruned DP search.”
+Generation
+Nirenburg et al 1988 - Lexical Realization in Natural Language Generation Describes the generation part of the interlingua MT system DIOGENES.
+Text Understanding
+Shank 1975 - SAM - A Story Understander
+Syntactic Parsing
+Semantic Parsing
+Schank & Tesler 1969 - A Conceptual Dependency Parser for Natural Language
+Grammar Induction
+Systems that Learned
+Reasoning Systems
+Carbonell 1978 - POLITICS: Automated Ideological Reasoning
+Carbonell 1979 - Subjective Understanding: Computer Models of Belief Systems PhD Thesis
+Language Acquisition
+Smith 1980 - FOCUSER: A strategic interaction paradigm for language acquisition. AAIII 1980, cited by Mitchell 1980.  Also published as a PhD thesis.
+Early Machine Learning or Corpus-based Methods in NLP
+Overviews
+Wermter et al 1996 - Connectionist, Statistical and Symbolic Approaches to Learning for Natural Language Processing Nice overview, part of a larger book
+Parsing
+Carbonell 1979 - Towards a Self-Extending Parser
+Sampson 1986 - A stochastic approach to parsing Learns statistical rules from a manually annotated corpus. Uses simulated annealing to find the most probable parse. (Randomized inference, similar to later work in NLP in 2014 here) “We have built up a database of manually-parsed sentences, from which we extract statistics that allow a likelihood measure to be determined for any logically possible non-leaf constituent of a parse-tree. That is, given a pairing of a mother-label with a sequence of daughter-labels, say the pair <J, NN JJ P>, the likelihood function will return a figure for the relative frequency with which (in this case) an adjective phrase consists of singular common noun + adjective + prepositional phrase.” “The most direct way… would be to generate all possible tree-structures for a given sentence taken as a sequence of word-tags, and all possible labellings of each of those structures, and choose the tree whose overall plausibility figure is highest. Unlike in the case of word-tagging, however, for parsing this approach is wholly impractical… I have therefore begun to experiment with simulated annealing as a solution to the problem.”
+1990 - Session 9: Automatic Acquisition of Linguistic Structure From HLT (became NAACL) 1990, see also dblp (and Mitch Marcus's google scholar)
+Machine Translation
+Brown et al 1988 - A Statistical Approach to French/English Translation Cited by Gale & Church 1990. Reflection on the work here
+Neural Networks in NLP
+Very Early Work
+Work prior to 2000s.
+Often called “Artificial Neural Networks (ANNs)” or “connectionist approach” in the old literature
+Overviews
+Rohde & Plaut 2003 - Connectionist Models of Language Processing Great overview of early work
+Selman 1989 - Connectionist systems for natural language understanding
+Wermter et al 1996 - Connectionist, Statistical and Symbolic Approaches to Learning for Natural Language Processing Nice overview, part of a larger book
+POS Tagging
+Parsing
+Small et al 1982 - Towards Connectionist Parsing
+Selman 1985 - Rule-based Processing in a Connectionist System for Natural Language Understanding (Tech Report CSRI-168 U. Toronto. local copy) Wow, foundational work. Way ahead of it's time. Used a heuristic method to set the weights, since this was before backprop was invented. Discusses learning the weights p. 37, bottom (p. 44 in pdf). Hinton was on the thesis committee.
+Selman, B. & Hirst, G. (1985). A Rule-Based Connectionist Parsing System, Proceedings of the Seventh Annual Conference of the Cognitive Science Society, Irvine, CA, August 1985, 212-219. An extended version entitled 'Parsing as an Energy Minimization Problem' appeared in Genetic Algorithms and Simulated Annealing (ed.) Lawrence Davis, Pitman, London. 155-168.
+Charniak & Santos 1987 - A connectionist context-free parser which is not context-free but then it is not really connectionist either
+Jain 1991 - Parsing Complex Sentences with Structured Connectionist Networks local copy
+Semantic Parsing (including shallow semantic parsing)
+Hinton 1981 - Implementing semantic networks in parallel hardware Cited by McClelland 1986 as Hinton 1981.
+McClelland & Kawamoto 1986 - Mechanisms of sentence processing: Assigning roles to constituents (another copy with references)
+Machine Translation
+McLean 1992 - Example-Based Machine Translation using Connectionist Matching
+Castaño et al 1997 - A Connectionist Approach to Machine Translation local copy
+Castaño et al 1997 - Machine Translation using Neural Networks and Finite-State Models local copy Good references to early literature
+Forcada & Neco 1997 - Recursive Hetero-Associative Memories for Translation local copy Introduced the encoder-decoder RNN architeture for NMT
+Inference and Reasoning
+Touretzky & Hinton 1985 - Symbols Among the Neurons: Details of a Connectionist Inference Architecture
+Early Deep Learning in NLP
+Work since 2000s, but prior to 2014.
+Bengio et al 2003 - A Neural Probabilistic Language Model
+Collobert et al 2011 - Natural Language Processing (Almost) from Scratch
+Related Pages
+History of ML
+Key Papers in NLP
+nlp/history_of_nlp.txt · Last modified: 2024/02/20 09:05 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

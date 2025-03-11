@@ -1,0 +1,166 @@
+ml:history_of_ml [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • history_of_ml
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+ml:history_of_ml
+Table of Contents
+History of Machine Learning
+Early History of ML (prior to 1980)
+Theory (prior to 2000)
+Early Theory (prior to 1980)
+Neural Networks (prior to 2010)
+Neural Networks in NLP
+Misc Topics
+Other Methods (Prior to 2010)
+Optimization (prior to 1980)
+Related Pages
+History of Machine Learning
+Early History of ML (prior to 1980)
+First use of the term “machine learning”: Arthur Samuel 1959 “Machine Learning is the field of study that gives computers the ability to learn without being explicitly programmed.”  Caveat: see here
+See also Machine Learning: An Artificial Intelligence Approach vol 1 by Michalski, Carbonell, and Mitchell Chapter 1, 1.4 and bibliography p. 20-23 and Comprehensive Bibliography of ML p. 511-556.
+Overviews
+Ho & Agrawala 1968 - On pattern classification algorithms introduction and survey
+Fu 1969 - Learning Control Systems - Review and Outlook
+Fu 1970 - Statistical Pattern Recognition
+Books
+Nilsson 1965 - Learning Machines: Foundations of Trainable Pattern-Classifying Systems
+Minsky & Papert 1969 - Perceptrons: An Introduction to Computational Geometry 1987 Expanded edition
+Bongard 1970 - Pattern Recognition pdf (translated from Russian). Cited by Carbonell p. 518.
+Carbonell et al 1986 - Machine Learning: A Guide to Current Research Duplicate here ISBN: 0-89838-214-9
+Papers
+Fisher 1937 -  Introduced Linear Discriminant Analysis (LDA) and the famous Iris dataset (see Ghojogh 2019). This is the classic supervised binary machine learning setup, where the features are assumed to be normally distributed. More on LDA here.
+McCulloch & Pitts 1943 - A Logical Calculus of the Ideas Immanent in Nervous Activity
+Wiener 1948 - Cybernetics See also here. Mostly control theory. Doesn't talk about learning, although chapters from the 1961 2nd edition do.
+Mcculloch 1949 - The Brain As A Computing Machine Cited by Samuel 1959
+Fix & Hodges 1951 - Discriminatory Analysis - Nonparametric Discrimination - Consistency Properties pdf Introduces the binary classification task (with unknown non-parametric distributions) into the statistics literature. According to the abstract of Fix 1952, which uses the same setup, “A classification procedure is worked out for the following situations. Two large samples, one from each of two populations, have been observed. An individual of unknown origin is to be classified…”
+Fix & Hodges 1952 - Discriminatory Analysis - Nonparametric Discrimination: Small Sample Performance pdf First introduces the k-nearest neighbors classifier (cited as [53] by survey paper Ho 1968) Was implemented on a computer? Need to check.
+Oettinger 1952 - Programming a digital computer to learn Semantic Scholar pdf (UCSC only) Perhaps one of the first experiments with a learning algorithm on a computer (besides Fix 1952). Experiments on the EDASC computer. The idea was suggested to the author by Wilks. Introduces a “response-learning s-machine” (Sec 3) which is a reinforcement learning machine in the multi-armed bandit setting. The equations governing the machine are given in Sec 5, and trade off between exploration and exploitation. Limitations: there are no input observations into the machine beside the reinforcement learning signal, so there is very limited learning. I believe there may be earlier experiments with electro-mechanical machines that do a similar thing (see the references).
+Bush, R., and Hosteller, F., “Stochastic Models for Learning”. John Wiley and Sons, 1955. Cited as [8] in Fu 1969.
+Rosenblatt 1957 - The Perceptron - A Perceiving and Recognizing Automaton Introduces Perceptron algorithm.
+Chow 1957 - An optimum character recognition system using decision functions pdf (UCSC only) Uses Bayes rule and minimizes the expected risk. Built on the theory of statistical decision functions, see citations 3-5. I believe they did not actually implement the system, paper contains only theoretical results.
+Rosenblatt 1958 -  The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain See also 1961 book.
+Friedberg 1958 - A Learning Machine: Part I January 1958.
+Andrews, A. M., “Learning Machines”, Proceedings of the Symposium on the Mechanization of Thoughts Processes, H.M. Stationary Office, London, England, 1959. vol1 vol2 Symposium held Nov 24-27, 1959. Cited by Carbonell p. 515.
+Kilburn, Grimsdale & Sumner 1959 - Experiments in Machine Learning and Thinking pdf (June 15-20, 1959). Cited by Carbonell p. 530. Work started in Feb 1957 on the Mark I computer. Perhaps the first mention of the term “machine learning” in a paper that has experiments on a computer. First instance of genetic programming?
+Samuel 1959 - Some Studies in Machine Learning Using the Game of Checkers (July, 1959).
+Martens 1959 - Two notes on machine “Learning” pdf
+Novikoff  1963 - On convergence proofs for perceptrons
+Tsypkin 1968 - Generalized Linear Learning Algorithms and Their Applications Also Ya. Z. Tsypkin, “Generalized learning algorithms,” Avtomatika t relemekhanika, No. 1, Moscow (1970).
+Tsypkin 1968 - Self-learning--What is it?
+Tsypkin 1972 - A Class of Learning Systems
+Mitchell 1977 - Version Spaces: A Candidate Elimination Approach to Rule Learning
+Mitchell 1978 - Version Spaces: An Approach to Concept Learning PhD thesis
+Naive-Bayes Classifier
+Todo: When was Naive-Bayes classifier first introduced? When was the term “Naive-Bayes” first used to refer to this classifier?
+See Domingos & Pazzani 1997 - On the Optimality of the Simple Bayesian Classifier under Zero-One Loss for a history. Says this very simple classifier has not been discussed much, presumably because of its simplicity.
+1968 - Adaptive Bayes Classification Model with Incompletely Specified Experiment Does this describe NB classifier? Don't have access.
+Clark & Niblett 1989 - The CN2 Induction Algorithm Perhaps the first description of the Naive-Bayes classifier in the machine learning literature? Calls it a “simple Bayes classifier.”
+I believe early versions of Duda and Hart may talk about NB
+Theory (prior to 2000)
+Early Theory (prior to 1980)
+Novikoff  1963 - On convergence proofs for perceptrons
+Hoeffding 1963 - Probability Inequalities for Sums of Bounded Random Variables
+Cover & Hart 1967 - Nearest Neighbor Pattern Classification Shows that as the sample size goes to infinity, the KNN has has an error which is less than twice the Bayes optimal classifier error.
+Cover 1968 - Estimation by the Nearest Neighbor Rule
+Vapnik & Chervonenkis 1971 - On the Uniform Convergence of Relative Frequencies of Events to Their Probabilities pdf
+Vapnik & Chervonenkis 1974 - Theory of Pattern Recognition. (Book in Russian)
+Devroye & Wagner 1976 - A distribution-free performance bound in error estimation pdf Cited by Blumer 1986
+Pearl 1978 - On the connection between the complexity and credibility of inferred models pdf Cited by Blumer 1986
+Theory (1980-2000)
+Mitchell 1980 - The Need for Biases in Learning Generalizations Introduces the concept of bias in machine learning
+Valiant 1984 - A theory of the learnable pdf Introduced PAC learning
+VC Theory
+Blumer et al 1986 - Classifying Learnable Geometric Concepts with the Vapnik-Chervonenkis Dimension First to apply VC dimension to PAC learning theory
+VC Theory notes from 1988  From here
+Blumer et al 1989 - Learnability and the Vapnik-Chervonenkis Dimension
+Abu-Mostafa 1989 - The Vapnik-Chervonenkis Dimension: Information versus Complexity in Learning
+Neural Networks (prior to 2010)
+Overviews: History of Neural Networks
+Schmidhuber 2014 - Deep Learning in Neural Networks: An Overview (Comprehensive history)
+Early Neural Models
+Sometimes also called connectionist models or artificial neural networks
+Feldman & Ballard 1982 - Connectionist Models and Their Properties
+Hinton et al 1984 - Distributed Representations Based on Hinton 1982 CMU Tech Report CS-84-157.
+Backpropagation
+Schmidhuber 2014 - Who invented backprop (see this arxiv paper for references)
+Woodrow & Lehr 1990 - Thirty Years of Adaptive Neural Networks: Perceptron, Madaline, and Backpropagation “The first major extension of the feedforward neural network beyond Madaline I took place in 1971 when Werbos developed a backpropagation training algorithm which, in 1974, he first published in his doctoral dissertation [39]. Unfortunately, Werbos’s work remained almost unknown in the scientific community. In 1982, Parker rediscovered the technique [41] and in 1985, published a report on it at M.I.T. [42]. Not long after Parker published his findings, Rumelhart, Hinton, and Williams [43,44] also rediscovered the technique and, largely as a result of the clear framework within which they presented their ideas, they finally succeeded in making it widely known.”
+Bryson & Ho 1969 - Applied Optimal Control Russell & Norvig (AI: A Modern Approach) cites this for an example of early work that used the concept of backprop
+Werbos 1974 thesis Invented backprop, according to Werbos 2004 and Schmidhuber 2014
+Werbos 1981 - Applications of advances in nonlinear sensitivity analysis (Springer) First paper to suggest backprop for neural nets (according to Schmidhuber 2014).
+For a history, see Werbos 2004 - Backwards Differentiation in AD and Neural Nets: Past Links and New Opportunities (Fascinating retrospective history)
+Parker, 1985
+LeCun, 1985
+The paper that popularized it: Rumelhart, Hinton & Williams 1986 - Learning Representations by Back-Propagating Errors (Letters to Nature)
+1985 tech report (published in PDP vol 1 1986) Talks about recurrent neural networks
+Universal approximation theorem
+Cybenko 1989 - Approximation by superpositions of a sigmoidal function  First paper to show that neural networks can approximate any function
+Resources
+Hinton's publications Contains papers that are hard to find.
+Old conferences and journals
+International Joint Conference on Neural Network (IJCNN) since 1987
+Workshop on Natural Language Processing and Neural Networks (NLPNN): 1999
+Cybernetics Translated from Kibernetika (in Russian). See here.
+Neural Networks in NLP
+See Neural Networks in NLP
+Misc Topics
+Other Methods (Prior to 2010)
+Support Vector Machines
+Weston & Watkins 1998 - Multi-class Support Vector Machines Tech Report CSD-TR-98-04 link
+Optimization (prior to 1980)
+Focusing on papers related to machine learning.
+Stochastic Gradient Descent (SGD)
+Classic overview in Bottou 2003 - Stochastic Learning
+Note: early Russian papers use M instead of E to denote expectation.
+History: As far as I can tell, SGD as we know it was first introduced by Ermol'ev & Nekrylova 1966, and stochastic sub-gradient descent (SSGD) was introduced by Ermol'ev 1969. These works built upon the stochastic approximation method that was proposed in Robins & Monroe 1951. This was extended to maximization problems of one dimension in Kiefer & Wolfowitz 1952, which was extended to the multidimensional case in Blum 1954 and Blum 1958. However, these methods used a finite-difference approximation to computing the stochastic gradient, in contrast to Ermol'ev & Nekrylova 1966 (History from Ermol'ev  1966 Sec 12).
+Kiefer & Wolfowitz 1952 - Stochastic Estimation of the Maximum of a Regression Function pdf
+Blum 1954 - Multidimensional Stochastic Approximation Methods Not quite SGD (computes a finite-differences approx to SGD in a random direction). Does not assume access to a noisy gradient. See sect 6.
+Blum 1958 - A note on stochastic approximation
+Gladyshev 1965 - On the stochastic approximation pdf In Russian. Cited by Ermol'ev & Nekrylova  1966. Perhaps this is SGD applied to least-squares regression?
+Ermol'ev  1966 - Methods of solution of nonlinear extremal problems pdf See section 12 for the early history of SGD. Overview of Blum 1954 shows that it is not quite SGD (computes a finite-differences approx to SGD).
+Ermol'ev & Nekrylova  1966 - Some methods of stochastic optimization pdf Stochastic gradient descent for differentiable, convex functions. $\xi^{(s)}$ is the stochastic gradient, $\rho_s$ is the stepsize. Cited by Nekrylova 1974. I believe this is the introduction of SGD, since Blum 1954 uses a finite-differences method.
+Polyak 1967 - A General Method for Solving Extremum Problems Talks about sub-gradient descent. Calls sub-gradients “support functionals.” Cited by Guseva 1971.
+Ermoliev, Yu.M., and Z.V. Nekrylova. 1967. The Method Stochastic Subgradients and Its Applications. Notes, Seminar on the Theory of Optimal Solution. Academy of Sciences of the U.S.S.R., Kiev. (Cited [1] in Ermoliev 1981.)
+Ermol'ev & Shor 1968 - Method of random walk for the two-stage problem of stochastic programming and its generalization pdf
+Ermol'ev Tuniev 1968 - Direct methods of solving some stochastic programming problems pdf Cited by Guseva 1971 Minimization of linear program with stochastic constraints.
+Ermol'ev 1969 - On the method of generalized stochastic gradients and quasi-Féjer sequences pdf I believe this may be the introduction of SSGD as we know it (stochastic sub-gradient descent). Calls sub-gradients “generalized gradient vectors,” and calls the stochastic sub-gradient a “generalized stochastic gradient vector, or briefly, the stochastic quasi-gradient vector.” Assumes convexity, since assumes sub-gradient. Cited by Nurminskii 1974 and Guseva 1971.
+Guseva 1971 - Convergence rate of the method of generalized stochastic gradients pdf First proof of rate of convergence of an SGD-like algorithm. (Have to look closer, I'm not sure if it's actually SGD). Assumes convexity. Notes: g(x) is the subgradient of f(x), called reference function. It is called the support functional in Polyak 1967 (citation [7]).
+Nurminskii 1974 - Minimization of nondifferentiable functions in the presence of noise pdf
+Nekrylova 1974 - Stochastic gradient method in infinite-dimensional space pdf
+Stochastic Approximation Method
+Robins & Monroe 1951 - A Stochastic Approximation Method local copy This paper is often cited as the paper that introduced SGD (see for example Bottou 2003). However, I would advocate against citing this paper as the originator of SGD, since it has the following limitations: it only treats 1 dimensional problems, it makes a monotonicity assumption, it is a root finding method, and they only apply it to the minimization problem of linear regression with least squares.  This is a long way away from SGD as formulated by Bottou 1991. I think there must be a much better citation than this for the origination of SGD and I suggest Bottou 1991 or Ermoliev 1981 as perhaps a better citation.
+Dvoretzky 1956 - On Stochastic Approximation local copy More general proofs of SAM
+Bottou 1991 - Stochastic Gradient Learning in Neural Networks Gives general proofs that SGD converges for non-convex problems such as neural networks
+There is earlier work on the “stochastic quasi-gradient method,” which is a generalization of SGD
+Quasi-gradient method Nurminskii - 1973
+Ermoliev 1981 - Stochastic quasi-gradient method, see Ermoliev & Gaivoronski - 1984  The most general version of SGD (that Jeff knows about), works with constrained problems and biased gradient estimates.  Reduces to SGD under normal circumstances.
+See also overview here: 2011 - Some scientific results of Yu. M. Ermoliev and his school in modern stochastic optimization theory pdf
+Second-order methods
+Battiti 1992 - First- and second-order methods for learning: Between steepest descent and newton’s method
+Becker & Le Cun 1988 - Improving the convergence of back-propagation learning with second-order methods
+Related Pages
+History of NLP
+ml/history_of_ml.txt · Last modified: 2024/02/14 09:07 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top
