@@ -9,16 +9,19 @@ import sys
 
 
 warnings.filterwarnings('ignore')
-
+seed = 27
+torch.manual_seed(seed)
+torch.cuda.manual_seed_all(seed)
+transformers.set_seed(seed)
 
 # Create prompt template for LLM
 prompt_tmplt = """
-Answer the question based on the following context, in a concise and summarized manner. Limit your response to 500 tokens or less and always finish your sentence! Make sure to format your answer so it is clear:
+Answer the question based on the following context, in a concise and summarized manner. Limit your response to 300 tokens or less and always finish your sentence! Make sure to format your answer so it is clear:
 
 {context}
 
 ------
-Give a concise clear answer to the question based on the above context: {question}
+Give a concise clear answer to the question based on the above context, limit your response to 300 tokens or less and make sure to summarize, rarely use lists: {question}
 """
 
 # context is the retrieved content from the database (db)
@@ -60,12 +63,12 @@ def query_rag(question):
 
     return answer
 
-"""parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser()
 parser.add_argument("question", type=str, help="The question for model.")
 args = parser.parse_args()
 output = query_rag(args.question)
 
-print(output)"""
+print(output)
 
 
 
