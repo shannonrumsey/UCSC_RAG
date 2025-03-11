@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup
 import requests
 import os
 import time
- 
 urls = ["https://www.gradadmissions.ucsc.edu/graduate-studies", "https://www.gradadmissions.ucsc.edu/nlp",
         "https://docs.google.com/spreadsheets/d/1ritoeqeeMPk8s_X8nmBTf5E2BfHd21a0RLggd5Rm5YE/edit?gid=0#gid=0",
         "https://docs.google.com/spreadsheets/d/1Q45Rw5fX2RY-HUl60JyCc3Wm9XEVlweBat3BXZYLJFw/edit?gid=0#gid=0",
@@ -21,24 +20,21 @@ urls = ["https://www.gradadmissions.ucsc.edu/graduate-studies", "https://www.gra
         "https://registrar.ucsc.edu/faqs/students/honors/index.html", "https://registrar.ucsc.edu/faqs/students/wait-list/index.html",
         "https://registrar.ucsc.edu/faqs/students/degree-verification.html", "https://registrar.ucsc.edu/faqs/students/evaluations.html", "https://registrar.ucsc.edu/faqs/students/fees.html",
         "https://registrar.ucsc.edu/faqs/students/graduation.html", "https://registrar.ucsc.edu/faqs/students/id-card-photos.html", "https://registrar.ucsc.edu/faqs/students/residency.html", "https://registrar.ucsc.edu/faqs/students/transcripts.html", 
-        "https://registrar.ucsc.edu/faqs/students/withdrawal.html"]
-
-
-jeff_urls = ["https://jflanigan.github.io/", "https://jflanigan.github.io/publications.html", 
-             "https://jflanigan.github.io/students.html", "https://jflanigan.github.io/teaching.html","https://jflanigan.github.io/software.html"]
-
-nlp_urls = ["https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=Main%20page", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:abstract_meaning_representation",
-            "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:dialog", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:experimental_method",
-            "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=ml:fine-tuning", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:hallucination_and_factivity",
-            "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=ml:history_of_ml,", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:history_of_nlp",
-            "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:information_extraction", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:key_papers_in_nlp",
-            "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:language_model", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=ml:ml_outline",
-            "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=ml:ml_overview", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:machine_translation",
-            "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=ml:nn_architectures", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=ml:nn_training",
-            "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=ml:nn_tricks", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:nlp_outline",
-            "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=people", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:pretraining",
-            "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:prompting", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:prompt_engineering",
-            "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:question_answering", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:transformers"]
+        "https://registrar.ucsc.edu/faqs/students/withdrawal.html",
+        "https://jflanigan.github.io/", "https://jflanigan.github.io/publications.html", 
+        "https://jflanigan.github.io/students.html", "https://jflanigan.github.io/teaching.html","https://jflanigan.github.io/software.html",
+        "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=Main%20page", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:abstract_meaning_representation",
+        "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:dialog", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:experimental_method",
+        "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=ml:fine-tuning", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:hallucination_and_factivity",
+        "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=ml:history_of_ml,", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:history_of_nlp",
+        "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:information_extraction", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:key_papers_in_nlp",
+        "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:language_model", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=ml:ml_outline",
+        "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=ml:ml_overview", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:machine_translation",
+        "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=ml:nn_architectures", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=ml:nn_training",
+        "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=ml:nn_tricks", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:nlp_outline",
+        "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=people", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:pretraining",
+        "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:prompting", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:prompt_engineering",
+        "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:question_answering", "https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=nlp:transformers"]
 
 # # Iterate over websites
 # for i, url in enumerate(urls):
@@ -64,6 +60,7 @@ nlp_urls = ["https://jlab.soe.ucsc.edu/nlp-wiki/doku.php?id=Main%20page", "https
 #         f.write(final_scraped)
 #     time.sleep(30)
 
+'''
 for i, url in enumerate(nlp_urls, start=53):
     
     # Scrape and parse HTML
@@ -85,4 +82,5 @@ for i, url in enumerate(nlp_urls, start=53):
     # Write to file
     with open(path + str(i) + ".txt", "w") as f:
         f.write(final_scraped)
-    time.sleep(30)
+    time.sleep(30)'
+    '''
