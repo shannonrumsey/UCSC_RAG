@@ -55,7 +55,7 @@ def query_rag(question):
 
     generated = output[0]["generated_text"]
 
-    to_remove = "Give a concise clear answer to the question based on the above context:"
+    to_remove = "Give a concise clear answer to the question based on the above context, limit your response to 300 tokens or less and make sure to summarize, rarely use lists:"
 
     ques_answer = generated.split(to_remove)[1]
 
