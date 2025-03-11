@@ -35,7 +35,7 @@ def query_rag(question):
     else:
         device = "cpu"
 
-    print(f"Using device: {device}")
+    #print(f"Using device: {device}")
 
     model_id = "meta-llama/Llama-3.2-1B-Instruct"
 
