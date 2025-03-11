@@ -1,0 +1,118 @@
+nlp:experimental_method [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • experimental_method
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+nlp:experimental_method
+Table of Contents
+Experimental Method and Reproducibility
+Reproducibility
+Statistical Significance
+Boostrap Resampling and Permutation Tests
+Papers
+Software
+Below is from an email I sent to a student Jan 20, 2019
+Reproducibility Checklists, Datasheets and Model Cards
+Other Topics in Experimental Design
+Effects of the Random Seed
+Resources and Tutorials
+Related Pages
+Experimental Method and Reproducibility
+Reproducibility
+Gundersen & Kjensmo 2018 - State of the Art: Reproducibility in Artificial Intelligence
+2017 - A Manifesto for Reproducible Science Nice overview here
+Dodge et al 2019 - Show Your Work: Improved Reporting of Experimental Results Introduces reproducibility checklists, see below, and also give a procedure for estimating if one model is better than another at various hyper-parameter tuning budgets (expected validation performance).  Their suggested estimator is a good one to use, see Dodge et al 2021.  Follow-up work in this area:
+Dodge et al 2020 - Fine-Tuning Pretrained Language Models: Weight Initializations, Data Orders, and Early Stopping The results can largely be mitigated by training for more epochs, see Mosbach 2020
+Tang et al 2020 - Showing Your Work Doesn’t Always Work Don't use. Introduces an unbiased estimator which has a high variance, see the follow-up work: Dodge 2021
+Dodge et al 2021 - Expected Validation Performance
+and Estimation of a Random Variable’s Maximum Compares to Tang 2020, and recommends using the procedure and estimator from Dodge 2019.
+Miltenburg et al 2021 - Preregistering NLP research There are issues with this idea.
+Marie et al 2021 - Scientific Credibility of Machine Translation Research: A Meta-Evaluation of 769 Papers
+Statistical Significance
+See also Statistical Tests.
+For an overview of applying tests of statistical significance to NLP, see:
+NLP 203 slides on statistical significance: Spring 2021
+Section 11.3 from here (applied to MT, but the same techniques are used elsewhere in NLP)
+Slides from Stanford NLP Group
+Dror et al 2018 - The Hitchhiker’s Guide to Testing Statistical Significance in Natural Language Processing and Appendix - Recommended Statistical Significance Tests for NLP Tasks
+Section 4.4.3 Classifier comparison and statistical significance from Eisenstein's book
+Appendix 3 from Noah Smith's book (available for free through UCSC library)
+Dror et al 2019 - Deep Dominance - How to Properly Compare Deep Neural Models Caveat: some researchers have advocated tuning the random seed as a hyperparameter, see Effects of the Random Seed
+Ulmer et al 2022 - Deep-Significance - Easy and Meaningful Statistical Significance Testing in the Age of Neural Networks
+Wilcoxon Signed-Rank Test Docs in SciPy. An issue to consider is how to include outcomes in which system A & B produce the same prediction/score. See the zero_method parameter and associated links.
+Boostrap Resampling and Permutation Tests
+Noreen 1989 - Computer Intensive Methods for Testing Hypotheses: An Introduction Excellent overview
+Bootstrap Methods and Permutation Tests
+Bootstrap Resampling Slides
+Chapter 3 of All of Nonparametric Statistics
+Papers
+See also ACL Anthology - statistical significance.
+Koehn 2004 - Statistical Significance Tests for Machine Translation Evaluation  Advocates resampling the test set to estimate statistical significance. Widely used in MT.
+Clark et al 2011 - Better Hypothesis Testing for Statistical Machine Translation: Controlling for Optimizer Instability Great paper.  Someone should redo this paper for the deep learning era (and take into account Dodge 2019).
+Berg-Kirkpatrick et al 2012 - An Empirical Investigation of Statistical Significance in NLP
+Dror et al 2017 - Replicability Analysis for Natural Language Processing: Testing Significance with Multiple Datasets
+Dror et al 2018 - The Hitchhiker’s Guide to Testing Statistical Significance in Natural Language Processing and Appendix - Recommended Statistical Significance Tests for NLP Tasks
+Zhu et al 2020 - NLPStatTest: A Toolkit for Comparing NLP System Performance
+Software
+testSignificanceNLP (Recommended) Paper and Summary of recommended tests
+NLPStatTest.  Paper
+HyBayes.  Paper
+Below is from an email I sent to a student Jan 20, 2019
+It is recommended to use a non-parametric test, such as the permutation test or paired bootstrap, rather than a t-test, since they don't have distribution assumptions.  An example of how to do this is (use the R-package at the mentioned at the end):
+https://thomasleeper.com/Rcourse/Tutorials/permutationtests.html
+Other references:
+https://cs.stanford.edu/people/wmorgan/sigtest.pdf
+http://www.aclweb.org/anthology/D/D12/D12-1091.pdf
+There are other tests which also re-sample the test data, which is necessary if the test data is small.  A script to do all this is:
+https://github.com/mgormley/sigtest
+You only need 3-5 different runs for each experiments.  If you don't get significance but want to show it, you can do more runs.
+Significance testing can be daunting since there are so many methods.  To keep it simple, I recommend just doing 3-5 runs for each experiment, and using the permutation test in the first link.  You can also report the sample standard deviation as error bars in the table (can to this with just 3-5 samples).
+Reproducibility Checklists, Datasheets and Model Cards
+Reproducibility Checklists
+ACL conferences now require a Reproducibility checklist when submitting papers.  See for example EMNLP 2021.
+Dodge et al 2019 - Show Your Work: Improved Reporting of Experimental Results
+The Machine Learning Reproducibility Checklist
+Datasheets (aka data cards)
+Gebru et al 2018 - Datasheets for Datasets
+Examples: QuAC Datasheet, WebNLG Data card, GEM Data cards
+Model cards
+Mitchell et al 2018 - Model Cards for Model Reporting
+Examples: An AllenNLP model card, InstructGPT model card
+Other Topics in Experimental Design
+Effects of the Random Seed
+For many common tasks and neural architectures, the choice of random seed has only a small effect on the accuracy or BLEU score (a standard deviation across random seeds of say .1-.5).  For this reason, many software packages fix the random seed in advance.  However, for some tasks or models, it is possible for the random seed to have a larger effect.  For example, Rongwen has found it has a large effect on neural models for Compositional Generalization.
+Overview: 2021 - We Need to Talk About Random Seeds Advocates tuning the random seed
+Madhyastha & Jain 2019 - On Model Stability as a Function of Random Seed
+2021 - Effects of Random Seeds on the Accuracy of Convolutional Neural Networks
+Summers & Dinneen 2021 - Nondeterminism and Instability in Neural Network Optimization
+Resources and Tutorials
+Tutorials
+ACL 2022 Tutorial: Towards Reproducible Machine Learning Research in Natural Language Processing (link to conference video)
+Related Pages
+Evaluation
+Hyperparameter Tuning
+Statistical Tests
+nlp/experimental_method.txt · Last modified: 2023/06/15 07:36 by 127.0.0.1
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

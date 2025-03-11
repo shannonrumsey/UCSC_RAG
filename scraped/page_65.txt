@@ -1,0 +1,204 @@
+ml:ml_overview [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • ml_overview
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+ml:ml_overview
+Table of Contents
+Machine Learning Overview
+Books
+Courses
+Overview of Topics
+Related Pages
+Machine Learning Overview
+This page is a concise overview of topics in machine learning, with links to readings and other learning materials.  Roughly, these topics are the union of topics covered in various ML books and courses.
+This is a resource to help you get up to speed in various topics if you're trying to learn ML on your own or broaden your ML knowledge.
+See also Aman.ai - AI Fundamentals
+Books
+Pattern Recognition and Machine Learning, Bishop, 2006 (Referenced below as Bishop) available here or local copy
+An Introduction to Statistical Learning (Reference below as ISL) available here or local copy
+The Elements of Statistical Learning: Data Mining, Inference, and Prediction. 2009 (Referenced below as ESL) available here or local copy
+CIML (Referenced below as CIML) available here
+Machine Learning, Tom Mitchell, McGraw Hill, 1997 (Referenced below as MLBook) available here
+Machine Learning Books by Kevin Murphy
+Machine Learning A Probabilistic Perspective, 2012 (referenced below as Murphy) available here
+Probabilistic Machine Learning: An Introduction, 2021 (reference below as PML1) available here or local copy
+Deep Learning Book (Referenced below as DLBook)
+A Primer on Neural Network Models for Natural Language Processing, Yoav Goldberg, 2016 local copy (Referenced below as NNPrimer)
+The Matrix Cookbook, available here
+Intro to ML (note this was released April 1st)
+Courses
+Machine Learning for Intelligent Systems @ Cornell
+Very quick intro to machine learning (slides): Introduction to Machine Learning local copy
+Overview of Topics
+This overview contains links to particular pages in textbooks, lectures, blog posts, and videos covering the topic, listed easiest to hardest to understand, with videos listed at the end.  In other words, for each topic, introductory material is listed first with more advanced material afterwards, although you may find more advanced material easier to understand in some cases.
+The blog posts and some of the videos are introductory and give the overall gist of the method, but may contain mathematical or conceptual errors. Videos that are lectures should be fine.
+Introduction to Machine Learning MLBook p. 1-15 PML p. 1-28
+“Machine Learning is the field of study that gives computers the ability to learn without being explicitly programmed.” Arthur Samuel 1959
+Basic Machine Learning Concepts
+Inductive Bias MLBook p. 39-45
+Overfitting/Underfitting
+Approximation error vs estimation error aka Bias-Variance Tradeoff CIML p. 71-72 Bartlett notes Sometimes also called the bias-variance tradeoff.
+Features
+Hyperparameters
+Train/dev/test split
+Don't look at the test data CIML p. 25 “Do not look at your test data. Even once. Even a tiny peek. Once you do that, it is not test data any more. Yes, perhaps your algorithm hasn’t seen it. But you have. And you are likely a better learner than your learning algorithm.”
+Additional ML Topics
+Generative vs Discriminative Classifiers
+“Generative Story” CIML p. 123-124
+Bayesian statistics
+MLE vs MAP estimation (and examples of MAP in machine learning) Blog
+Classification
+Naive Bayes CIML p. 120-123, MLBook p. 5
+Note: Naive Bayes is a generative classifier - it estimates p(x,y).  It can be used for binary or multiclass classification.  A Naive Bayes classifier for documents where the input features are words is called a “Bag of Words model”
+Logistic regression (LR) and Naive Bayes have the same model form, but Naive Bayes maximizes p(x,y) while LR maximizes p(y|x).  See Vivek's NB Note or MLBook p. 14
+Logistic Regression MLBook p. 7-14 ESL p. 119-122
+*Decision Trees Blog1 Blog2 CIML p. 10-18 ESL p.305-310
+*Random Forests ISLR p. 319-321
+*k Nearest Neighbors (k-NN) Blog CIML p. 29-40 Bishop p. 125-127 (starting from “We close this chapter by showing how the K-nearest-neighbour technique for density estimation can be extended to the problem of classification…”)
+Perceptron Blog Lecture (w/ video) CIML p. 41-54 MLBook p. 86, Bishop p. 192-196, Wikipedia
+The perceptron algorithm is actually minimizing a function of the data. It turns out, stochastic gradient descent (SGD) with stepsize 1 on a particular function of the data (called the perceptron loss function) is exactly the perceptron algorithm.
+There is a multiclass version of the perceptron
+Neural Networks NNPrimer p. 354-379 Bishop p. 225-272 CIML p. 129-140 ESL 392-401
+Bayesian Neural Networks Bishop p. 277-284
+Support Vector Machines Blog1 Blog2 CIML p. 100-103 Bishop p.325-345 ISL p. 337-349 ESL p. 417-422
+Either the primal or the dual version of the SVM optimization problem can be used.  Historically, the dual version was used.  However, the dual must be optimized using a specialized optimization algorithm such as sequential minimal optimization (SMO), while the unconstrained version of the primal can be optimized using any gradient-based optimizer such as stochastic gradient descent (SGD), which is usually faster in practice.  For this reason, for large-scale learning, the primal version with a gradient-based optimizer is often preferred.  See SVM.
+*Kernel Methods Blog ISL p. 350-354 CIML p. 141-148 ESL p. 423-438 Kernel methods can also be used for regression.
+Loss Functions and Training
+Regression
+*Linear Regression Blog1 Blog2 ESL p. 43-51 Bishop p. 137-147 ISL p. 59-119
+MAP vs MLE linear regression (MAP adds a regularizer term)
+Bayesian linear regression
+“Non-Linear” Regression
+Polynomial Regression ISL p. 266-268
+Splines Notes ISL p. 271-280 ESL p. 139-181
+Practicalities
+*Hyperparameters and Model Selection
+Train/dev/test split Video
+The most practical and principled way to select the model and hyperparameters is on a development set.
+Feature Selection and Feature Engineering CIML p. 55-62
+Regularization
+Early-stopping
+L2 regularization
+L1 regularization
+Pruning (for decision trees)
+Evaluation
+Accuracy
+Precision, Recall, F1: Macro vs Micro averaging
+*Area Under the Curve (AUC) Blog
+Tests of Significance CIML p. 67-69
+Data Resampling Methods
+k-fold Cross Validation Be careful using this method on NLP datasets! Due to the non-IID nature of NLP datasets, it is generally not recommended to use k-fold cross validation (can over-estimate performance).  Better to use a thoughtfully-chosen train/dev/test split.
+*Bootstrap Resampling
+Jacknife
+Debugging ML CIML p. 69-71 Blog
+Deep Learning
+NN Architectures
+Feedforward NNs
+Convolutional NNs (CNNs) Blog1 Blog2 DLBook Video
+Recurrent NNs (RNNs) Blog1 Blog2 Blog3 Blog4 (covers RNNs, LSTMs, Attention, Transformers DLBook
+*Attention Blog1 Blog2 Blog3 NMT p. 48-52 Attention
+*Transformers Blog1 Blog2 Blog3 Paper (hard) Annotated Transformer (perhaps easier)
+Training Methods Video
+Generative Adversarial Networks (GANs)
+*Reinforcement Learning
+Graphical Models
+Bayesian Networks Bishop p. 360
+Hidden Markov Models (HMMs)
+Undirected Graphical Models (MRFs and CRFs) Bishop p. 383
+Linear-chain Conditional Random Fields
+Factor Graphs Bishop p. 399
+Inference
+Variable Elimination
+Belief Propagation (Sum-Product and Max-Product Algorithms) Bishop p. 402-415
+Junction Tree Algorithm
+Loopy Belief Propagation Bishop p. 417-418
+Variational Inference
+Sampling Methods
+Combining Models
+Ensembling
+Mixture of Experts
+*Boosting
+Bayesian Model Averaging
+Bagging ISL p. 316-318
+Unsupervised Methods
+Density Estimation
+*EM Algorithm Blog MLBook p. 191-196 ESL p. 272-279 Murphy p. 348-359 Lecture Notes (covers hard and soft EM and application to HMMs) Video (EM for Gaussian Mixture Models)
+There is both soft EM (soft assignment, the usual version) and hard EM (hard assignment during E-step).  Both versions “work” in that they will both converge to a local maximum.  The hard EM version can converge faster but sometimes doesn't work as well (see here or here).
+There are also online versions of EM and other variants, see Murphy p. 365-369
+*Clustering
+K-Means Clustering Blog1 Blog2 ISL p. 386-390 Murphy p. 352-354 Video: 1 2 3
+K-Means is an instance of the hard EM algorithm, see Lecture Notes
+Hierarchical Clustering
+Agglomorative Clustering
+*Principle Component Analysis (PCA)
+Structured Prediction
+Structured Perceptron
+Structured SVM
+Conditional Random Fields (CRFs)
+Probability and Statistics Background
+Terminology
+Probability Distribution (referred to as just a “Distribution”)
+To sample from a probability distribution
+Parameters
+Random Variable
+Independent
+Independent and Identically Distributed (IID)
+Joint Distribution
+Marginal Distribution (referred to as just a Marginal).  Also to marginalize
+To compute a marginal, you marginalize (sum) over the other random variables
+Probability Distributions: Uniform, Normal, Poisson, Binomial, etc
+*Bias-Variance Decomposition Lecture, Notes This is a statistics term, used when analyzing mean squared error in regression or density estimation, for example. In machine learning, it's more properly called approximation error (≈ bias) and estimation error (≈ variance) because you can't compute the bias (E[y]) or variance E[(y - E[y])^2] for non-numeric outputs like classes in multi-class classification.  However, these terms are often applied to ML somewhat loosely.
+Density Estimation
+Histograms
+Kernel Density Estimators
+Gaussian Processes
+Theory
+Concept Learning
+Hypothesis Space
+Inductive Bias MLBook p. 39-45
+Bias-Variance Tradeoff
+VC dimension
+NP hardness of Learning
+PAC Learning Theory
+PAC-Bayesian Learning Theory
+Information Theory Murphy p. 56-61
+Entropy
+Cross-entropy
+Mutual Information
+KL-Divergence
+Software
+R
+scikit-learn
+TensorFlow
+PyTorch
+NLTK
+SpaCy
+OpenCV
+Related Pages
+Deep Learning
+ML Glossary (glossary of slightly more advanced terms)
+ml/ml_overview.txt · Last modified: 2024/11/27 21:56 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

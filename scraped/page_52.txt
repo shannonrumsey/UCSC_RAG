@@ -1,0 +1,7 @@
+Jeffrey Flanigan's software
+Publications
+Students
+Teaching
+Software
+Jeffrey Flanigan
+JAMR - Semantic parser, generator, and aligner for AMR.

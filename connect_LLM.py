@@ -60,12 +60,12 @@ def query_rag(question):
 
     return answer
 
-"""parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser()
 parser.add_argument("question", type=str, help="The question for model.")
 args = parser.parse_args()
 output = query_rag(args.question)
 
-print(output)"""
+print(output)
 
 
 

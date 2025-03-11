@@ -1,0 +1,90 @@
+ml:fine-tuning [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • fine-tuning
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+ml:fine-tuning
+Table of Contents
+Fine-Tuning
+Overviews
+General Papers
+Parameter-Efficient Tuning (PET)
+Related Pages
+Fine-Tuning
+This page lists fine-tuning methods such as Adaptors, LoRA, BitFit, NoisyTune, etc.
+Overviews
+Mosbach et al 2020 - On the Stability of Fine-tuning BERT: Misconceptions, Explanations, and Strong Baselines Gives a good baseline setting of hyperpameters for tuning BERT in section 6: fine-tune using ADAM with bias correction and a learning rate of 2e−5 for 20 epochs, with learning rate linearly increased for the first 10% of steps and linearly decayed to zero afterward.
+Ding et al 2022 - Delta Tuning: A Comprehensive Study of Parameter Efficient Methods for Pre-trained Language Models
+He et al 2022 - Towards a Unified View of Parameter-Efficient Transfer Learning
+Liu et al 2022 - Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning
+Lv et al 2023 - Full Parameter Fine-tuning for Large Language Models with Limited Resources
+Han et al 2024 - Parameter-Efficient Fine-Tuning for Large Models: A Comprehensive Survey
+2024 - The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs: An Exhaustive Review of Technologies, Research, Best Practices, Applied Research Challenges and Opportunities Missing lots of stuff.  Not really the ultimate guide.
+Szep et al 2024 - A Practical Guide to Fine-tuning Language Models with Limited Data
+Blog Posts, etc
+Microsoft - Recommendations for LLM fine-tuning
+Acorn - Fine-Tuning LLMs: Top 6 Methods, Challenges and Best Practices
+OpenPipe - Fine-tuning Best Practices Chapter 2: Models
+Figure from Mahabadi 2021.
+General Papers
+See also Optimization - Instability of Fine-tuning.
+Lee et al 2019 - Mixout: Effective Regularization to Finetune Large-scale Pretrained Language Models
+Dodge et al 2020 - Fine-Tuning Pretrained Language Models: Weight Initializations, Data Orders, and Early Stopping The results can largely be mitigated by training for more epochs, see Mosbach 2020
+Zhou et al 2020 - IsoBN: Fine-Tuning BERT with Isotropic Batch Normalization
+Mosbach et al 2020 - On the Stability of Fine-tuning BERT: Misconceptions, Explanations, and Strong Baselines Advocates a simple baseline in section 6: fine-tune using ADAM with bias correction and a learning rate of 2e−5 for 20 epochs, with learning rate linearly increased for the first 10% of steps and linearly decayed to zero afterward.
+Zhang et al 2020 - Revisiting Few-sample BERT Fine-tuning
+Gradual Fine-Tuning: Xu et al 2021 - Gradual Fine-Tuning for Low-Resource Domain Adaptation
+Zhou & Srikumar 2021 - A Closer Look at How Fine-tuning Changes BERT
+Xu et al 2021 - Raise a Child in Large Language Model: Towards Effective and Generalizable Fine-tuning Applies masking to only fine-tune a subset of the weights. Shows it outperforms regular fine-tuning.
+Wu et al 2022 - NoisyTune: A Little Noise Can Help You Finetune Pretrained Language Models Better Shows that adding some noise to the parameters (small perturbation) before fine-tuning can improve results.
+Malladi et al 2023 - Fine-Tuning Language Models with Just Forward Passes
+Qiu et al 2023 - Unlocking Emergent Modularity in Large Language Models
+Li et al 2024 - Gradient-Mask Tuning Elevates the Upper Limits of LLM Performance
+Removing the Causal Mask In Decoder-Only Models
+2024 - Looking Right is Sometimes Right: Investigating the Capabilities of Decoder-only LLMs for Sequence Labeling Says “LLMs fall short of achieving state-of-the-art results in information extraction (IE) tasks, many of which are formulated as sequence labeling (SL)”
+LLM2Vec: Large Language Models Are Secretly Powerful Text Encoders Shows that Mistral was probably pre-trained using some bi-directional attention.
+Parameter-Efficient Tuning (PET)
+See also Memory Reduction Techniques.
+Adaptor Layers: Houlsby et al 2019 - Parameter-Efficient Transfer Learning for NLP
+PyTorch code examples: PyTorch Adaptor Transformers Colab notebook tutorials Training an Adapter for a Transformer model
+P-tuning: Liu 2021 - GPT Understands, Too
+Mahabadi et al 2021 - Parameter-efficient Multi-task Fine-tuning for Transformers via Shared Hypernetworks
+Mahabadi et al 2021 - COMPACTER: Efficient Low-Rank Hypercomplex Adapter Layers
+LoRA: Hu et al 2021 - LoRA: Low-Rank Adaptation of Large Language Models
+Ben-Zaken et al 2021 - BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models
+MAM-Adaptor: He et al 2022 - Towards a Unified View of Parameter-Efficient Transfer Learning
+Chen et al 2022 - Revisiting Parameter-Efficient Tuning: Are We Really There Yet?
+T-Few: Liu et al 2022 - Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning
+QLoRA: Dettmers et al 2023 - QLORA: Efficient Finetuning of Quantized LLMs
+Malladi et al 2023 - Fine-Tuning Language Models with Just Forward Passes
+Zhao et al 2024 - GaLore: Memory-Efficient LLM Training by Gradient Low-Rank Projection Can also be used for pre-training
+Related Pages
+Domain Adaptation
+Pretraining
+Prompting
+Prompt-Tuning, Soft-Prompting, etc
+NN Training
+ml/fine-tuning.txt · Last modified: 2025/03/07 10:52 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

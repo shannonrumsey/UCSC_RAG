@@ -1,0 +1,80 @@
+ml:nn_tricks [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • nn_tricks
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+ml:nn_tricks
+Table of Contents
+Neural Network Tricks
+Overviews
+Older NN Tricks
+Related Pages
+Neural Network Tricks
+Overviews
+NLP 202 lecture: Training Deep Neural Networks (Winter 2022)
+Training Tricks (see NN Training)
+Initialization
+Normalization
+Learning Rate Schedule
+Gradient clipping Pascanu et al 2012
+Scheduled Sampling
+Curriculum Learning
+Overcoming Catastrophic Forgetting
+Adjust the batch size, or use gradient accumulation (see this blog, for example) to simulate larger batch sizes
+Try a different optimizer, such as RAdam
+Adjust epsilon in Adam
+Fine-tuning Specific Tricks
+NoisyTune: A Little Noise Can Help You Finetune Pretrained Language Models Better : Before fine-tuning, adding a very small amount of uniform noise to each weight matrix can help performance (noise scaled by variance of the weight)
+Regularization Tricks (see Regularization)
+Dropout
+Ensembling
+Knowledge Distillation (can improve performance by some type of regularization)
+Label Smoothing
+Data Processing Tricks (see Data Preparation)
+Subword Units (BPE, wordpiece, subword regularization, BPE dropout.  Shared source and target vocabulary for subword units.)
+Shared source and target embeddings
+Architecture Tricks (see NN Architectures)
+Residual connections
+ReZero
+Weight sharing
+Attention
+Copy mechanism
+Seq2Seq and Generation Tricks
+Try a different decoding method
+Nucleus sampling
+Uniform information density decoding
+Reinforcement Learning Tricks
+Efficiency Tricks
+GPU Deep Learning
+Gradient Checkpointing or forward gradient
+Model Compression
+Tricks for Edge Computing
+Knowledge Distillation
+Older NN Tricks
+Nowlan & Hinton 1992 - Soft weight sharing
+Related Pages
+NN Training
+ml/nn_tricks.txt · Last modified: 2023/10/11 22:19 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

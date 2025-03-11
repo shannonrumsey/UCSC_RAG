@@ -1,0 +1,202 @@
+nlp:abstract_meaning_representation [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • abstract_meaning_representation
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+nlp:abstract_meaning_representation
+Table of Contents
+Abstract Meaning Representation
+Introductions and Overviews
+Papers
+Parsing
+Generation
+Applications
+AMR Extensions
+Evaluation
+Software
+Multi-sentence AMR
+Guesture, Situated, and Visual AMRs
+Software and Resources
+People
+Related Pages
+Abstract Meaning Representation
+Introductions and Overviews
+Introduction The best introduction to AMR.
+AMR website
+Banarescu et al 2013 - Abstract Meaning Representation for Sembanking
+AMR Annotation
+AMR Dict List of linguistic phenomena and how to handle them in AMR
+AMR Bibliography
+Generation
+Hao et al 2022 - A Survey : Neural Networks for AMR-to-Text
+Papers
+See an updated list of AMR papers here: AMR Bibliography
+Parsing
+See also Semantic Parsing and Google Scholar - AMR Parsing.
+Graph-based
+Flanigan et al 2014 - A Discriminative Graph-Based Parser for the Abstract Meaning Representation
+Lyu & Titov 2018 - AMR Parsing as Graph Prediction with Latent Alignment
+Zhou et al 2020 - AMR Parsing with Latent Structural Information
+Bai et al 2022 - Graph Pre-training for AMR Parsing and Generation
+Transition-based
+Wang et al 2015 - A Transition-based Algorithm for AMR Parsing
+Peng et al 2017 - Addressing the Data Sparsity Issue in Neural AMR Parsing
+Ballesteros & Al-Onaizan 2017 - AMR Parsing using Stack-LSTMs
+Naseem et al 2019 - Rewarding Smatch: Transition-Based AMR Parsing with Reinforcement Learning
+Cai & Lam 2020 - AMR Parsing via Graph Sequence Iterative Inference  I would classify this approach as a transition-based algorithm that incrementally builds the graph
+Astudillo et al 2020 - Transition-based Parsing with Stack-Transformers
+Zhou et al 2021 - AMR Parsing with Action-Pointer Transformer
+Drozdov et al 2022 - Inducing and Using Alignments for Transition-based AMR Parsing
+Grammar-based
+Artzi et al 2015 - Broad-coverage CCG Semantic Parsing with AMR
+Gildea et al 2019 - Ordered Tree Decomposition for HRG Rule Extraction
+Seq2seq
+Konstas et al 2017 - Neural AMR: Sequence-to-Sequence Models for Parsing and Generation
+Ge et al 2019 - Modeling Source Syntax and Semantics for Neural AMR Parsing
+Xu et al 2020 - Improving AMR Parsing with Sequence-to-Sequence Pre-training
+AMRBART: Bai et al 2022 - Graph Pre-training for AMR Parsing and Generation (SOTA as of March 2023)
+BiBL: Cheng et al 2023 - BiBL: AMR Parsing and Generation with Bidirectional Bayesian Learning
+Prompted LLMs
+Lee et al 2023 - AMR Parsing with Instruction Fine-tuned Pre-trained Language Models
+Other methods
+Zhou et al 2016 - AMR Parsing with an Incremental Joint Model Has a joint model for concept and relation identification. Compares to the same feature set as JAMR.
+Cai & Lam 2019 - Core Semantic First: A Top-down Approach for AMR Parsing
+Zhang et al 2019 - Broad-Coverage Semantic Parsing as Transduction
+Lindemann et al 2020 - Fast semantic parsing with well-typedness guarantees
+Domain Adaptation
+Bai et al 2022 - Cross-domain Generalization for AMR Parsing
+Generation
+See also Generation
+Wang et al 2020 - AMR-To-Text Generation with Graph Transformer
+Hoyle et al 2020 - Promoting Graph Awareness in Linearized Graph-to-Text Generation
+Applications
+Machine Translation
+Song et al 2019 - Semantic Neural Machine Translation using AMR
+Nguyen et al 2020 - Integrating AMR to Neural Machine Translation using Graph Attention Networks
+Nguyen et al 2021 - Improving Neural Machine Translation with AMR Semantic Graphs
+Li & Flanigan 2022 - Improving Neural Machine Translation with the Abstract Meaning Representation by Combining Graph and Sequence Transformers
+Wein & Schneider 2023 - Lost in Translationese? Reducing Translation Effect Using Abstract Meaning Representation
+Summarization
+Liu et al 2015 - Toward Abstractive Summarization Using Semantic Representations
+Liao et al 2018 - Abstract Meaning Representation for Multi-Document Summarization
+Kouris et al 2022 - Text Summarization Based on Semantic Graphs: An Abstract Meaning Representation Graph-to-Text Deep Learning Approach
+Ribeiro et al 2022 - FactGraph: Evaluating Factuality in Summarization with Semantic Graph Representations
+(See also Fei Liu's Publications)
+Qiu et al 2024 - AMRFact: Enhancing Summarization Factuality Evaluation with AMR-Driven Negative Samples Generation
+Applications to (or with) LLMs
+Jiang et al 2024 - Don’t Forget to Connect! Improving RAG with Graph-based Reranking
+Question Answering
+Mitra & Baral 2016-  Addressing a Question Answering Challenge by Combining Statistical Methods with Inductive Rule Learning and Reasoning
+Lim et al 2020 - I Know What You Asked: Graph Path Learning using AMR for Commonsense Reasoning
+Kapanipathi et al 2021 - Leveraging Abstract Meaning Representation for Knowledge Base Question Answering
+Xu et al 2021 - Exploiting Reasoning Chains for Multi-hop Science Question Answering
+Xu et al 2021 - Dynamic Semantic Graph Construction and Reasoning for Explainable Multi-hop Science Question Answering
+Deng et al 2022 - Interpretable AMR-Based Question Decomposition for Multi-hop Question Answering
+Wang et al 2023 - Exploiting Abstract Meaning Representation for Open-Domain Question Answering
+Classification
+Ma et al 2023 - AMR-based Path Aggregation Graph Network for Aspect-based Sentiment Analysis At ACL 2023
+Information Extraction
+Pan et al 2015 - Unsupervised Entity Linking with Abstract Meaning Representation
+Garg et al 2015 - Extracting Biomolecular Interactions Using Semantic Parsing of Biomedical Text
+Rao et al 2017 - Biomedical Event Extraction using Abstract Meaning Representation
+Dialog
+Bonial et al 2020 - Dialogue-AMR: Abstract Meaning Representation for Dialogue
+Bai et al 2021 - Semantic Representation for Dialogue Modeling
+Prompting and LLMs
+Jin et al 2024 - Analyzing the Role of Semantic Representations in the Era of Large Language Models Uses AMR in a CoT-style prompt
+Fact-Checking
+Ribeiro et al 2022 - FactGraph: Evaluating Factuality in Summarization with Semantic Graph Representations
+Style-Transfer
+Jangra et al 2022 - T-STAR: Truthful Style Transfer using AMR Graph as Intermediate Representation
+Data Augmentation
+Shou et al 2022 - AMR-DA: Data Augmentation by Abstract Meaning Representation Augments the data by parsing with AMR parser, manipulating the graph, and generating a new sentence.  They used it for textual similarity task.
+Embodied or Vision and Language
+Choi et al 2022 - Scene Graph Parsing via Abstract Meaning Representation in Pre-trained Language Models Not really vision related. Uses AMR to help with caption to scene-graph parsing
+Pre-training and Embedding Representations
+Opitz & Frank 2022 - SBERT studies Meaning Representations: Decomposing Sentence Embeddings into Explainable Semantic Features
+AMR Extensions
+Other languages than English
+Chinese & Czech: Xue et al 2014 - Not an Interlingua, but Close: Comparison of English AMRs to Chinese and Czech
+Chinese: Li et al 2016 - Annotating the Little Prince with Chinese AMRs
+Vigus 2020 - Cross-Lingual Annotation: A Road Map for Low- and No-Resource Languages
+Multi-sentence AMR
+Time and Temporal Information
+Donatelli et al 2018 - Annotation of Tense and Aspect Semantics for Sentential AMR
+Bos 2020 - Separating Argument Structure from Logical Structure in AMR
+Quantifier Scoping and Inference
+Williamson et al 2021 - Intensionalizing Abstract Meaning Representations: Non-Veridicality and Scope
+UMR
+Pustejovsky et al 2019 - Modeling Quantification and Scope in Abstract Meaning Representations
+Van Gysel et al 2021 - Designing a Uniform Meaning Representation for Natural Language Processing (pdf)
+UMR Guidelines
+Interlingual extensions
+BabelNet Meaning Representation (BMR): Lorenzo et al 2022 - Fully-Semantic Parsing and Generation: the BabelNet Meaning Representation
+Bonn et al 2020 - Spatial AMR: Expanded Spatial Annotation in the Context of a Grounded Minecraft Corpus
+Dialog
+Bonial et al 2020 - Dialogue-AMR: Abstract Meaning Representation for Dialogue
+Bonial et al 2021 - Builder, we have done it: Evaluating & Extending Dialogue-AMR NLU Pipeline for Two Collaborative Domains
+Lai et al 2020 - A Continuation Semantics for Abstract Meaning Representation
+Ji et al 2022 - Automatic Enrichment of Abstract Meaning Representations
+Evaluation
+Parsing
+Song & Gildea 2019 - SemBleu: A Robust Metric for AMR Parsing Evaluation (github)
+Generation
+Opitz & Frank 2020 - Towards a Decomposable Metric for Explainable Evaluation of Text Generation from AMR
+Software
+Parsers
+This one works well: Cai & Lam 2020 - AMR Parsing via Graph Sequence Iterative Inference Rongwen has been using it. Ask him if you want help running it.
+Libraries for reading AMR graphs
+Penman — a Python library for PENMAN graph notation docs
+Alignment
+Pourdamghani et al 2015 - Aligning English Strings with Abstract Meaning Representation Graphs software or this software This is the aligner that was used to produce the alignments in the AMR LDC data.
+Saphra & Lopez 2015 - AMRICA: an AMR Inspector for Cross-language Alignments
+Multi-sentence AMR
+Related: Coreference Resolution, Implicit Roles
+O’Gorman et al 2018 - AMR Beyond the Sentence: the Multi-sentence AMR corpus (this data is released in AMR 3.0 LDC2020T02)
+Multisentence AMR Guidelines
+Related work: Ebner et al 2019 - Multi-Sentence Argument Linking
+Anikina et al 2020 - Predicting Coreference in Abstract Meaning Representations
+Fu et al 2021 - End-to-End AMR Coreference Resolution First paper to do document coreferenece for AMRs (not full multi-document AMRs because missing implicit roles). The input is AMR, doesn't actually use the text (github)
+Naseem et al 2022 - DOCAMR: Multi-Sentence AMR Representation and Evaluation
+Guesture, Situated, and Visual AMRs
+Annotation Schemes
+Brutti et al 2022 - Abstract Meaning Representation for Gesture
+Donatelli et al 2022 - Towards Situated AMR: Creating a Corpus of Gesture AMR
+Parsers
+Choi et al 2022 - Scene Graph Parsing via Abstract Meaning Representation in Pre-trained Language Models
+Abdelsalam et al 2022 - Visual Semantic Parsing: From Images to Abstract Meaning Representation
+Software and Resources
+IBM AMR Parser
+People
+Martha Palmer
+James Pustejovsky
+Linfeng Song
+Nianwen Xue
+Related Pages
+AMR Annotation
+Graph Neural Networks
+Semantic Representations
+nlp/abstract_meaning_representation.txt · Last modified: 2024/08/25 23:45 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

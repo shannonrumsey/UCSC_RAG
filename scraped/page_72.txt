@@ -1,0 +1,179 @@
+nlp:pretraining [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • pretraining
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+nlp:pretraining
+Table of Contents
+Pretraining
+Overviews
+Key and Early Papers
+Contextualized Pretrained Models
+Table of Large Models
+Fine-Tuning Methods
+Other Papers
+Complex Pre-training Methods
+Taxonomy of Pretraining Methods
+Properties of Pretrained Models
+Pretraining Methodology
+Amount, Selection and Cleaning of Pretraining Data
+Pretraining On An Academic Budget
+Software
+Related Pages
+Pretraining
+Overviews
+Liu et al 2020 - A Survey on Contextual Embeddings
+Qiu et al 2020 - Pre-trained Models for Natural Language Processing: A Survey Nice tables of pretraining methods on page 9 and 10, see Taxonomy of Pretraining Methods below.
+Zhao et al 2023 - A Survey of Large Language Models
+Key and Early Papers
+For a history, see section 2.4 of Qiu 2020 or the related work in the GPT-2 paper.
+Dai et al 2015 - Semi-supervised Sequence Learning
+Ramachandran et al 2017 - Unsupervised Pretraining for Sequence to Sequence Learning
+Peters et al 2018 - Deep Contextualized Word Representations
+Devlin et al 2018 - BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
+Gururangan et al 2020 - Don’t Stop Pretraining: Adapt Language Models to Domains and Tasks
+Zhang et al 2020 - When Do You Need Billions of Words of Pretraining Data?
+Krishna et al 2022 - Downstream Datasets Make Surprisingly Good Pretraining Corpora
+Renduchintala et al 2023 - INGENIOUS: Using Informative Data Subsets for Efficient Pre-Training of Language Models
+Wang et al 2023 - Farewell to Aimless Large-scale Pretraining: Influential Subset Selection for Language Model
+Contextualized Pretrained Models
+Papers sorted chronologically.  For a large list of pre-trained models, see here.
+CoVe: McCann et al 2017 - Learned in Translation: Contextualized Word Vectors
+ELMO: Peters et al 2018 - Deep Contextualized Word Representations
+GPT: Radford et al 2018 - Improving Language Understanding by Generative Pre-Training
+BERT: Devlin et al 2018 - BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding original github
+XLM: Lample et al 2019 - Cross-lingual Language Model Pretraining
+GPT-2: Radford et al 2019 - Language Models are Unsupervised Multitask Learners original github Annotated GPT-2 Illustrated GPT-2 Interestingly, GPT-2 does not include a bias term in the final linear layer for the vocab, see here and here.
+MASS: Song et al 2019 - MASS: Masked Sequence to Sequence Pre-training for Language Generation
+XLNet: Yang et al 2019 - XLNet: Generalized Autoregressive Pretraining for Language Understanding
+RoBERTa: Liu et al 2019 - RoBERTa: A Robustly Optimized BERT Pretraining Approach
+CTRL: Keskar et al 2019 - CTRL: A Conditional Transformer Language Model for Controllable Generation
+ALBERT: Lan et al 2019 - ALBERT: A Lite BERT for Self-supervised Learning of Language Representations
+T5: Raffel et al 2019 - Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer
+BART: Lewis et al 2020 - BART: Denoising Sequence-to-Sequence Pre-training for NaturalLanguage Generation, Translation, and Comprehension
+XLM-R: Conneau et al 2019 - Unsupervised Cross-lingual Representation Learning at Scale
+ELECTRA: Clark et al 2020 - ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators
+Longformer: Beltagy et al 2020 - Longformer: The Long-Document Transformer
+MPNet: Song et al 2020 - MPNet: Masked and Permuted Pre-training for Language Understanding
+GPT-3: Brown et al 2020 - Language Models are Few-Shot Learners
+DeBERTa: He et al 2020 - DeBERTa: Decoding-enhanced BERT with Disentangled Attention “Improves the BERT and RoBERTa models using two novel techniques.”
+MARGE: Lewis 2020 - Pre-training via Paraphrasing
+BigBird: Zaheer et al 2020 - Big Bird: Transformers for Longer Sequences
+ConvBERT: Jiang et al 2020 - ConvBERT: Improving BERT with Span-based Dynamic Convolution
+Switch Transformer: Fedus et al 2021 - Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity
+Muppet: Aghajanyan et al 2021 - Muppet: Massive Multi-task Representations with Pre-Finetuning
+Tay et al 2021 - Are Pre-trained Convolutions Better than Pre-trained Transformers?
+XLM-E: Chi et al 2022 - LM-E: Cross-lingual Language Model Pre-training via ELECTRA
+InstructGPT: Ouyang et al 2022 - Training Language Models to Follow Instructions with Human Feedback
+Table of Large Models
+List of popular models in chronological order.  See also the list of Large Language Models.
+Model  Year  Type  Parameters  Training Data  Objective  Public?  Notes  Link
+BERT  2018  Dec
+T5  2019  Enc-Dec 11B  C4   Yes   github
+BART   Enc-Dec
+
+Fine-Tuning Methods
+Moved to Fine-Tuning.
+Other Papers
+Bommasani et al 2021 - On the Opportunities and Risks of
+Foundation Models Talks about the benefits and potential issues with pretrained models.
+Wu et al 2022 - Insights into Pre-training via Simpler Synthetic Tasks
+Complex Pre-training Methods
+Pagnoni et 2022 -  Socratic Pretraining: Question-Driven Pretraining for Controllable Summarization - Pre-training on generated questions
+Taxonomy of Pretraining Methods
+
+Figure from Qiu 2020.
+
+Figure from Liu 2020.
+
+Figure from Qiu 2020.
+
+Figure from Liu 2020.  Key:
+LM: language modeling
+MLM: masked language modeling
+NSP: next sentence prediction
+SOP: sentence order prediction
+Discriminator (o/r): predict for each word if it was replaced (r ) or not (o, original)
+seq2seq LM: given a prefix of words in a sequence, predict the rest of the sequence
+Span Mask: predict masked words, where the masked words are contiguous (a span)
+Text Infilling: Spans of words are replaced with a single mask token. Must predict all the words in the masked span.
+Sent shuffling: Unshuffle a shuffled sentence
+TLM: (Translation Language Modeling)  Tokens in both source and target sequences are masked for learning cross-lingual association.
+Properties of Pretrained Models
+Tu et al 2020 - An Empirical Study on Robustness to Spurious Correlations using Pre-trained Language Models
+Pretraining Methodology
+See also scaling laws.
+Blog posts:
+Yi Tay - Training great LLMs entirely from ground up in the wilderness as a startup
+Papers
+Komatsuzaki 2019 - One Epoch Is All You Need
+Izsak et al 2021 - How to Train BERT with an Academic Budget
+Zhao et al 2024 - GaLore: Memory-Efficient LLM Training by Gradient Low-Rank Projection Like LoRA, but can be used for pre-training as well.  They pretrain a 7B model from scratch on an RTX 4090.
+Zheng et al 2023 - GPT-Fathom: Benchmarking Large Language Models to Decipher the Evolutionary Path towards GPT-4 and Beyond
+System Descriptions
+The following papers contain very useful descriptions of LLM pretraining methods and issues
+Zhang et al 2022 - OPT: Open Pre-trained Transformer Language Models Discusses loss spikes, etc.
+Kaddour 2023 - The MiniPile Challenge for Data-Efficient Language Models
+OpenAI 2023 - GPT-4 Technical Report
+Google 2023 - PaLM 2 Technical Report Talks about scaling laws, etc
+2024 - Orion-14B: Open-source Multilingual Large Language Models
+Groeneveld et al 2024 - OLMo: Accelerating the Science of Language Models
+Llama Team 2024 - The Llama 3 Herd of Models
+2024 - DeepSeek-V3 Technical Report
+Amount, Selection and Cleaning of Pretraining Data
+Overviews
+Longpre et al 2023 - A Pretrainer's Guide to Training Data: Measuring the Effects of Data Age, Domain Coverage, Quality, & Toxicity
+Amount
+Zhang et al 2020 - When Do You Need Billions of Words of Pretraining Data?
+2021 - How much pretraining data do language models need to learn syntax?
+Selection
+Krishna et al 2022 - Downstream Datasets Make Surprisingly Good Pretraining Corpora
+Xie et al 2023 - Data Selection for Language Models via Importance Resampling The advantage of this method is it is very fast: data selection from the Pile can be done in 4 hours on a single computer.
+Wang et al 2023 - Farewell to Aimless Large-scale Pretraining: Influential Subset Selection for Language Model
+Xie et a 2023 - DoReMi: Optimizing Data Mixtures Speeds Up Language Model Pretraining
+Ye et al 2024 - Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance
+Goyal et al 2024 - Scaling Laws for Data Filtering: Data Curation cannot be Compute Agnostic
+Pretraining On An Academic Budget
+Papers or projects where people have pretrained LLMs with academic compute budgets.
+Izsak et al 2021 - How to Train BERT with an Academic Budget
+Geiping & Goldstein 2022 - Training a Language Model on a Single GPU in One Day
+Kaddour 2023 - The MiniPile Challenge for Data-Efficient Language Models
+nanoT5
+nanoGPT Reproduces GPT-2 (124M) on OpenWebText, running on a single 8XA100 40GB node in about 4 days of training.
+Zhao et al 2024 - GaLore: Memory-Efficient LLM Training by Gradient Low-Rank Projection Like LoRA, but can be used for pre-training as well.  They pretrain a 7B model from scratch on an RTX 4090.
+Software
+GPT Neo An open-source implementation of model & data parallel GPT3-like models using the mesh-tensorflow library.
+Huggingface Transformers library has a large number of pre-trained models.  You can see a list in the github repo here
+Related Pages
+BERT and friends
+Catastrophic Forgetting
+Fine-Tuning
+Language Model
+Multimodal Pretraining
+Prompting
+Semi-supervised Learning
+Word Embeddings
+nlp/pretraining.txt · Last modified: 2025/03/07 11:53 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

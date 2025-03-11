@@ -1,0 +1,182 @@
+nlp:prompting [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • prompting
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+nlp:prompting
+Table of Contents
+Prompting and In-Context Learning
+Overviews
+Prompting Language Models
+Zero-shot
+Few-shot aka In-Context Learning
+Soft-Prompting, etc
+Prompt Design / Prompt Engineering
+Calibration and Scoring
+Data-Augmentation Prompting
+Chain of Thought Prompting
+Cross-lingual Prompting
+Miscellaneous Promping Papers
+Chained or Tool-based Prompting
+Prompt Compression
+Retrieval-Based Methods (Retrieval-Augmented)
+Data Contamination Issues
+Comparision to Fine-Tuning
+Analysis of In-Context-Learning
+Datasets
+Software
+Talks and Lectures
+People
+Related Pages
+Prompting and In-Context Learning
+Overviews
+Liu et al 2021 - Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing
+Dong et al 2022 - A Survey on In-context Learning
+Qiao et al 2022 - Reasoning with Language Model Prompting: A Survey
+Tutorials, Courses and Slides
+Slides
+UMass Amherst: Prompt-based learning
+Stanford: Prompting, Instruction Finetuning, and RLHF
+Blog: Lil'log Prompt Engineering
+Github: BREX's Prompt Engineering Guide
+Github: DAIR AI's Prompt Engineering Guide
+Course: learnprompting.org
+Prompting Language Models
+Zero-shot
+Radford et al 2019 - Language Models Are Unsupervised Multitask Learners GPT-2
+Wei et al 2021 - Finetuned Language Models Are Zero-Shot Learners
+Lyu et al 2022 - Z-ICL: Zero-Shot In-Context Learning with Pseudo-Demonstrations
+Few-shot aka In-Context Learning
+Schick & Schütze 2020 - It's Not Just Size That Matters: Small Language Models Are Also Few-Shot Learners
+Schick & Schütze 2021 - Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference Introduces PET, pre-dates GTP-3
+Brown et al 2021 - Language Models are Few-Shot Learners GPT-3
+Gao et al 2021 - Making Pre-trained Language Models Better Few-shot Learners
+Schick & Schütze 2020 - Few-Shot Text Generation with Natural Language Instructions GenPET, prompting for natural language generation
+Soft-Prompting, etc
+See Soft-prompting overview on p.3 of Zhao & Schütze 2021
+Shin et al 2020 - AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts
+Prefix-Tuning (aka P-Tuning): Liu et al 2021 - GPT understands, too Zhao 2021 finds this method to be the best.
+Qin & Eisner 2021 - Learning How to Ask: Querying LMs with Mixtures of Soft Prompts
+Prompt Tuning: Lester et al 2021 - The Power of Scale for Parameter-Efficient Prompt Tuning Can be seen as a “simplification of the recently proposed “prefix tuning” of Li and Liang (2021)”
+Zhao & Schütze 2021 - Discrete and Soft Prompting for Multilingual Models They find that soft prompting with an LSTM like  Liu et al 2021 is best, both for English and cross-lingually.
+Liu et al 2021 - P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks
+Su et al 2021 - On Transferability of Prompt Tuning for Natural Language Processing
+Khashabi et al 2021 - Prompt Waywardness: The Curious Case of Discretized Interpretation of Continuous Prompts
+Tang et al 2022 - Context-Tuning: Learning Contextualized Prompts for Natural Language Generation
+Vu et al 2022 - SPoT: Better Frozen Model Adaptation through Soft Prompt Transfer - Multi-task, uses a library of learned soft prompts
+Prompt tuning can be slower than fine-tuning.  See the figure below.
+Figure from Su et al 2022.  See also figures 6-8 from Ding et al 2022.
+Prompt Design / Prompt Engineering
+See Prompt Engineering.
+Calibration and Scoring
+Holtzman et al 2021 - Surface Form Competition: Why the Highest Probability Answer Isn’t Always Right
+Zhou et al 2023 - Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering
+Data-Augmentation Prompting
+Wang et al 2022 - PromDA: Prompt-based Data Augmentation for Low-Resource NLU Tasks
+Chain of Thought Prompting
+See also Reasoning Chains.
+Overviews
+Chu et al 2023 - A Survey of Chain of Thought Reasoning: Advances, Frontiers and Future
+Besta et al 2024 - Topologies of Reasoning: Demystifying Chains, Trees, and Graphs of Thoughts
+Wei et al 2022 - Chain of Thought Prompting Elicits Reasoning in Large Language Models Introduced chain of thought prompting
+Kojima et al 2022 - Large Language Models are Zero-Shot Reasoners Introduced the prompt “Let's think step by step.”
+Wang et al 2022 - Self-Consistency Improves Chain of Thought Reasoning in Language Models Sample multiple chain of thought reasonings, and take the majority vote for the answer
+Wang et al 2022 - Iteratively Prompt Pre-trained Language Models for Chain of Thought
+Zelikman et al 2023 - STaR: Self-Taught Reasoner Bootstrapping Reasoning With Reasoning
+Dohan et al 2022 - Language Model Cascades
+Madaan & Yazdanbakhsh et al 2022 - Text and Patterns: For Effective Chain of Thought, It Takes Two to Tango
+Saparov & He 2022 - Language Models Are Greedy Reasoners: A Systematic Formal Analysis of Chain-of-Thought
+Yao et al 2022 - ReAct: Synergizing Reasoning and Acting in Language Models - The basis of LangChain
+Wang et 2023 - Plan-and-Solve Prompting: Improving Zero-Shot Chain-of-Thought Reasoning by Large Language Models
+Tree of Thought and Tree Search
+Yao et al 2023 - Tree of Thoughts: Deliberate Problem Solving with Large Language Models
+Long 2023 - Large Language Model Guided Tree-of-Thought
+Feng et al 2023 - Alphazero-like Tree-Search can Guide Large Language Model Decoding and Training
+Chi et al 2024 - THOUGHTSCULPT: Reasoning with Intermediate Revision and Search
+Li et al 2023 - Symbolic Chain-of-Thought Distillation: Small Models Can Also “Think” Step-by-Step
+Wang & Zhao 2023 - Metacognitive Prompting Improves Understanding
+in Large Language Models
+Yasunaga et al 2023 - Large Language Models as Analogical Reasoners Adds to the prompt “# Instruction: ## Recall relevant exemplars: ## Solve the initial problem:”, which helps more than “Let's think step by step.”
+Wang & Zhou et al 2024 - Chain-of-Thought Reasoning Without Prompting
+Chen et al 2024 - Masked Thought: Simply Masking Partial Reasoning Steps Can Improve Mathematical Reasoning Learning of Language Models Masks the CoT to get better results
+Cross-lingual Prompting
+Zhao & Schütze 2021 - Discrete and Soft Prompting for Multilingual Models
+Miscellaneous Promping Papers
+Scao & Rush 2021 - How Many Data Points is a Prompt Worth? Prompts are very helpful in small data regimes, and are worth 100's of datapoints.
+Khashabi et al 2021 - Prompt Waywardness: The Curious Case of Discretized Interpretation of Continuous Prompts. See also Webson & Pavlick 2021
+Chained or Tool-based Prompting
+For an overview see Tool Learning Papers
+Overviews
+Qin et al 2023 - Tool Learning with Foundation Models
+Yao et al 2022 - ReAct: Synergizing Reasoning and Acting in Language Models. This kind of thing is implemented in LangChain
+Schick et al 2023 - Toolformer: Language Models Can Teach Themselves to Use Tools
+Qin et al 2023 - Tool Learning with Foundation Models
+Qin et al 2023 - ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs
+Uses RapidAPI
+Prompt Compression
+Mu et al 2024 - Learning to Compress Prompts with Gist Tokens
+Retrieval-Based Methods (Retrieval-Augmented)
+See Retrieval-Augmented Methods.
+Data Contamination Issues
+Overviews
+Ravaut et al 2024 - How Much are LLMs Contaminated? A Comprehensive Survey and the LLMSanitize Library
+Jacovi, et al 2023 - Stop Uploading Test Data in Plain Text: Practical Strategies for Mitigating Data Contamination by Evaluation Benchmarks
+Li & Flanigan 2023 - Task Contamination: Language Models May Not Be Few-Shot Anymore
+LLMSanitize: Ravaut et al 2024 - How Much are LLMs Contaminated? A Comprehensive Survey and the LLMSanitize Library
+Zhang et al 2024 - A Careful Examination of Large Language Model Performance on Grade School Arithmetic
+Drinkall et al 2024 - Time Machine GPT
+Comparision to Fine-Tuning
+Balaguer et al 2024 - RAG vs Fine-tuning: Pipelines, Tradeoffs, and a Case Study on Agriculture
+Analysis of In-Context-Learning
+Min et al 2022 - Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?
+Garg et al 2022 - What Can Transformers Learn In-Context? A Case Study of Simple Function Classes
+Akyürek et al 2022 - What learning algorithm is in-context learning? Investigations with linear models
+Hendel et al 2023 - In-Context Learning Creates Task Vectors
+Datasets
+Datasets with Prompts for Evaluating Language Models
+PromptSource: github Bach et al 2022 - PromptSource: An Integrated Development Environment and Repository for Natural Language Prompts 2,000 prompts for 170 datasets
+BIG-Bench: github Srivastava et al 2022 - Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models Growing list of user-submitted tasks.  Contains languages other than English
+SuperNatural-Instructuctions: Wang et al 2022 - SUPER-NATURALINSTRUCTIONS: Generalization via Declarative Instructions on 1600+ NLP Tasks 1,600 instructions for 76 tasks across 55 languages
+BIG-Bench-Hard
+LM-Evaluation Harness: github
+Software
+LangChain Framework for building applications with prompting (chaining prompts, etc). This paper was the basis for it: Yao et al 2022 - ReAct: Synergizing Reasoning and Acting in Language Models
+Talks and Lectures
+Invited Talk @ NAACL 2021: Humans Learn From Task Descriptions and So Should Our Models - Hinrich Schütze
+People
+Timo Schick
+Related Pages
+Instruction-Tuning
+Few-Shot Learning
+Fine-Tuning
+Language Model
+Meta-Learning
+Pretraining
+Prompt Engineering
+Retrieval-Augmented Methods
+Natural Language Task Descriptions
+Zero-Shot Learning
+nlp/prompting.txt · Last modified: 2024/08/02 03:46 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

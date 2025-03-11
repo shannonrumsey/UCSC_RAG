@@ -1,0 +1,72 @@
+main_page [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • main_page
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+main_page
+Table of Contents
+NLP Wiki
+Some Highlights
+Creating Pages
+Namespaces
+Helpful Links
+NLP Wiki
+Welcome to the NLP Wiki, maintained by Jeff Flanigan's JLab group at UCSC.
+This wiki is a work in progress - please don't share widely.
+See the Sitemap, NLP Outline, or ML Outline.
+There are two wikis: NLP Wiki and
+JLab Wiki (internal wiki for Jeff's NLP group).
+Some Highlights
+Abstract Meaning Representation
+Dialog
+Experimental Method and Reproducibility
+Fine-Tuning
+Hallucination and Factivity
+History of ML, History of NLP
+Information Extraction
+Key Papers in NLP
+Language Model
+Machine Learning Outline
+Machine Learning Overview
+Machine Translation
+Neural Network Architectures
+Neural Network Training
+Neural Network Tricks
+NLP Outline
+People
+Pretraining
+Prompting
+Prompt Engineering
+Question Answering
+Transformers
+Creating Pages
+To create a page, just visit it, and go to “Create page.”  (This will only work if you have an account and are logged in.)
+Namespaces
+You can create namespaces (basically folders) by putting “namespace:” at the beginning of the title.  The Sitemap is organized by namespaces.  Namespaces can be nested.  There are namespaces such as “nlp”, “ml”, and “papers”.  The “paper” namespace is for paper summaries.  Feel free to create your own namespace such as “username” for your own pages.
+Helpful Links
+The welcome page.
+The syntax page.
+main_page.txt · Last modified: 2023/12/07 03:39 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top

@@ -1,0 +1,199 @@
+nlp:transformers [NLP Wiki]
+skip to content
+NLP Wiki
+User Tools
+Log In
+Site Tools
+Search
+ToolsShow pagesourceOld revisionsBacklinksRecent ChangesMedia ManagerSitemapLog In>
+Recent ChangesMedia ManagerSitemap
+Trace: • transformers
+Sidebar
+Outlines
+NLP
+ML
+People
+ML Overview
+Key Papers in NLP
+Sitemap
+NLP
+ML
+Papers
+JLab Wiki
+Tools
+Welcome page
+Syntax page
+Sidebar (edit)
+nlp:transformers
+Table of Contents
+Transformers
+Overview
+Surveys
+Transformer Properties
+Analysis and Interpretation
+Transformer Variants: Overviews
+Improvements
+Mixture of Expert (MoE) Transformers
+Ablation Experiments on the Transformer
+Pruning Attention Heads
+Training
+Efficient Transformers
+Survey Papers
+Papers
+Datasets and Benchmarks
+Long-Context Transformers
+Papers
+Position Embeddings
+Software
+Related Pages
+Transformers
+Overview
+See Transformers in the ML Overview for introductory blog posts
+Original paper: Vaswani et al 2017 - Attention Is All You Need
+The Annotated Transformer
+Textbook (SLP): Ch 9.7: Transformers
+A walkthrough of transformer architecture code Contains a very good picture of the computation graph.
+Surveys
+Lin et al 2021 - A Survey of Transformers
+Transformer Properties
+Time and Space Complexity: The Transformer uses O(n^2) computation time, and O(n^2) memory (Subramanian et al 2019) due to the attention matrix.  However, the experiments in Subramanian et al 2019 (fig 2) seem to show a linear increase in memory usage with sequence length.  Presumably this is because the attention matrix does not dominate the memory footprint.
+Expressiveness and Representation Power:
+See also the group FLaNN (Formal Languages and Neural Networks).
+Hahn 2019 - Theoretical Limitations of Self-Attention in Neural Sequence Models Indicates Transformers can't even represent finite state machines
+Chiang et al 2022 - Overcoming a Theoretical Limitation of Self-Attention
+Henderson 2020 - The Unstoppable Rise of Computational Linguistics in Deep Learning Argues why the Transformer is so good at language
+Bhattamishra et al 2020 - On the Ability and Limitations of Transformers to Recognize Formal Languages
+Elhage et al 2021 - A Mathematical Framework for Transformer Circuits
+Merrill et al 2022 - Saturated Transformers are Constant-Depth Threshold Circuit
+Transformer Programs
+Weiss et al 2021 - Thinking Like Transformers
+Lindner et al 2023 - Tracr: Compiled Transformers as a Laboratory for Interpretability
+Friedman et al 2023 - Learning Transformer Programs
+Delétang et al 2022 - Neural Networks and the Chomsky Hierarchy
+Merrill et al 2022 - Transformers Can Be Translated to First-Order Logic with Majority Quantifiers
+Liu et al 2022 - Transformers Learn Shortcuts to Automata
+Analysis and Interpretation
+See also Transformer Circuits.
+Visualization of position embeddings in BERT and GPT-2 (from here)
+Ramsauer et al 2020 - Hopfield Networks is All You Need
+Geva et al 2020 - Transformer Feed-Forward Layers Are Key-Value Memories
+Langedijk et al 2023 - DecoderLens: Layerwise Interpretation of Encoder-Decoder Transformers
+For decoders/LLMs
+Feucht et al 2024 - Token Erasure as a Footprint of Implicit Vocabulary Items in LLMs Finds the implicit vocabulary in a Transformer decoder model
+Transformer Programs
+RASP: Weiss et al 2021 - Thinking like Transformers
+Lindner et al 2023 - Tracr: Compiled Transformers as a Laboratory for Interpretability
+Friedman et al 2023 - Learning Transformer Programs
+Transformer Variants: Overviews
+Blog post: Lil'Log: The Transformer Family
+Narang et al 2021 - Do Transformer Modifications Transfer Across Implementations and Applications? Experimental comparison of Transformer model variants
+Improvements
+Shaw et al 2018 - Self-Attention with Relative Position Representations
+Dai et al 2019 - Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context
+So et al 2019 - The Evolved Transformer Neural architecture search for Transformer variants
+Nguyen & Salazar 2019 - Transformers without Tears: Improving the Normalization of Self-Attention Many of these changes are default in the popular Transformer codebases
+Shazeer 2019 - Fast Transformer Decoding: One Write-Head is All You Need twitter Used in AlphaCode to speed up decoding.
+Liu et al 2020 - Very Deep Transformers for Neural Machine Translation
+Subramanian et al 2020 - Multi-scale Transformer Language Models
+Sukhbaatar et al 2019 - Adaptive Attention Span in Transformers Related to Milad's work.
+Zemlyanskiy et al 2021 - ReadTwice: Reading Very Large Documents with Memories
+Csordás et al 2021 - The Neural Data Router: Adaptive Control Flow in Transformers Improves Systematic Generalization
+Wang et al 2022 - DeepNet: Scaling Transformers to 1,000 Layers
+Dao et al 2022 - FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness
+Dao et al 2023 - Fash Decoding Speeds up flash attention for decoding. (Essentially, fixes a problem in the way decoding was implemented initially, so it's much faster. The new way is the more natural way it should have been implemented.)
+Mixture of Expert (MoE) Transformers
+Lepikhin, et al 2020 - GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding
+Zhang et al 2021 - MoEfication: Transformer Feed-forward Layers are Mixtures of Experts
+Ablation Experiments on the Transformer
+These are ablation experiments on the Transformer, such as ablating the multi-head attention, or comparing to an LSTM with multi-head attention.
+Chen et al 2018 - The Best of Both Worlds: Combining Recent Advances in Neural Machine Translation Outperforms the Transformer with a stacked BiLSTM with multi-head attention and other tricks from the Transformer.  Slightly slower per token, but converges faster.
+Domhan 2018 - How Much Attention Do You Need? A Granular Analysis of Neural Machine Translation Architectures Tries combinations of Transformer, RNN, CNN decoder and encoder layers.  Shows that “one can bring recurrent and convolutional models very close to the Transformer performance by borrowing concepts from the Transformer architecture, but not using self-attention.” In particular, they find that:
+“Source attention on lower encoder layers brings no additional benefit.”
+“Multiple source attention layers and residual feed-forward layers are key.”
+“Self-attention is more important for the source than for the target side.”
+Simple Self-Attention Network (SSAN) Ambartsoumian & Popowich 2018 - Self-Attention: A Better Building Block for Sentiment Analysis Neural Network Classifiers  Compares the transformer to a 1-layer and 2-layer single-headed transformer layer.
+RNN with attention back to previous states.  Has anyone compared this to the transformer?  I can't remember.
+2019 - Tied Transformers: Neural Machine Translation with Shared Encoder and Decoder Shared weights for encoder and decoder.  Very natural if you consider the seq2seq transformer as a conditional language model.
+Fixed (not learned) attention patterns in the encoder: Raganato et al 2020 - Fixed Encoder Self-Attention Patterns in Transformer-Based Machine Translation
+Linearizing the softmax in the attention - O(n) to compute: Katharopoulos et al 2020
+No position embeddings (NoPE): 2023 - The Impact of Positional Encoding on Length Generalization in Transformers
+Wang et al 2024 - Length Generalization of Causal Transformers without Position Encoding
+Pruning Attention Heads
+Michel et al 2019 - Are Sixteen Heads Really Better than One?
+Behnke & Heafield 2020 - Losing Heads in the Lottery: Pruning Transformer Attention in Neural Machine Translation
+Training
+Popel & Bojar 2018 - Training Tips for the Transformer Model
+Initialization issues
+Zhang et al 2019 - Improving Deep Transformer with Depth-Scaled Initialization and Merged Attention
+Liu et al 2020 - Understanding the Difficulty of Training Transformers
+Liu et al 2020 - Very Deep Transformers for Neural Machine Translation
+Optimizer issues
+Zhang et al 2019 - Why are Adaptive Methods Good for Attention Models?
+Warm-up, see Warm-up
+Normalization issues
+Nguyen & Salazar 2019 - Transformers without Tears: Improving the Normalization of Self-Attention
+RMSNorm. Improvement to layer normalization. Shown by Narang et al 2021 to work well for Transformers.
+Xiong et al 2020 - On Layer Normalization in the Transformer Architecture Says pre-norm transformers don't need warm-up and are often better
+Liu et al 2020 - Understanding the Difficulty of Training Transformers
+Shen et al 2020 - PowerNorm: Rethinking Batch Normalization in Transformers
+Wang et al 2022 - DeepNet: Scaling Transformers to 1,000 Layers
+Miscellaneous topics
+Merrill et al 2020 - Parameter Norm Growth During Training of Transformers
+Efficient Transformers
+Survey Papers
+Tay et al 2020 - Efficient Transformers: A Survey
+Tay et al 2020 - Long Range Arena: A Benchmark for Efficient Transformers
+Papers
+Guo et al 2019 - Star-Transformer
+Rae et al 2019 - Compressive Transformers for Long-Range Sequence Modelling
+Roy et al 2020 - Efficient Content-Based Sparse Attention with Routing Transformers
+Hofstätter et al 2020 - Local Self-Attention over Long Text for Efficient Document Retrieval  Sliding window local attention mechanism
+Wang et al 2020 - Linformer: Self-Attention with Linear Complexity
+Katharopoulos et al 2020 - Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention Misleading name.  This paper linearizes the softmax in the attention layers which makes it O(n) to compute
+Choromanski et al 2020 - Rethinking Attention with Performers
+Xiong et al 2021 - Nystromformer: A Nystrom-based Algorithm for Approximating Self-Attention  Similar to SVD, but approximately linearizes the softmax by selecting landmarks before the softmax.
+Fedus et al 2021 - Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity
+Peng et al 2021 - Random Feature Attention Uses random features to approximate the softmax, making it O(1).  Drop in replacement for standard attention. Experiments with the Transformer.
+Lee-Thorp et al 2021 - FNet: Mixing Tokens with Fourier Transforms
+Ma et al 2021 - Luna: Linear Unified Nested Attention
+Hourglass Transformer: Hierarchical Transformers Are More Efficient Language Models - Has three blocks of layers: ones that downsample the tokens through pooling, ones that process, and ones that upsample.
+FLASH: Hua et al 2022 - Transformer Quality in Linear Time
+Nawrot et al 2022 - Efficient Transformers with Dynamic Token Pooling
+Datasets and Benchmarks
+https://github.com/google-research/long-range-arena|LRA (pronounced “ELRA”): Tay et al 2020 - Long Range Arena: A Benchmark for Efficient Transformers (Not just NLP tasks)
+Long-Context Transformers
+Papers
+Dao et al 2022 - FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness
+Bertsch et al 2023 - Unlimiformer: Long-Range Transformers with Unlimited Length Input
+Mohtashami et al 2023 - Landmark Attention: Random-Access Infinite Context Length for Transformers
+Guo et al 2023 - LongCoder: A Long-Range Pre-trained Language Model for Code Completion
+Chen et al 2023 - Extending Context Window of Large Language Models via Positional Interpolation
+Dao 2023 - FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning
+Yang 2023 - LongQLoRA: Efficient and Effective Method to Extend Context Length of Large Language Models
+Li et al 2023 - LooGLE: Can Long-Context Language Models Understand Long Contexts?
+Qin et al 2024 - Lightning Attention-2: A Free Lunch for Handling Unlimited Sequence Lengths in Large Language Models
+Munkhdalai et al 2024 - Leave No Context Behind: Efficient Infinite Context Transformers with Infini-attention
+Han et al 2023 - LM-Infinite: Zero-Shot Extreme Length Generalization for Large Language Models Expands the length limit to 200 million with no additional training and is O(n)
+Levy et al 2024 - Same Task, More Tokens: the Impact of Input Length on the Reasoning Performance of Large Language Models
+Position Embeddings
+Learned position embeddings: Gehring et al 2017 - Convolutional Sequence to Sequence Learning
+2022 - Randomized Positional Encodings Boost Length Generalization of Transformers (Submitted to ACL 2022, not accepted.)  Has good related work in section 4, comparison to prior work.
+Su et al 2021 - RoFormer: Enhanced Transformer with Rotary Position Embedding
+Press et al 2021 - Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation Uses exponential weighted decay in the attention to encode positional information
+No Position Embeddings Transformer (NoPE): 2023 - The Impact of Positional Encoding on Length Generalization in Transformers
+Chen et al 2023 - Extending Context Window of Large Language Models via Positional Interpolation
+Software
+See also Software.
+Hugging Face Transformers Paper
+Tutorials and example code
+Tensorflow's transformer tutorial
+The Annotated Transformer
+nanoGPT Small version by Andrej Karpathy. Very cool
+Related Pages
+Attention Mechanisms
+BERT and Friends
+Seq2seq
+State-Space Models
+nlp/transformers.txt · Last modified: 2025/03/11 01:16 by jmflanig
+Page Tools
+Show pagesourceOld revisionsBacklinksBack to top
