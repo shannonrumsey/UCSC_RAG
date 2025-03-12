@@ -22,7 +22,7 @@ for index, row in df.iterrows():
     print(f"🔎 Asking: {question}")
     
     # Run the LLM script and capture the response
-    stream = os.popen(f'python connect_LLM.py "{question}"')
+    stream = os.popen(f'python connect_LLM_3B.py "{question}"')
     answer = stream.read().strip()
     
     print(f"✅ Answer: {answer}\n{'-'*80}")
