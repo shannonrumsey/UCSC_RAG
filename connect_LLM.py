@@ -13,7 +13,11 @@ warnings.filterwarnings('ignore')
 
 # Create prompt template for LLM
 prompt_tmplt = """
+<<<<<<< Updated upstream
 Answer the question based on the following context, in a concise and summarized manner:
+=======
+Answer the question based on the following context, in a concise and summarized manner. Limit your response to 500 tokens or less and always finish your sentence! Make sure to format your answer so it is clear and do not include any extra information other than the answer:
+>>>>>>> Stashed changes
 
 {context}
 
