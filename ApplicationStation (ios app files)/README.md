@@ -17,16 +17,29 @@ ApplicationStation/
 │   ├── ApplicationStation/  
 │   │   ├── Assets.xcassets/  
 │   │   ├── PreviewContent/  
-│   │   ├── GeminiAPI.swift            # Contains all code related to fetching responses from Gemini API
-│   │   ├── RagChat.swift              # Contains code for the UI interface where the user interacts with our model
-│   │   ├── RagAPI.swift               # Contains API calls to our local model
-│   │   ├── SecretsFile.swift          # Connects to secrets.plist (not included in repo) to get our Gemini API key
-│   │   ├── DataManager.swift          # Contains backend code related to storing and fetching messages from FireBase
-│   │   ├── AuthManager.swift          # Contains all code regarding user authentication 
-│   │   ├── LoginView.swift            # Contains the UI for the login screen
-│   │   ├── CreateAccount.swift        # Contains UI for create account screen
-│   │   ├── MessageStruct.swift        # Contains code for the message struct (how messages are stored in Firebase)
+│   │   ├── GeminiAPI.swift            
+│   │   ├── RagChat.swift              
+│   │   ├── RagAPI.swift               
+│   │   ├── SecretsFile.swift          
+│   │   ├── DataManager.swift          
+│   │   ├── AuthManager.swift          
+│   │   ├── LoginView.swift            
+│   │   ├── CreateAccount.swift        
+│   │   ├── MessageStruct.swift        
 │   ├── ApplicationStationTests/  
 │   ├── ApplicationStationUITests/  
 │   ├── ApplicationStation.xcodeproj/   
 │── README.md 
+
+
+### File Descriptions  
+
+- **GeminiAPI.swift** – Contains all code related to fetching responses from the Gemini API.  
+- **RagChat.swift** – Contains code for the UI interface where users interact with the model.  
+- **RagAPI.swift** – Handles API calls to the local RAG model.  
+- **SecretsFile.swift** – Connects to `secrets.plist` (not included in the repo) to retrieve the Gemini API key.  
+- **DataManager.swift** – Backend logic for storing and fetching messages from Firebase.  
+- **AuthManager.swift** – Manages user authentication.  
+- **LoginView.swift** – UI for the login screen.  
+- **CreateAccount.swift** – UI for the account creation screen.  
+- **MessageStruct.swift** – Defines the structure for storing messages in Firebase.  
