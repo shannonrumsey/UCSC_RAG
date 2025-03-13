@@ -6,8 +6,21 @@ import torch
 import argparse
 import warnings
 import sys
+import pandas as pd
+
+# open the test file
+df = pd.read_csv("RAG_test_dataset.csv")
+print(df.head())
+
+questions = df["Question"]
+answers = []
+contexts = []
 
 
+
+
+# this code is copied from connect_LLM.py with slight changes to the return statement
+# so that it gives the context 
 warnings.filterwarnings('ignore')
 seed = 27
 torch.manual_seed(seed)
@@ -61,17 +74,14 @@ def query_rag(question):
 
     answer = ques_answer.split(question)[1]
 
-    return answer
+    return answer, context_text
 
 parser = argparse.ArgumentParser()
-parser.add_argument("question", type=str, help="The question for model.")
-args = parser.parse_args()
-output = query_rag(args.question)
 
-print(output)
-
-
-
-
-
+for question in questions:
+    output, context_text = query_rag(question)
+    answers.append(output)
+    contexts.append(context_text)
+df = pd.DataFrame({"questions": questions, "answers": answers, "contexts": contexts})
+df.to_csv("question_answer_context.csv", index=False)
 
