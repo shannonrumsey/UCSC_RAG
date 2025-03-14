@@ -1,9 +1,18 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+<<<<<<< Updated upstream
 
 
 df = pd.read_csv('1B_gemini_test_results_processed.csv')
+=======
+import sys
+sys.stdout = open("gemini_eval_results.txt", "a")
+print("\n\n\n\n")
+print("=============Gemini Evaluation results on 3B=================")
+print("\n\n")
+df = pd.read_csv('3B_gemini_test_results_processed.csv')
+>>>>>>> Stashed changes
 
 df = df[['relevance', 'accuracy', 'coherence']]
 
@@ -31,7 +40,11 @@ overall_metrics = calculate_metrics(df)
 
 category_metrics = {}
 for category, indices in categories.items():
+<<<<<<< Updated upstream
     sub_df = df.iloc[np.array(indices) - 1] 
+=======
+    sub_df = df.iloc[np.array(indices) - 1]
+>>>>>>> Stashed changes
     category_metrics[category] = calculate_metrics(sub_df)
 
 
@@ -46,6 +59,10 @@ for category, metrics in category_metrics.items():
         print(f"{key}: {value:.4f}")
 
 
+<<<<<<< Updated upstream
+=======
+sys.stdout.close()
+>>>>>>> Stashed changes
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -75,7 +92,7 @@ for bar_group in bars:
 
 
 ax.set_ylabel("Scores", fontsize=16, fontweight='bold')
-ax.set_title("Gemini 2.0 Flask Evaluation of Our RAG Model", fontsize=20, fontweight='bold')
+ax.set_title("Gemini 2.0 Flask Evaluation of Our RAG Model - 3B", fontsize=20, fontweight='bold')
 ax.set_xticks(x)
 ax.set_xticklabels(labels, fontsize=14, fontweight='bold')
 ax.legend(fontsize=12, title_fontsize=14, prop={'weight': 'bold'})

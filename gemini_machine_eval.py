@@ -5,12 +5,12 @@ import pandas as pd
 import os
 import csv
 import time 
-df = pd.read_csv("question_answer_context.csv")
+df = pd.read_csv("question_answer_context_3B.csv")
 
 prompt_template = (
     "Evaluate the RAG model output based on the following criteria:\n"
     "1. Relevance: Does the retrieved context relate to the question? (0 or 1)\n"
-    "2. Accuracy: Is the answer factually correct based on the provided context? (0 or 1)\n"
+    "2. Accuracy: Is the answer factually correct? (0 or 1)\n"
     "3. Coherence: Is the answer well-formed and coherent? (0 or 1)\n"
     "Provide your evaluation as a JSON object with binary scores for each category.\n\n"
     "Context: {context}\n"
@@ -92,4 +92,4 @@ def test_data(df, turncate_size, prompt_template, output_file):
 
     print(f"Results saved to {output_file}")
 
-test_data(df, 400, prompt_template, "1B_gemini_test_results.csv")
+test_data(df, 400, prompt_template, "3B_gemini_test_results.csv")
