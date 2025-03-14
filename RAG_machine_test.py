@@ -49,7 +49,7 @@ def query_rag(question):
     else:
         device = "cpu"
 
-    model_id = "meta-llama/Llama-3.2-3B-Instruct"
+    model_id = "meta-llama/Llama-3.1-8B-Instruct"
     generator = transformers.pipeline("text-generation", model=model_id, torch_dtype=torch.bfloat16, device=device)
 
     # Embeds the question and searches the database
@@ -78,4 +78,4 @@ for question in questions:
 
 # Save results to CSV
 df = pd.DataFrame({"questions": questions, "answers": answers, "contexts": contexts})
-df.to_csv("question_answer_context_2.csv", index=False)
+df.to_csv("question_answer_context_3.csv", index=False)
