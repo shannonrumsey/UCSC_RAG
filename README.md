@@ -1,4 +1,3 @@
-Here's your **updated README** with a section about **getting permission to use Llama 3.2** and **authenticating with an access token**.
 
 ---
 
