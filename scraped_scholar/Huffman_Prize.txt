@@ -1,0 +1,9 @@
+Huffman Prize Scholarship Description
+This annual prize honors the memory and the legacy of its namesake–David A. Huffman, Computer Science
+Professor Emeritus. David A. Huffman was a distinguished member of the UC Santa Cruz faculty and one of the
+founders of the first department in what is now the Jack Baskin School of Engineering. His research in
+information sciences was highly original and eclectic and displayed a unique aesthetic. The Huffman coding
+procedure for minimum redundancy codes is the most celebrated of his achievements. Throughout his long
+teaching career, he offered conceptual challenges to students to expand their sphere of thought and sharpen
+their analytical abilities. His classes were an inspiration to countless students.
+This award is restricted to graduating Baskin Engineering seniors.
