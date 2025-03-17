@@ -5,7 +5,7 @@ import pandas as pd
 import os
 import csv
 import time 
-df = pd.read_csv("question_answer_context_3B.csv")
+df = pd.read_csv("question_answer_context_8B.csv")
 
 prompt_template = (
     "Evaluate the RAG model output based on the following criteria:\n"
@@ -92,4 +92,4 @@ def test_data(df, turncate_size, prompt_template, output_file):
 
     print(f"Results saved to {output_file}")
 
-test_data(df, 400, prompt_template, "3B_gemini_test_results.csv")
+test_data(df, 400, prompt_template, "8B_gemini_test_results.csv")

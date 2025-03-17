@@ -1,18 +1,18 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-<<<<<<< Updated upstream
 
 
-df = pd.read_csv('1B_gemini_test_results_processed.csv')
-=======
+
+
+
 import sys
 sys.stdout = open("gemini_eval_results.txt", "a")
 print("\n\n\n\n")
-print("=============Gemini Evaluation results on 3B=================")
+print("=============Gemini Evaluation results on 8B=================")
 print("\n\n")
-df = pd.read_csv('3B_gemini_test_results_processed.csv')
->>>>>>> Stashed changes
+df = pd.read_csv('8B_gemini_test_results_processed.csv')
+
 
 df = df[['relevance', 'accuracy', 'coherence']]
 
@@ -40,11 +40,7 @@ overall_metrics = calculate_metrics(df)
 
 category_metrics = {}
 for category, indices in categories.items():
-<<<<<<< Updated upstream
-    sub_df = df.iloc[np.array(indices) - 1] 
-=======
     sub_df = df.iloc[np.array(indices) - 1]
->>>>>>> Stashed changes
     category_metrics[category] = calculate_metrics(sub_df)
 
 
@@ -59,10 +55,9 @@ for category, metrics in category_metrics.items():
         print(f"{key}: {value:.4f}")
 
 
-<<<<<<< Updated upstream
-=======
+
 sys.stdout.close()
->>>>>>> Stashed changes
+
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -70,10 +65,10 @@ import numpy as np
 colors = ['#D1E3E7', '#F9F9A6', '#FFD57F', '#A8F4A5', '#E6D0FF']
 labels = list(category_metrics.keys())
 x = np.arange(len(labels))
-width = 0.20
+width = 0.18
 
 
-fig, ax = plt.subplots(figsize=(18, 6))
+fig, ax = plt.subplots(figsize=(12, 6))
 
 bars = [
     ax.bar(x - 2*width, [category_metrics[c]["Overall Score"] for c in labels], width, label="Overall Score", color=colors[0], edgecolor="black"),
@@ -83,20 +78,17 @@ bars = [
     ax.bar(x + 2*width, [category_metrics[c]["Strict Accuracy"] for c in labels], width, label="Strict Accuracy", color=colors[4], edgecolor="black")
 ]
 
-
 for bar_group in bars:
     for bar in bar_group:
         height = bar.get_height()
-        ax.text(bar.get_x() + bar.get_width()/2, height + 0.02, f'{height:.1%}', 
-                ha='center', va='bottom', fontsize=12, fontweight='bold')
-
+        ax.text(bar.get_x() + bar.get_width()/2 + .01, height + 0.02, f'{height:.1%}', 
+                ha='center', va='bottom', fontsize=8, fontweight='bold')
 
 ax.set_ylabel("Scores", fontsize=16, fontweight='bold')
-ax.set_title("Gemini 2.0 Flask Evaluation of Our RAG Model - 3B", fontsize=20, fontweight='bold')
+ax.set_title("Gemini 2.0 Flask Evaluation of Our RAG Model - 8B", fontsize=20, fontweight='bold')
 ax.set_xticks(x)
-ax.set_xticklabels(labels, fontsize=14, fontweight='bold')
-ax.legend(fontsize=12, title_fontsize=14, prop={'weight': 'bold'})
-plt.xticks(rotation=45)
+ax.set_xticklabels(labels, fontsize=18, fontweight='bold', rotation=0)  # Labels horizontal, increased font size
+ax.legend(fontsize=16, title_fontsize=18, prop={'weight': 'bold'})  # Increased legend font size
 plt.ylim(0, 1.1)
 
 plt.show()

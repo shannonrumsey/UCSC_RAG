@@ -39,7 +39,7 @@ def query_rag(question):
 
     #print(f"Using device: {device}")
 
-    model_id = "meta-llama/Llama-3.2-1B-Instruct"
+    model_id = "meta-llama/Llama-3.2-3B-Instruct"
 
     generator = transformers.pipeline("text-generation", model=model_id, torch_dtype=torch.bfloat16, device=device)
 
@@ -63,16 +63,10 @@ def query_rag(question):
 
     answer = ques_answer.split(question)[1]
 
-<<<<<<< Updated upstream
-    return answer
 
-'''parser = argparse.ArgumentParser()
-parser.add_argument("question", type=str, help="The question for model.")
-args = parser.parse_args()
-output = query_rag(args.question)'''
-=======
     return answer, context_text
->>>>>>> Stashed changes
+
+
 
 
 

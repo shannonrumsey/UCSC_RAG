@@ -1,0 +1,368 @@
+
+
+
+
+
+=============Gemini Evaluation results on 3B=================
+
+
+
+
+========== OVERALL METRICS ==========
+Overall Score: 0.6622
+Relevance Accuracy: 0.7365
+Accuracy Column: 0.6622
+Coherence Accuracy: 0.9122
+Strict Accuracy: 0.5467
+
+========== CATEGORY METRICS ==========
+
+--- Applying ---
+Overall Score: 0.6923
+Relevance Accuracy: 0.7436
+Accuracy Column: 0.6923
+Coherence Accuracy: 0.8205
+Strict Accuracy: 0.5000
+
+--- Health Insurance ---
+Overall Score: 0.7391
+Relevance Accuracy: 0.9130
+Accuracy Column: 0.7391
+Coherence Accuracy: 0.9565
+Strict Accuracy: 0.7391
+
+--- Registrar ---
+Overall Score: 0.6500
+Relevance Accuracy: 0.7000
+Accuracy Column: 0.6500
+Coherence Accuracy: 0.9500
+Strict Accuracy: 0.5854
+
+--- NLP Wiki ---
+Overall Score: 0.6222
+Relevance Accuracy: 0.6889
+Accuracy Column: 0.6222
+Coherence Accuracy: 0.9556
+Strict Accuracy: 0.4667
+
+
+
+
+
+=============Gemini Evaluation results on 3B=================
+
+
+
+
+========== OVERALL METRICS ==========
+Overall Score: 0.6622
+Relevance Accuracy: 0.7365
+Accuracy Column: 0.6622
+Coherence Accuracy: 0.9122
+Strict Accuracy: 0.5467
+
+========== CATEGORY METRICS ==========
+
+--- Applying ---
+Overall Score: 0.6923
+Relevance Accuracy: 0.7436
+Accuracy Column: 0.6923
+Coherence Accuracy: 0.8205
+Strict Accuracy: 0.5000
+
+--- Health Insurance ---
+Overall Score: 0.7391
+Relevance Accuracy: 0.9130
+Accuracy Column: 0.7391
+Coherence Accuracy: 0.9565
+Strict Accuracy: 0.7391
+
+--- Registrar ---
+Overall Score: 0.6500
+Relevance Accuracy: 0.7000
+Accuracy Column: 0.6500
+Coherence Accuracy: 0.9500
+Strict Accuracy: 0.5854
+
+--- NLP Wiki ---
+Overall Score: 0.6222
+Relevance Accuracy: 0.6889
+Accuracy Column: 0.6222
+Coherence Accuracy: 0.9556
+Strict Accuracy: 0.4667
+
+
+
+
+
+=============Gemini Evaluation results on 3B=================
+
+
+
+
+========== OVERALL METRICS ==========
+Overall Score: 0.6622
+Relevance Accuracy: 0.7365
+Accuracy Column: 0.6622
+Coherence Accuracy: 0.9122
+Strict Accuracy: 0.5467
+
+========== CATEGORY METRICS ==========
+
+--- Applying ---
+Overall Score: 0.6923
+Relevance Accuracy: 0.7436
+Accuracy Column: 0.6923
+Coherence Accuracy: 0.8205
+Strict Accuracy: 0.5000
+
+--- Health Insurance ---
+Overall Score: 0.7391
+Relevance Accuracy: 0.9130
+Accuracy Column: 0.7391
+Coherence Accuracy: 0.9565
+Strict Accuracy: 0.7391
+
+--- Registrar ---
+Overall Score: 0.6500
+Relevance Accuracy: 0.7000
+Accuracy Column: 0.6500
+Coherence Accuracy: 0.9500
+Strict Accuracy: 0.5854
+
+--- NLP Wiki ---
+Overall Score: 0.6222
+Relevance Accuracy: 0.6889
+Accuracy Column: 0.6222
+Coherence Accuracy: 0.9556
+Strict Accuracy: 0.4667
+
+
+
+
+
+=============Gemini Evaluation results on 3B=================
+
+
+
+
+========== OVERALL METRICS ==========
+Overall Score: 0.6622
+Relevance Accuracy: 0.7365
+Accuracy Column: 0.6622
+Coherence Accuracy: 0.9122
+Strict Accuracy: 0.5467
+
+========== CATEGORY METRICS ==========
+
+--- Applying ---
+Overall Score: 0.6923
+Relevance Accuracy: 0.7436
+Accuracy Column: 0.6923
+Coherence Accuracy: 0.8205
+Strict Accuracy: 0.5000
+
+--- Health Insurance ---
+Overall Score: 0.7391
+Relevance Accuracy: 0.9130
+Accuracy Column: 0.7391
+Coherence Accuracy: 0.9565
+Strict Accuracy: 0.7391
+
+--- Registrar ---
+Overall Score: 0.6500
+Relevance Accuracy: 0.7000
+Accuracy Column: 0.6500
+Coherence Accuracy: 0.9500
+Strict Accuracy: 0.5854
+
+--- NLP Wiki ---
+Overall Score: 0.6222
+Relevance Accuracy: 0.6889
+Accuracy Column: 0.6222
+Coherence Accuracy: 0.9556
+Strict Accuracy: 0.4667
+
+
+
+
+
+=============Gemini Evaluation results on 3B=================
+
+
+
+
+========== OVERALL METRICS ==========
+Overall Score: 0.6622
+Relevance Accuracy: 0.7365
+Accuracy Column: 0.6622
+Coherence Accuracy: 0.9122
+Strict Accuracy: 0.5467
+
+========== CATEGORY METRICS ==========
+
+--- Applying ---
+Overall Score: 0.6923
+Relevance Accuracy: 0.7436
+Accuracy Column: 0.6923
+Coherence Accuracy: 0.8205
+Strict Accuracy: 0.5000
+
+--- Health Insurance ---
+Overall Score: 0.7391
+Relevance Accuracy: 0.9130
+Accuracy Column: 0.7391
+Coherence Accuracy: 0.9565
+Strict Accuracy: 0.7391
+
+--- Registrar ---
+Overall Score: 0.6500
+Relevance Accuracy: 0.7000
+Accuracy Column: 0.6500
+Coherence Accuracy: 0.9500
+Strict Accuracy: 0.5854
+
+--- NLP Wiki ---
+Overall Score: 0.6222
+Relevance Accuracy: 0.6889
+Accuracy Column: 0.6222
+Coherence Accuracy: 0.9556
+Strict Accuracy: 0.4667
+
+
+
+
+
+=============Gemini Evaluation results on 3B=================
+
+
+
+
+========== OVERALL METRICS ==========
+Overall Score: 0.6622
+Relevance Accuracy: 0.7365
+Accuracy Column: 0.6622
+Coherence Accuracy: 0.9122
+Strict Accuracy: 0.5467
+
+========== CATEGORY METRICS ==========
+
+--- Applying ---
+Overall Score: 0.6923
+Relevance Accuracy: 0.7436
+Accuracy Column: 0.6923
+Coherence Accuracy: 0.8205
+Strict Accuracy: 0.5000
+
+--- Health Insurance ---
+Overall Score: 0.7391
+Relevance Accuracy: 0.9130
+Accuracy Column: 0.7391
+Coherence Accuracy: 0.9565
+Strict Accuracy: 0.7391
+
+--- Registrar ---
+Overall Score: 0.6500
+Relevance Accuracy: 0.7000
+Accuracy Column: 0.6500
+Coherence Accuracy: 0.9500
+Strict Accuracy: 0.5854
+
+--- NLP Wiki ---
+Overall Score: 0.6222
+Relevance Accuracy: 0.6889
+Accuracy Column: 0.6222
+Coherence Accuracy: 0.9556
+Strict Accuracy: 0.4667
+
+
+
+
+
+=============Gemini Evaluation results on 3B=================
+
+
+
+
+========== OVERALL METRICS ==========
+Overall Score: 0.6622
+Relevance Accuracy: 0.7365
+Accuracy Column: 0.6622
+Coherence Accuracy: 0.9122
+Strict Accuracy: 0.5467
+
+========== CATEGORY METRICS ==========
+
+--- Applying ---
+Overall Score: 0.6923
+Relevance Accuracy: 0.7436
+Accuracy Column: 0.6923
+Coherence Accuracy: 0.8205
+Strict Accuracy: 0.5000
+
+--- Health Insurance ---
+Overall Score: 0.7391
+Relevance Accuracy: 0.9130
+Accuracy Column: 0.7391
+Coherence Accuracy: 0.9565
+Strict Accuracy: 0.7391
+
+--- Registrar ---
+Overall Score: 0.6500
+Relevance Accuracy: 0.7000
+Accuracy Column: 0.6500
+Coherence Accuracy: 0.9500
+Strict Accuracy: 0.5854
+
+--- NLP Wiki ---
+Overall Score: 0.6222
+Relevance Accuracy: 0.6889
+Accuracy Column: 0.6222
+Coherence Accuracy: 0.9556
+Strict Accuracy: 0.4667
+
+
+
+
+
+=============Gemini Evaluation results on 3B=================
+
+
+
+
+========== OVERALL METRICS ==========
+Overall Score: 0.5602
+Relevance Accuracy: 0.7229
+Accuracy Column: 0.5602
+Coherence Accuracy: 0.8253
+Strict Accuracy: 0.4790
+
+========== CATEGORY METRICS ==========
+
+--- Applying ---
+Overall Score: 0.4500
+Relevance Accuracy: 0.7750
+Accuracy Column: 0.4500
+Coherence Accuracy: 0.7500
+Strict Accuracy: 0.4250
+
+--- Health Insurance ---
+Overall Score: 0.6522
+Relevance Accuracy: 0.7826
+Accuracy Column: 0.6522
+Coherence Accuracy: 0.8261
+Strict Accuracy: 0.4783
+
+--- Registrar ---
+Overall Score: 0.6829
+Relevance Accuracy: 0.6829
+Accuracy Column: 0.6829
+Coherence Accuracy: 0.8780
+Strict Accuracy: 0.5366
+
+--- NLP Wiki ---
+Overall Score: 0.5111
+Relevance Accuracy: 0.6444
+Accuracy Column: 0.5111
+Coherence Accuracy: 0.8444
+Strict Accuracy: 0.4667

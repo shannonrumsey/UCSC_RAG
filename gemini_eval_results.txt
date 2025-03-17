@@ -90,3 +90,61 @@ Relevance Accuracy: 0.6889
 Accuracy Column: 0.6222
 Coherence Accuracy: 0.9556
 Strict Accuracy: 0.4667
+
+
+
+
+=============Gemini Evaluation results on 8B=================
+
+
+
+
+========== OVERALL METRICS ==========
+Overall Score: 0.8800
+Relevance Accuracy: 0.8600
+Accuracy Column: 0.8800
+Coherence Accuracy: 0.8000
+Strict Accuracy: 0.7067
+
+========== CATEGORY METRICS ==========
+
+--- Applying ---
+Overall Score: 0.8750
+Relevance Accuracy: 0.8000
+Accuracy Column: 0.8750
+Coherence Accuracy: 0.6500
+Strict Accuracy: 0.4750
+
+--- Health Insurance ---
+Overall Score: 1.0000
+Relevance Accuracy: 1.0000
+Accuracy Column: 1.0000
+Coherence Accuracy: 0.9130
+Strict Accuracy: 0.9130
+
+--- Registrar ---
+Overall Score: 0.7805
+Relevance Accuracy: 0.8537
+Accuracy Column: 0.7805
+Coherence Accuracy: 0.7805
+Strict Accuracy: 0.7073
+
+--- NLP Wiki ---
+Overall Score: 0.9111
+Relevance Accuracy: 0.8444
+Accuracy Column: 0.9111
+Coherence Accuracy: 0.8889
+Strict Accuracy: 0.8000
+
+
+
+
+=============Gemini self bias evaluation results=================
+
+Accuracy: 0.9600
+Precision: 0.9259
+Recall: 1.0000
+F1 Score: 0.9615
+Confusion Matrix:
+[[23  2]
+ [ 0 25]]
