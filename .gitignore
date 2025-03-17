@@ -15,6 +15,9 @@ __pycache__/
 venv/
 myenv/
 
+# Gemini API key for Python
+gemini_secrets.py
+
 # Distribution / packaging
 .Python
 build/

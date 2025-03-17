@@ -11,6 +11,7 @@
 		BF71BC272D80AB7C005009E5 /* GeminiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71BC262D80AB7C005009E5 /* GeminiAPI.swift */; };
 		BF71BC292D80AC27005009E5 /* SecretsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71BC282D80AC27005009E5 /* SecretsFile.swift */; };
 		BF71BC2B2D80ACE8005009E5 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF71BC2A2D80ACE2005009E5 /* Secrets.plist */; };
+		BF71BC302D828DEC005009E5 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = BF71BC2F2D828DEC005009E5 /* PythonKit */; };
 		BF73696F2D7CDD6E005889E8 /* ApplicationStationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF73696E2D7CDD6E005889E8 /* ApplicationStationApp.swift */; };
 		BF7369712D7CDD6E005889E8 /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7369702D7CDD6E005889E8 /* CreateAccount.swift */; };
 		BF7369732D7CDD71005889E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7369722D7CDD71005889E8 /* Assets.xcassets */; };
@@ -75,6 +76,7 @@
 			files = (
 				BF73699D2D7CE8F0005889E8 /* FirebaseAuth in Frameworks */,
 				BF73699F2D7CE902005889E8 /* FirebaseFirestore in Frameworks */,
+				BF71BC302D828DEC005009E5 /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +190,7 @@
 			packageProductDependencies = (
 				BF73699C2D7CE8F0005889E8 /* FirebaseAuth */,
 				BF73699E2D7CE902005889E8 /* FirebaseFirestore */,
+				BF71BC2F2D828DEC005009E5 /* PythonKit */,
 			);
 			productName = ApplicationStation;
 			productReference = BF73696B2D7CDD6E005889E8 /* ApplicationStation.app */;
@@ -263,6 +266,7 @@
 			mainGroup = BF7369622D7CDD6E005889E8;
 			packageReferences = (
 				BF73699A2D7CE86C005889E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				BF71BC2E2D828D90005009E5 /* XCRemoteSwiftPackageReference "PythonKit" */,
 			);
 			productRefGroup = BF73696C2D7CDD6E005889E8 /* Products */;
 			projectDirPath = "";
@@ -643,6 +647,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		BF71BC2E2D828D90005009E5 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		BF73699A2D7CE86C005889E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -654,6 +666,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BF71BC2F2D828DEC005009E5 /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF71BC2E2D828D90005009E5 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
 		BF73699C2D7CE8F0005889E8 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BF73699A2D7CE86C005889E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

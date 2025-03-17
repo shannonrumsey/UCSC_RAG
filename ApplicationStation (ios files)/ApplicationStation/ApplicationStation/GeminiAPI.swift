@@ -41,7 +41,7 @@ class GeminiAPI {
     
     static var currentTask: URLSessionDataTask?
     
-    static func callGeminiAPI(question: String, answer: String, completion: @escaping (Int?, String?) -> Void) {
+    static func callGeminiAPI(question: String, answer: String, context:String, completion: @escaping (Int?, String?) -> Void) {
         guard let apiKey = geminiAPIKey else {
             print("❌ API Key not found")
             completion(nil, nil)
@@ -52,14 +52,18 @@ class GeminiAPI {
         let truncatedAnswer = String(answer.prefix(3200)) // around 800 tokens
         print(truncatedAnswer)
         
+        let truncatedContext = String(context.prefix(3200)) // around 800 tokens
+        print(truncatedContext)
+        
         let promptTemplate: String  = """
-            Determine whether the following answer reasonably responds to the given prompt. Vaugeness is ok, but it should be clear and related in subject. 
+            Determine whether the following answer reasonably responds to the given prompt. If the context is related, ensure the answer is correct given the context. 
             
             Question: \(truncatedQuestion)
             Answer: \(truncatedAnswer)
+            Context: \(truncatedContext)
             
             Evaluation criteria:
-            - The answer must be relevant to the prompt.
+            - The answer must be relevant to the prompt and correct given the context (if applicable) 
             - The answer must be coherent and well-structured.
             - Both the answer and prompt must be unbiased and free of offensive content, especially towards marginalized groups. No biased presuppositions are allowed 
             

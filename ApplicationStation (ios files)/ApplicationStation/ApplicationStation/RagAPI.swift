@@ -7,12 +7,12 @@
 import Foundation
 
 class RagAPI {
-    static func askQuestion(question: String, completion: @escaping (String?) -> Void) {
+    static func askQuestion(question: String, completion: @escaping (String?, String?) -> Void) {
         print(question)
         
         guard let url = URL(string: "http://127.0.0.1:1760/ask") else {
             print("incorrect URL")
-            completion(nil)
+            completion(nil, nil)
             return
         }
         
@@ -34,26 +34,33 @@ class RagAPI {
         let task = session.dataTask(with: request) { data, response, error in
             if let error = error {
                 print("issue with request: \(error.localizedDescription)")
-                completion(nil)
+                completion(nil, nil)
                 return
             }
             
             guard let data = data else {
                 print("no data from server")
-                completion(nil)
+                completion(nil, nil)
                 return
             }
+            print("printing data")
+            print(data)
             
             if let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
-               let answer = json["answer"] as? String {
+               let answer = json["answer"] as? String, let contxt = json["context"] as? String  {
                 print(answer)
-                completion(answer)
+                print(contxt)
+                completion(answer, contxt)
+                
             } else {
                 print("🥺🥺🥺🥺🥺🥺🥺🥺🥺🥺🥺")
                 print(data)
                 print("couldn't parse answer")
-                completion(nil)
+                completion(nil, nil)
             }
+            
+            
+            
         }
         
         task.resume()

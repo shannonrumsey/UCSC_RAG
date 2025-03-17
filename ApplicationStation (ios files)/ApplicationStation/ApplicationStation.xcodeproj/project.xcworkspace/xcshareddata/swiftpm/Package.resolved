@@ -1,4 +1,5 @@
 {
+  "originHash" : "ff4ad812b951d52799dcbb8d84d372043b3f83e9d132793870b4f95add8096c4",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -109,6 +110,15 @@
       }
     },
     {
+      "identity" : "pythonkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pvieito/PythonKit.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "6fee7617cfa910fbac7035276e295ba967adbbb4"
+      }
+    },
+    {
       "identity" : "swift-protobuf",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-protobuf.git",
@@ -118,5 +128,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

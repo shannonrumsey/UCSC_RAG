@@ -10,9 +10,9 @@ def ask():
     if not question:
         return jsonify({"error": "No question provided"}), 400
 
-    answer = query_rag(question)
+    answer, context = query_rag(question)
     print(answer)
-    return jsonify({"answer": answer})
+    return jsonify({"answer": answer, "context": context})
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=1760, debug=True)

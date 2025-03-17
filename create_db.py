@@ -8,6 +8,7 @@ import chromadb
 import shutil
 
 scraped = os.path.join(os.path.dirname(__file__), "scraped")
+# scraped = os.path.join(os.path.dirname(__file__), "scraped_scholarship")
 # Read files and create list of files
 documents = []
 for filename in os.listdir(scraped):

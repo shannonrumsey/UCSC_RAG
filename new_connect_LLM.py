@@ -8,6 +8,7 @@ import warnings
 import sys
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from textwrap import dedent
+import os
 
 warnings.filterwarnings('ignore')
 seed = 27
@@ -32,6 +33,7 @@ def query_rag(question):
         device = torch.device('mps')
     elif torch.cuda.is_available():
         device = torch.device('cuda')
+        os.environ["CUDA_VISIBLE_DEVICES"] = "0"
     else:
         device = torch.device('cpu')
     
@@ -40,7 +42,7 @@ def query_rag(question):
     generator = transformers.pipeline("text-generation", model=model_id, torch_dtype=torch.bfloat16, device=device)
 
     # Embeds the question and searches the database
-    results = db.similarity_search_with_score(question, k=3)
+    results = db.similarity_search_with_score(question, k=5)
 
     # Formats the retreived documents
     context_text = "\n\n---\n\n".join([doc.page_content for doc, score in results])
@@ -59,7 +61,7 @@ def query_rag(question):
     # print(output)
     generated = output[0]["generated_text"]
 
-    answer = generated.split("assistant<|end_header_id|>")[1]
+    answer = generated.split("assistant<|end_header_id|>")[1].strip()
 
 
     return answer

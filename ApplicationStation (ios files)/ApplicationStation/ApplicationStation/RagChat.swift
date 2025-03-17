@@ -15,11 +15,11 @@ struct RagChat: View {
     
     var body: some View {
         ZStack {
-            // Основной фон
+     
             Color.black.ignoresSafeArea()
             
             VStack {
-                // Верхняя панель с кнопками
+        
                 HStack {
                     Button(action: {
                         authManager.signOut()
@@ -40,7 +40,7 @@ struct RagChat: View {
                 .padding(.top, 40)
                 .padding(.horizontal)
                 
-                // Основное содержимое
+       
                 ScrollView {
                     VStack(alignment: .leading) {
                         ForEach(dataManager.messages, id: \ .self) { message in
@@ -63,7 +63,7 @@ struct RagChat: View {
                     .padding(.horizontal)
                 }
                 
-                // Поле ввода
+           
                 HStack {
                     TextField("Ask a question...", text: $userMessage)
                         .padding()
@@ -77,7 +77,7 @@ struct RagChat: View {
                             isLoading = true
                             let newMessage = Message(message: "User: " + userMessage, timeStamp: Timestamp(date: Date()))
                             
-                            RagAPI.askQuestion(question: newMessage.message) { answer in
+                            RagAPI.askQuestion(question: newMessage.message) { answer, context in
                                 let cleanAnswer = (answer ?? "")
                                     .replacingOccurrences(of: "Answer: ", with: "")
                                     .replacingOccurrences(of: "User:", with: "")
@@ -85,7 +85,7 @@ struct RagChat: View {
                                     .replacingOccurrences(of: "Agent:", with: "")
                                 let newAnswer = Message(message: "AI: " + cleanAnswer, timeStamp: Timestamp(date: Date()))
                                 
-                                GeminiAPI.callGeminiAPI(question: newMessage.message, answer: newAnswer.message) { isCorrect, explanation in
+                                GeminiAPI.callGeminiAPI(question: newMessage.message, answer: newAnswer.message, context: context ?? "") { isCorrect, explanation in
                                     isLoading = false
                                     
                                     guard let isCorrect = isCorrect, let explanation = explanation else {
@@ -93,7 +93,7 @@ struct RagChat: View {
                                         return
                                     }
                                     
-                                    if isCorrect == 1 {
+                                    if isCorrect == 1  {
                                         dataManager.saveMessages(messages: [newMessage, newAnswer]) {
                                             dataManager.loadMessages {
                                                 userMessage = ""
@@ -166,7 +166,7 @@ struct RagChat: View {
 
             if isLoading {
                 ZStack {
-                    Color.black.opacity(0.6).edgesIgnoringSafeArea(.all) // затемнение фона
+                    Color.black.opacity(0.6).edgesIgnoringSafeArea(.all)
                     ProgressView("Loading answer...")
                         .progressViewStyle(CircularProgressViewStyle(tint: Color.black))
                         .padding()
@@ -174,7 +174,7 @@ struct RagChat: View {
                         .cornerRadius(10)
                         .shadow(radius: 5)
                         .font(.headline)
-                        .foregroundColor(.black) // изменяем цвет текста на черный
+                        .foregroundColor(.black)
                         .frame(width: 250, height: 100)
                 }
             }
