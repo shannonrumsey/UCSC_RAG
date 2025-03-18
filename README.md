@@ -183,15 +183,5 @@ This repo contains a subrepo with its own README file. For information on connec
    - Ensure `gemini_secrets.py` contains a valid **Gemini API key**.
    - API keys should be stored securely and **not hardcoded in scripts**.
 
----
-
-## **9. Future Improvements**
-
-- **Enhanced Scraping**: Extract structured content like tables & lists.
-- **Larger LLM Support**: Experiment with **Llama 3.2-8B** for better response quality.
-- **Automated Data Updates**: Refresh scraped content periodically.
-- **Multi-Turn Conversations**: Support dialogue history for follow-up questions.
-- **Slack Integration**: Allow chatbot to query UCSC NLP Slack (if permissions allow).
-- **Interactive UI**: Implement a web-based interface using **Streamlit** or **Flask**.
 
 ---
