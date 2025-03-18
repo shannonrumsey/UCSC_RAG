@@ -54,7 +54,7 @@ for question, category in questions_with_categories.items():
     df = pd.concat([df, pd.DataFrame([{"Question": question, "Category": category, "Answer": answer}])], ignore_index=True)
 
 # Save to CSV
-csv_path = "ucsc_questions_with_answers.csv"
+csv_path = "data/outputs/ucsc_questions_with_answers.csv"
 df.to_csv(csv_path, index=False)
 
 print(f"\n📄 CSV file '{csv_path}' has been created successfully!")

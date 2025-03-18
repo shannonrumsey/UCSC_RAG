@@ -1,10 +1,9 @@
-
 ---
-
 # **UCSC_RAG**
 
 This project implements a **Retrieval-Augmented Generation (RAG) model** using **LangChain**, **ChromaDB**, and **Llama 3.2**. It scrapes UCSC NLP-related websites, stores text embeddings in a vector database, and allows users to query the data for contextual responses.
 
+Additionally, the system integrates **Gemini 2.0 Flash** to evaluate model-generated responses, ensuring factual accuracy, coherence, and relevance. This helps reduce hallucinations and improves overall response quality.
 ---
 
 ## **1. Installation**
@@ -28,14 +27,14 @@ pip install -r requirements.txt
 If `requirements.txt` is missing, install manually:
 
 ```bash
-pip install beautifulsoup4 requests langchain chromadb torch transformers
+pip install beautifulsoup4 requests langchain chromadb torch transformers google-generativeai matplotlib pandas numpy
 ```
 
 ---
 
 ## **2. Scraping Data**
 
-The **`scraper.py`** script extracts text from UCSC NLP-related web pages and saves it in the `scraped/` directory.
+The **`scraper.py`** script extracts text from UCSC NLP-related web pages and saves it in the `data/scraped/` directory.
 
 ### **Run the scraper**
 
@@ -47,7 +46,7 @@ This will:
 
 1. Fetch content from predefined URLs.
 2. Remove unnecessary elements (styles, scripts).
-3. Save the cleaned text in the `scraped/` directory.
+3. Save the cleaned text in the `data/scraped/` directory.
 
 🚀 **Note:** The script includes a **30-second delay per request** to avoid being blocked.
 
@@ -65,7 +64,7 @@ python create_db.py
 
 This will:
 
-1. Load all scraped text files from `scraped/`.
+1. Load all scraped text files from `data/scraped/`.
 2. Split text into smaller chunks.
 3. Convert text into embeddings using **HuggingFace’s all-mpnet-base-v2** model.
 4. Store embeddings in **ChromaDB**.
@@ -90,7 +89,40 @@ This will:
 
 ---
 
-## **5. Getting Access to Llama 3.2**
+## **5. Gemini-Based Evaluation**
+
+To ensure factual accuracy and reduce hallucinations, the responses from the RAG model are evaluated using **Gemini 2.0 Flash**.
+
+### **Run Gemini Evaluation**
+
+```bash
+python src/gemini/gemini_machine_eval.py
+```
+
+This will:
+
+1. **Read model-generated responses** from `data/outputs/`.
+2. **Use Gemini 2.0 Flash** to assess relevance, accuracy, and coherence.
+3. **Store evaluation results** in `data/outputs/gemini_eval_results.txt`.
+
+### **Metrics Evaluated**
+
+- **Relevance**: Is the retrieved context related to the question?
+- **Accuracy**: Is the generated answer factually correct?
+- **Coherence**: Is the response well-formed and readable?
+- **Strict Accuracy**: A stricter metric that requires all three to be correct.
+
+Evaluation results can be visualized using **matplotlib** with:
+
+```bash
+python src/gemini/analyzing_results.py
+```
+
+This generates **bar graphs** comparing performance across different categories (Admissions, Registrar, Health, NLP Wiki).
+
+---
+
+## **6. Getting Access to Llama 3.2**
 
 The **Llama 3.2-1B-Instruct** model is **restricted**, and you must request access before using it.
 
@@ -120,19 +152,6 @@ python connect_LLM.py "What is the UCSC NLP program?"
 
 ---
 
-## **6. Explanation of Main Files**
-
-| File               | Description                                                   |
-| ------------------ | ------------------------------------------------------------- |
-| `scraper.py`       | Scrapes UCSC NLP-related websites.                            |
-| `create_db.py`     | Converts text into embeddings and stores in ChromaDB.         |
-| `connect_LLM.py`   | Queries the database and generates responses using Llama 3.2. |
-| `requirements.txt` | List of required dependencies.                                |
-| `.gitignore`       | Prevents tracking of unnecessary files.                       |
-| `scraped/`         | Stores extracted text files.                                  |
-
----
-
 ## **7. Notes & Troubleshooting**
 
 ### **Common Issues**
@@ -147,7 +166,7 @@ python connect_LLM.py "What is the UCSC NLP program?"
    pip install --upgrade torch transformers
    ```
 
-   If the error says **"403 Client Error: Forbidden"**, it means you **haven't requested access** to Llama 3.2. Follow the **steps in section 5**.
+   If the error says **"403 Client Error: Forbidden"**, it means you **haven't requested access** to Llama 3.2. Follow the **steps in section 6**.
 
 3. **Slow query responses?**
 
@@ -155,16 +174,24 @@ python connect_LLM.py "What is the UCSC NLP program?"
    - Use a **GPU** for faster LLM inference.
 
 4. **Database not found?**
+
    - Ensure `create_db.py` was run **before** querying the model.
-   - Check if the `scraped/` directory contains text files.
+   - Check if the `data/scraped/` directory contains text files.
+
+5. **Gemini not evaluating responses?**
+   - Ensure `gemini_secrets.py` contains a valid **Gemini API key**.
+   - API keys should be stored securely and **not hardcoded in scripts**.
 
 ---
 
 ## **8. Future Improvements**
 
-- Enhance the **scraper** to extract structured content (tables, lists).
-- Use a **larger LLM model** for better answer quality.
-- Implement **Slack integration** to extract UCSC NLP Slack data (if permitted).
+- **Enhanced Scraping**: Extract structured content like tables & lists.
+- **Larger LLM Support**: Experiment with **Llama 3.2-8B** for better response quality.
+- **Automated Data Updates**: Refresh scraped content periodically.
+- **Multi-Turn Conversations**: Support dialogue history for follow-up questions.
+- **Slack Integration**: Allow chatbot to query UCSC NLP Slack (if permissions allow).
+- **Interactive UI**: Implement a web-based interface using **Streamlit** or **Flask**.
 
 ---
 

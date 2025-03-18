@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from connect_LLM import query_rag
+from llm.connect_LLM import query_rag
 
 app = Flask(__name__)
 

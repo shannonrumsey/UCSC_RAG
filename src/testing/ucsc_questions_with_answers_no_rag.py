@@ -2,8 +2,8 @@ import pandas as pd
 import os
 
 # Load the CSV containing questions and categories
-input_csv_path = "RAG_Questions.csv"
-output_csv_path = "ucsc_questions_with_answers_3B.csv"
+input_csv_path = "data/inputs/RAG_Questions.csv"
+output_csv_path = "data/outputs/ucsc_questions_with_answers_no_rag_8B.csv"
 
 df = pd.read_csv(input_csv_path)
 
@@ -22,7 +22,7 @@ for index, row in df.iterrows():
     print(f"🔎 Asking: {question}")
     
     # Run the LLM script and capture the response
-    stream = os.popen(f'python connect_LLM_3B.py "{question}"')
+    stream = os.popen(f'python connect_LLM_no_rag.py "{question}"')
     answer = stream.read().strip()
     
     print(f"✅ Answer: {answer}\n{'-'*80}")

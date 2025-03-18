@@ -1,18 +1,12 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-<<<<<<< Updated upstream
-
-
-df = pd.read_csv('1B_gemini_test_results_processed.csv')
-=======
 import sys
 sys.stdout = open("gemini_eval_results.txt", "a")
 print("\n\n\n\n")
 print("=============Gemini Evaluation results on 3B=================")
 print("\n\n")
-df = pd.read_csv('3B_gemini_test_results_processed.csv')
->>>>>>> Stashed changes
+df = pd.read_csv('data/outputs/3B_gemini_test_results_processed.csv')
 
 df = df[['relevance', 'accuracy', 'coherence']]
 
@@ -40,11 +34,7 @@ overall_metrics = calculate_metrics(df)
 
 category_metrics = {}
 for category, indices in categories.items():
-<<<<<<< Updated upstream
-    sub_df = df.iloc[np.array(indices) - 1] 
-=======
     sub_df = df.iloc[np.array(indices) - 1]
->>>>>>> Stashed changes
     category_metrics[category] = calculate_metrics(sub_df)
 
 
@@ -59,10 +49,7 @@ for category, metrics in category_metrics.items():
         print(f"{key}: {value:.4f}")
 
 
-<<<<<<< Updated upstream
-=======
 sys.stdout.close()
->>>>>>> Stashed changes
 
 import matplotlib.pyplot as plt
 import numpy as np

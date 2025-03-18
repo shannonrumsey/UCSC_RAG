@@ -9,7 +9,7 @@ import sys
 import pandas as pd
 
 # Open the test file
-df = pd.read_csv("RAG_test_dataset.csv")
+df = pd.read_csv("data/inputs/RAG_test_dataset.csv")
 print(df.head())
 
 # Ensure all questions are strings and handle NaN values
@@ -78,4 +78,4 @@ for question in questions:
 
 # Save results to CSV
 df = pd.DataFrame({"questions": questions, "answers": answers, "contexts": contexts})
-df.to_csv("question_answer_context_3.csv", index=False)
+df.to_csv("data/outputs/question_answer_context_3.csv", index=False)
