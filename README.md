@@ -195,9 +195,3 @@ This repo contains a subrepo with its own README file. For information on connec
 - **Interactive UI**: Implement a web-based interface using **Streamlit** or **Flask**.
 
 ---
-
-## **8. Need Help?**
-
-If you run into issues, feel free to reach out! 🚀
-
----
