@@ -149,10 +149,11 @@ After logging in, you can **run the query script as usual**:
 ```bash
 python connect_LLM.py "What is the UCSC NLP program?"
 ```
-
+## **7. iOS files, connecting the app, and Gemini filtering 
+This repo contains a subrepo with its own README file. For information on connecting the iOS app and filtering with Gemini, please open the iOS folder 
 ---
 
-## **7. Notes & Troubleshooting**
+## **8. Notes & Troubleshooting**
 
 ### **Common Issues**
 
@@ -184,7 +185,7 @@ python connect_LLM.py "What is the UCSC NLP program?"
 
 ---
 
-## **8. Future Improvements**
+## **9. Future Improvements**
 
 - **Enhanced Scraping**: Extract structured content like tables & lists.
 - **Larger LLM Support**: Experiment with **Llama 3.2-8B** for better response quality.
@@ -195,7 +196,7 @@ python connect_LLM.py "What is the UCSC NLP program?"
 
 ---
 
-## **9. Need Help?**
+## **8. Need Help?**
 
 If you run into issues, feel free to reach out! 🚀
 
