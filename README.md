@@ -2,8 +2,8 @@
 # **UCSC_RAG**
 
 This project implements a **Retrieval-Augmented Generation (RAG) model** using **LangChain**, **ChromaDB**, and **Llama 3.2**. It scrapes UCSC NLP-related websites, stores text embeddings in a vector database, and allows users to query the data for contextual responses.
+Additionally, the system integrates **Gemini 2.0 Flash** to evaluate model-generated responses.
 
-Additionally, the system integrates **Gemini 2.0 Flash** to evaluate model-generated responses, ensuring factual accuracy, coherence, and relevance. This helps reduce hallucinations and improves overall response quality.
 ---
 
 ## **1. Installation**
