@@ -6,6 +6,10 @@ Additionally, the system integrates **Gemini 2.0 Flash** to evaluate model-gener
 
 ---
 
+## DEMO
+
+[![Chatbot Demo](https://img.youtube.com/vi/t4GpstMtra8/maxresdefault.jpg)](https://www.youtube.com/watch?v=t4GpstMtra8)
+
 ## **1. Installation**
 
 ### **Prerequisites**
